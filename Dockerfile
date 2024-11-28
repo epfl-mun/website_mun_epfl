@@ -1,32 +1,22 @@
-# Use the official Node.js image as the base image
-FROM node:14-alpine AS build-stage
+FROM node:lts-alpine
 
-# Set the working directory
+# install simple http server for serving static content
+RUN npm install -g http-server
+
+# make the 'app' folder the current working directory
 WORKDIR /app
 
-# Copy the package.json and package-lock.json files
+# copy both 'package.json' and 'package-lock.json' (if available)
 COPY package*.json ./
 
-# Install dependencies
+# install project dependencies
 RUN npm install
 
-# Copy the rest of the application code
+# copy project files and folders to the current working directory (i.e. 'app' folder)
 COPY . .
 
-# Build the application
+# build app for production with minification
 RUN npm run build
 
-# Use the official Nginx image as the base image for the production stage
-FROM nginx:stable-alpine AS production-stage
-
-# Copy the built files from the build stage to the Nginx html directory
-COPY --from=build-stage /app/dist /usr/share/nginx/html
-
-# Copy the Nginx configuration file
-COPY nginx.conf /etc/nginx/conf.d/default.conf
-
-# Expose port 80
-EXPOSE 80
-
-# Start Nginx
-CMD ["nginx", "-g", "daemon off;"]
+EXPOSE 8080
+CMD [ "http-server", "dist" ]
