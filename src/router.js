@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from './pages/Home.vue'
 import About from './pages/About.vue'
-import SubPage from './pages/SubPage.vue'
+import Events from './pages/Events.vue'
 import EventDetail from './pages/EventDetail.vue'
 
 const routes = [
@@ -14,13 +14,11 @@ const routes = [
     path: '/about',
     name: 'About',
     component: About,
-    children: [
-      {
-        path: 'subpage',
-        name: 'SubPage',
-        component: SubPage
-      }
-    ]
+  },
+  {
+    path : '/events',
+    name : "Events",
+    component : Events
   },
   {
     path: '/event/:id',
