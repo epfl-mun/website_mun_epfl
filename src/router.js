@@ -3,6 +3,7 @@ import Home from './pages/Home.vue'
 import About from './pages/About.vue'
 import Events from './pages/Events.vue'
 import EventDetail from './pages/EventDetail.vue'
+import Team from './pages/Team.vue'
 
 const routes = [
   {
@@ -25,6 +26,11 @@ const routes = [
     name: 'EventDetail',
     component: EventDetail,
     props: true
+  },
+  {
+    path : '/team',
+    name : "Team",
+    component : Team
   }
 ]
 

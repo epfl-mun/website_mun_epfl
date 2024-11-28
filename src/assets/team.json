@@ -1,0 +1,47 @@
+[
+    {
+        "id" : 1,
+        "poste" : "President",
+        "name" : "Louis Cresci",
+        "description" : "Louis is a third-year EPFL student majoring in computer science. With over five years of experience in the world of MUN, he led the restructuring of the association to raise awareness of MUN across the entire campus. He has contributed to organizing several events for the association, showing solid skills in planning and managing EPFLMUN conference successfully.",
+        "image" : "/pictures/team/louis_cresci.jpg",
+        "linkedin" : "https://www.linkedin.com/in/louis-cresci-1b1b3b1b3/",
+        "mail" : "louis.cresci@epfl.ch"
+    },
+    {
+        "id" : 2,
+        "poste" : "Vice President",
+        "name" : "Amyelle Noppeney",
+        "description" : "Amyelle is a master’s student in political science at the University of Lausanne. Her deep expertise in politics and international relations brings a different perspective to highly technological MUN EPFL. She initially joined MUN EPFL as the Under-Secretary-General of Public Relations, playing a key role in organizing last year’s conference. This experience inspired her to further dedicate herself to the association and its mission.",
+        "image" : "/pictures/team/louis_cresci.jpg",
+        "linkedin" : "https://www.linkedin.com/in/louis-cresci-1b1b3b1b3/",
+        "mail" : "amyelle.noppeney@unil.ch"
+    },
+    {
+        "id" : 3,
+        "poste" : "Head of Marketing",
+        "name" : "Miro Svyrydov",
+        "description" : "Miro is a former EPFL student who embarked on a journey in the event industry, currently pursuing his degree in Event Management in Dublin, Ireland. Miro's profound experience in Marketing and general knowledge of EPFL's structure allow him to ensure strong engagement and participation in all MUN EPFL's initiatives.",
+        "image" : "/pictures/team/louis_cresci.jpg",
+        "linkedin" : "https://www.linkedin.com/in/louis-cresci-1b1b3b1b3/",
+        "mail" : "miro.svyridov@unil.ch"
+    },
+    {
+        "id" : 4,
+        "poste" : "Head of Academics",
+        "name" : "Gabriel Guitart Stamatopol",
+        "description" : "Gabriel is an EPFL student, currently pursuing his Bachelor's Degree in Mathematics. Gabriel's MUN journey that started back in high school, which is why his experience brings a high level of excellence to MUN EPFL. At times fierce debater and at times travel agency, Gabriel will make sure your debating experience at MUN EPFL is the best it can be.",
+        "image" : "/pictures/team/louis_cresci.jpg",
+        "linkedin" : "https://www.linkedin.com/in/louis-cresci-1b1b3b1b3/",
+        "mail" : "gabriel.stamatopol@epfl.ch"
+    },
+    {
+        "id" : 5,
+        "poste" : "Head of Sponsoring",
+        "name" : "Jan Staszewicz",
+        "description" : "Jan is currently pursuing his Bachelor's degree in Computer Science at EPFL. Thanks to his experience in developing entrepreneurial projects, he has acquired solid skills in making contact with companies and creating partnerships. This experience has enabled him to strengthen his communication and negotiation skills, making him a key asset in securing the financial and collaborative support needed for the association's initiatives.",
+        "image" : "/pictures/team/louis_cresci.jpg",
+        "linkedin" : "https://www.linkedin.com/in/louis-cresci-1b1b3b1b3/",
+        "mail" : "jan.staszewicz@epfl.ch"
+    }
+]
