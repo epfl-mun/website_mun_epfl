@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from './pages/Home.vue'
 import About from './pages/About.vue'
 import SubPage from './pages/SubPage.vue'
+import EventDetail from './pages/EventDetail.vue'
 
 const routes = [
   {
@@ -20,6 +21,12 @@ const routes = [
         component: SubPage
       }
     ]
+  },
+  {
+    path: '/event/:id',
+    name: 'EventDetail',
+    component: EventDetail,
+    props: true
   }
 ]
 

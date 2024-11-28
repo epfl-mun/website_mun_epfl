@@ -12,3 +12,11 @@ html, body {
   min-height: 100vh;
   margin : 0;
 }
+
+.text-red-primary{
+    color: #ff0000;
+}
+
+.bg-red-primary {
+    background-color: #ff0000;
+}
