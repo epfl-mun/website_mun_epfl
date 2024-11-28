@@ -2,17 +2,21 @@
   <div id="app">
     <!-- Navbar -->
      <Navbar />
-    <router-view></router-view>
+    <router-view class="element-at-center"></router-view>
+    <!-- Footer -->
+     <Footer />
   </div>
 </template>
 
 <script>
 import Navbar from './components/Navbar.vue';
+import Footer from './components/Footer.vue';
 
 export default {
   name: 'App',
   components: {
-    Navbar
+    Navbar,
+    Footer
   }
 }
 </script>
@@ -25,5 +29,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.element-at-center{
+  min-height : 100vh;
 }
 </style>
