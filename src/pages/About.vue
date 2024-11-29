@@ -21,13 +21,13 @@
           </p>
         </div>
         <div style="height : 400px; width : 50%; overflow: hidden;" class="rounded">
-          <img src="/pictures/conference-not-debate/rolex_public.jpg" alt="committee on EPFL logo" class="w-auto object-cover"  style="height :500px;"/>
+          <img src="/pictures/conference-not-debate/welcoming_sg.jpg" alt="committee on EPFL logo" class="w-auto object-cover"  style="height :500px;"/>
         </div>
       </div>
 
       <div class="flex flex-between mt-10" style="width : 1324px">
         <div style="height : 400px; width : 50%; overflow: hidden;" class="rounded">
-          <img src="/pictures/conference-not-debate/rolex_public.jpg" alt="committee on EPFL logo" class="w-auto object-cover"  style="height :500px;"/>
+          <img src="/pictures/conferences/reunion_with_6_people.jpg" alt="committee on EPFL logo" class="w-auto object-cover"  style="height :500px;"/>
         </div>
         <div class="flex flex-col justify-start items-center gap-7 w-1/2 p-5 px-20">
           <h2 class="text-4xl font-bold text-black">One objective: represent MUN EPFL at conferences</h2>
@@ -43,17 +43,17 @@
           <h2 class="text-4xl font-bold mb-5">A + for students</h2>
           
           <div class="flex items-stretch gap-5 justify-around">
-            <div class="bg-gray-300 rounded p-3 w-1/3 h-full">
+            <div class="bg-gray-300 rounded p-3 w-1/3 flex-grow">
               <h3 class="text-2xl mb-2 text-left">Weekly seesions</h3>
               <p class="text-left">Every week, MUN EPFL members meet in a friendly setting to debate.</p>
             </div>
 
-            <div class="bg-gray-300 rounded p-3 w-1/3 h-full">
+            <div class="bg-gray-300 rounded p-3 w-1/3 flex-grow">
               <h3 class="text-2xl mb-2 text-left">Develop oral skills</h3>
               <p class="text-left">Debates allow members to improve their eloquence, negotation techniques and communicaton skills.</p>
             </div>
 
-            <div class="bg-gray-300 rounded p-3 w-1/3 h-full">
+            <div class="bg-gray-300 rounded p-3 w-1/3 flex-grow">
               <h3 class="text-2xl mb-2 text-left">International political issues</h3>
               <p class="text-left">Members have the opportunity to debate current and long-standing international political and geopolitical issues.</p>
             </div>
