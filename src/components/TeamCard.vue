@@ -10,9 +10,13 @@
             </p>
         </div>
             
-            <div class="flex gap-3">
-                <div>Linkedin</div>
-                <div>Mail</div>
+            <div class="flex gap-3 mt-4">
+              <a :href="person.linkedin" target="_blank" class="text-white rounded-3xl p-2 aspect-square w-8 h-8 flex justify-center items-center bg-black">
+                <font-awesome-icon :icon="['fab', 'linkedin']" />
+              </a>
+              <a :href="'mailto:' + person.email" class="text-white rounded-3xl p-2 aspect-square w-8 h-8 flex justify-center items-center bg-black">
+                <font-awesome-icon :icon="['fas', 'envelope']" />
+              </a>
             </div>
         </div>
     </div>
