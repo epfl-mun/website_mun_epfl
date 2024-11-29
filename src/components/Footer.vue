@@ -8,9 +8,9 @@
         <div>La Coupole CO116, 1015 Lausanne Switzerland</div>
 
         <div class="flex items-center justify-center gap-10 font-bold text-xl underline">
-            <div>Status</div>
-            <div>Instagram</div>
-            <div>Facebook</div>
+            <a href="https://facebook.com/mun.epfl" target="_blank" rel="noopener noreferrer">Status</a>
+            <a href="https://www.instagram.com/mun.epfl" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://facebook.com/mun.epfl" target="_blank" rel="noopener noreferrer">Facebook</a>
         </div>
     </footer>
 </template>

@@ -13,7 +13,7 @@
       "date": "October 1st",
       "location": "CM1 121",
       "description": "<p>Are you interested in MUN debates? Whether you want to participate or just watch, you can come and attend exciting debates. The debate is open to everyone, whether you are a novice or an expert. And it will be followed by a friendly aperitif!</p>",
-      "image": "/pictures/conferences/delegate_focus.jpg"
+      "image": "/pictures/weekly_sessions/first_session.jpg"
     },
     {
       "id": 3,
@@ -21,6 +21,6 @@
       "date": "November 12-15",
       "location": "Karshruhe",
       "description": "<p>If you participated in the first debate sessions, you have the possibility to register to go on a trip with the MUN delegation. This trip is partly reimbursed by the Association (the precise reimbursement conditions will be indicated during registration).</p>",
-      "image": "/pictures/conferences/delegate_focus.jpg"
+      "image": "/pictures/trips/train.jpg"
     }
   ]

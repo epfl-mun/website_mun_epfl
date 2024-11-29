@@ -1,6 +1,8 @@
 <template>
-    <section class="h-1/2 w-full">
-      <img style="height : 400px" class="object-cover w-full" alt="committee on EPFL logo" src="/pictures/informelles/comittee_on_epfl_logo.jpg" />
+    <section class="relative h-1/2 w-full bg-cover bg-center" style="background-image: url('/pictures/team/home_page_picture.jpg'); height: 500px;">
+      <div class="flex items-center justify-center h-full">
+        <img src="/pictures/logos/Mun_EPFL_long_reversed.svg" alt="Logo" class="logo" style="height : 80%">
+      </div>
     </section>
 
     <section class="w-full flex justify-center items-center">
