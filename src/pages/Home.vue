@@ -1,7 +1,8 @@
 <template>
-    <section class="relative h-1/2 w-full bg-cover bg-center" style="background-image: url('/pictures/team/home_page_picture.jpg'); height: 500px;">
+    <section class="relative h-1/2 w-full bg-cover bg-center" style="height: 500px;">
       <div class="flex items-center justify-center h-full">
-        <img src="/pictures/logos/Mun_EPFL_long_reversed.svg" alt="Logo" class="logo" style="height : 80%">
+        <LazyImage src="/pictures/team/home_page_picture.jpg" alt="committee on EPFL logo" height="100%" montainsTransform="rotate(45deg) translate(50%, 70%)" sunOrigin="1000px 5000px" sunSize="5%"/>
+        <img v-show="!loading" src="/pictures/logos/Mun_EPFL_long_reversed.svg" alt="Logo" class="logo absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" style="height : 80%">
       </div>
     </section>
 
@@ -27,11 +28,13 @@
   
   <script>
 import Events from '@/components/Events.vue';
+import LazyImage from '@/components/LazyImage.vue';
 
   export default {
     name: 'HomePage',
     components: {
-      Events
-    }
+      Events,
+      LazyImage
+    },
   }
   </script>

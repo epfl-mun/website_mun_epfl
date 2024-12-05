@@ -1,5 +1,5 @@
 <template>
-  <div class="relative" :style="{ height: height, width: width, '--parent-width': width, '--montains-transform' : montainsTransform, '--sunOrigin' : sunOrigin }">
+  <div class="relative" :style="{ height: height, width: width, '--parent-width': width, '--montains-transform' : montainsTransform, '--sunOrigin' : sunOrigin, '--sunSize' : sunSize }">
         <div v-if="loading" class="image-loader"></div>
         <img v-show="!loading" :src="src" @load="onLoad" @error="onError" :alt="alt" class="w-full h-full object-cover" />
     </div>
@@ -31,6 +31,10 @@
       sunOrigin: {
         type: String,
         default: '300px 1500px'
+      },
+      sunSize: {
+        type: String,
+        default: '10%'
       }
     },
     data() {
@@ -76,7 +80,7 @@
   position: absolute;
   left: 10px;
   top: 10px;
-  width: 10%;
+  width: var(--sunSize);
   aspect-ratio: 1/1;
   border-radius: 50%;
   background: #ff3d00;
