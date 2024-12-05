@@ -27,9 +27,25 @@
           <div v-for="committee in committees" :key="committee.title" class="flex-1">
             <div class="flex flex-col items-center gap-4">
                 <div class="rounded-full bg-white p-2">
-                  <LazyImage :src="`/pictures/conf_2024/committee/${committee.image}.png`" :alt="committee.title" width="40px" height="40px"/>
+                  <LazyImage :src="`/pictures/conf_2024/committee/${committee.image}.png`" :alt="committee.title" width="50px" height="50px"/>
                 </div>
                 <h3 class="text-xl text-gray-100">{{committee.title}}</h3>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="flex flex-col items-center justify-center py-7">
+        <h2 class="text-6xl font-bold mb-10">2024 partners:</h2>
+        <div class="flex max-w-7xl">
+          <div v-for="partner in partners" :key="partner.title" class="flex-1">
+            <div class="flex flex-col items-center gap-4">
+                <div class="rounded-full p-2">
+                  <LazyImage :src="`/pictures/conf_2024/partners/${partner.image}.png`" :alt="partner.title" width="150px" height="150px"/>
+                </div>
+                <h3 class="text-xl text-black">{{partner.title}}</h3>
             </div>
           </div>
         </div>
@@ -91,7 +107,7 @@ export default {
       ],
       partners : [
         {
-            image : "ZUMUN",
+            image : "ZuMUN",
             title : "Zurich Model United Nations",
         },
         {
