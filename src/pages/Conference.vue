@@ -1,11 +1,26 @@
 <template>
-    <div style="height : 600px; width : 100%;">
+  <section>
+    <div style="height : 600px; width : 100%;" class="relative">
         <LazyImage src="/pictures/team/home_page_picture.jpg" alt="committee on EPFL logo" height="100%" montainsTransform="rotate(45deg) translate(50%, 70%)" sunOrigin="1000px 5000px" sunSize="5%"/>
+        <div v-show="!loading"  class="logo absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white max-w-3xl p-10">
+          <h1 class="text-red-primary font-bold text-7xl mb-5">EPFLMun</h1>
+          <p class="text-center text-lg mb-5">
+            EPFLMun is an international conference of simulation of the United Nation that takes place every year at the Ecole Polytechnique Fédérale de Lausanne (EPFL), one of
+            Europe's leading science and technology insitutions. This presitgious event gathers participants from diverse backgrounds and nationalities for a weekend of intense debate,
+            diplomacy, and collaboration. Delegates step into the shoes of world leaders, tackling pressing global issues and crafting innovative solutions throught negotation and diagogue.
+          </p>
+
+          <p class="text-center text-lg">
+            With a focus on fostering leadership, critical thinking, and intercultural understanding, EPFLMun offers a unique platform for young minds to explore international relations
+            and make their voices heard on the world stage. Whether you are an experienced MUN participant or new to the world of diplomacy, EPFLMun promises an enriching and inspiring experience.
+          </p>
+        </div>
     </div>
+  </section>
+
 
     <section claass="bg-red-primary">
-      <div class="bg-red-primary py-6 flex flex-col items-center justify-normal">
-        
+      <div class="bg-red-primary py-6 flex flex-col items-center justify-normal"> 
         <h2 class="text-6xl font-bold text-white mb-10">EPFLMun is</h2>
         
         <div class="flex max-w-7xl">
