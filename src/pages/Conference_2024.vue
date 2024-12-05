@@ -21,31 +21,91 @@
   </section>
 
   <section>
-    <div class="flex flex-col items-center justify-center py-5">
-        <h2>Committees</h2>
+    <div class="flex flex-col items-center justify-center py-7 bg-red-primary">
+        <h2 class="text-6xl text-white font-bold mb-10">Committees</h2>
         <div class="flex max-w-7xl">
-          <div v-for="element in elements" :key="element.title" class="flex-1">
+          <div v-for="committee in committees" :key="committee.title" class="flex-1">
             <div class="flex flex-col items-center gap-4">
-
                 <div class="rounded-full bg-white p-2">
-                  
-                  <LazyImage :src="`/svg/conference/${element.svg}.svg`" alt="icon" width="40px" height="40px"/>
+                  <LazyImage :src="`/pictures/conf_2024/committee/${committee.image}.png`" :alt="committee.title" width="40px" height="40px"/>
                 </div>
-                <h3 class="text-xl text-gray-100">{{element.title}}</h3>
+                <h3 class="text-xl text-gray-100">{{committee.title}}</h3>
             </div>
           </div>
         </div>
     </div>
-  </section>
+</section>
+
+    <section>
+      <div class="max-w-6xl m-auto mt-5">
+
+        <Carousel v-bind="config">
+          <Slide v-for="(image, index) in images" v-bind:key="index">
+            <div style="width : 1200px; aspect-ratio: 16/9;">
+              <img :src="image" alt="Slider Image" class="w-full h-auto object-cover" :key="index"/>
+            </div>
+          </Slide>
+          <template #addons>
+            <Navigation />
+            <Pagination />
+          </template>
+        </Carousel>
+
+      </div>
+    </section>
+
 </template>
 
 <script>
 import LazyImage from '@/components/LazyImage.vue';
+import { Carousel, Slide, Navigation, Pagination } from 'vue3-carousel';
 
 export default {
   name: 'Conference_2024',
   components: {
-        LazyImage
+        LazyImage,
+        Carousel,
+        Slide,
+        Navigation,
+        Pagination
   },
+  data() {
+    return {
+      committees: [
+        {
+          image: "DISEC",
+          title: "Disarmament and International Security Committee (DISEC)",
+        },
+        {
+          image: "UNHRC",
+          title: "United Nations Human Rights Council (UNHRC)",
+        },
+        {
+          image: "UNSC",
+          title: "United Nation Security Council (UNSC)",
+        },
+        {
+          image: "Novgorod",
+          title: "Crisis committee: Fall of the Novgorod Republic",
+        },
+      ],
+      partners : [
+        {
+            image : "ZUMUN",
+            title : "Zurich Model United Nations",
+        },
+        {
+            image : "SIMUN",
+            title : "Sorbonne International Model United Nations",
+        }
+      ],
+      images: [
+        '/pictures/conference-not-debate/rolex_welcoming.jpg',
+        '/pictures/conference-not-debate/swisstech_talk.jpg',
+        '/pictures/conferences/reunion_with_6_people.jpg',
+        '/pictures/conference-not-debate/rolex_speaker_front.jpg',
+      ]
+    };
+  }
 }
 </script>
