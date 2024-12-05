@@ -2,7 +2,7 @@
     <div class="flex flex-col justify-start items-center">
       <div class="flex flex-between mt-10 items-center" style="width : 1324px">
         <div style="height : 400px; width : 50%; overflow: hidden;" class="rounded">
-          <img src="/pictures/conference-not-debate/rolex_public.jpg" alt="committee on EPFL logo" class="w-auto object-cover"  style="height :500px;"/>
+          <LazyImage src="/pictures/conference-not-debate/rolex_public.jpg" alt="committee on EPFL logo" height="500px" />
         </div>
         <div class="flex flex-col justify-start items-center gap-7 w-1/2 p-5 px-20">
           <h1 class="text-4xl font-bold text-black">About Us</h1>
@@ -21,13 +21,13 @@
           </p>
         </div>
         <div style="height : 400px; width : 50%; overflow: hidden;" class="rounded">
-          <img src="/pictures/conference-not-debate/welcoming_sg.jpg" alt="committee on EPFL logo" class="w-auto object-cover"  style="height :500px;"/>
+          <LazyImage src="/pictures/conference-not-debate/welcoming_sg.jpg" alt="committee on EPFL logo" height="500px" />
         </div>
       </div>
 
       <div class="flex flex-between mt-10" style="width : 1324px">
         <div style="height : 400px; width : 50%; overflow: hidden;" class="rounded">
-          <img src="/pictures/conferences/reunion_with_6_people.jpg" alt="committee on EPFL logo" class="w-auto object-cover"  style="height :500px;"/>
+          <LazyImage src="/pictures/conferences/reunion_with_6_people.jpg" alt="committee on EPFL logo" height="500px" />
         </div>
         <div class="flex flex-col justify-start items-center gap-7 w-1/2 p-5 px-20">
           <h2 class="text-4xl font-bold text-black">One objective: represent MUN EPFL at conferences</h2>
@@ -65,7 +65,13 @@
 </template>
   
   <script>
+
+import LazyImage from '@/components/LazyImage.vue';
+
   export default {
-    name: 'AboutPage'
+    name: 'AboutPage',
+    components: {
+      LazyImage
+    }
   }
   </script>
