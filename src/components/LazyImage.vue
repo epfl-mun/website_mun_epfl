@@ -1,5 +1,5 @@
 <template>
-  <div class="relative" :style="{ height: height, width: width, '--parent-width': width, '--montains-transform' : montainsTransform, '--sunOrigin' : sunOrigin, '--sunSize' : sunSize }">
+  <div class="relative" :style="{ height: height, width: width, '--parent-width': width, '--montains-transform' : montainsTransform, '--montains-shadow' : mountainsShadow, '--sunOrigin' : sunOrigin, '--sunSize' : sunSize }">
         <div v-if="loading" class="image-loader"></div>
         <img v-show="!loading" :src="src" @load="onLoad" @error="onError" :alt="alt" class="w-full h-full object-cover" />
     </div>
@@ -24,6 +24,10 @@
         type: String,
         default: '100%'
       },
+        mountainsShadow: {
+            type: String,
+            default: '100px -300px'
+        },
       montainsTransform: {
         type: String,
         default: 'rotate(45deg) translate(30%, 70%)'
@@ -71,7 +75,7 @@
   height: 100%;
   transform: var(--montains-transform);
   background: #ff9371;
-  box-shadow: 100px -300px 0 5px #ff3d00;
+  box-shadow: var(--montains-shadow) 0 5px #ff3d00;
   animation: slide 2s infinite ease-in-out alternate;
 }
 

@@ -1,6 +1,9 @@
 <template>
     <div class="card pb-4">
-      <img :src="`${event.image}`" alt="Event Image" style="width: 100%; height:250px" class="mb-5 object-cover">
+      <div style="width: 400px; height:250px">
+        <LazyImage :src="`${event.image}`" alt="Event Image" montainsTransform="rotate(45deg) translate(40%, 70%)" mountainsShadow="50px -100px" sunOrigin="200px 700px" sunSize="10%" />
+      </div>
+      <!-- <img :src="`${event.image}`" alt="Event Image" style="width: 100%; height:250px" class="mb-5 object-cover"> -->
       <h2 class="text-2xl font-bold mb-5">{{ event.title }}</h2>
       <div class="flex flex-col justify-left text-left gap-3 px-8 mb-5">
         <div>
@@ -19,6 +22,8 @@
   </template>
   
   <script>
+import LazyImage from './LazyImage.vue';
+
   export default {
     name: 'EventCard',
     props: {
@@ -26,6 +31,9 @@
         type: Object,
         required: true
       }
+    },
+    components: {
+      LazyImage
     }
   }
   </script>
