@@ -5,6 +5,7 @@
             <router-link to="/about" class="text-black">About</router-link>
             <router-link to="/events" class="text-black">Events</router-link>
             <router-link to="/team" class="text-black">Team</router-link>
+            <router-link to="/conference" class="text-black">Conference</router-link>
         </div>
     </nav>
   </template>

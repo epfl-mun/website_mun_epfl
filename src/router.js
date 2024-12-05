@@ -4,6 +4,7 @@ import About from './pages/About.vue'
 import Events from './pages/Events.vue'
 import EventDetail from './pages/EventDetail.vue'
 import Team from './pages/Team.vue'
+import Conference from './pages/Conference.vue'
 
 const routes = [
   {
@@ -31,6 +32,11 @@ const routes = [
     path : '/team',
     name : "Team",
     component : Team
+  },
+  {
+    path : "/conference",
+    name : "Conference",
+    component : Conference
   }
 ]
 
