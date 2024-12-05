@@ -17,6 +17,7 @@
     "vue-carousel": "^0.18.0",
     "vue-lazyload": "^3.0.0",
     "vue-router": "^4.5.0",
+    "vue3-carousel": "^0.8.1",
     "vue3-lazyload": "^0.3.8"
   },
   "devDependencies": {

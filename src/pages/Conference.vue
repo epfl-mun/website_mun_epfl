@@ -31,17 +31,39 @@
     </section>
 
     <section>
-      
-    </section>
+      <div class="max-w-6xl m-auto">
+
+        <Carousel v-bind="config">
+          <Slide v-for="(image, index) in images" v-bind:key="index">
+            <div style="width : 1200px; aspect-ratio: 16/9;">
+              <img :src="image" alt="Slider Image" class="w-full h-auto object-cover" :key="index"/>
+            </div>
+          </Slide>
+
+          <template #addons>
+            <Navigation />
+            <Pagination />
+          </template>
+        </Carousel>
+
+      </div>
+      </section>
 </template>
 
 <script>
 import LazyImage from '@/components/LazyImage.vue';
+import 'vue3-carousel/dist/carousel.css'
+import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
+
 
 export default {
     name: 'Conference',
     components: {
-      LazyImage
+      LazyImage,
+      Carousel,
+      Slide,
+      Pagination,
+      Navigation
     },
     data() {
     return {
@@ -66,8 +88,14 @@ export default {
           svg: "calendar",
           title: "3 incredible days, from March 21 to 23",
         },
+      ],
+      images: [
+        '/pictures/conference-not-debate/rolex_welcoming.jpg',
+        '/pictures/conference-not-debate/swisstech_talk.jpg',
+        '/pictures/conferences/reunion_with_6_people.jpg',
+        '/pictures/conference-not-debate/rolex_speaker_front.jpg',
       ]
     };
   }
-  }
+}
 </script>
