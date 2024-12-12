@@ -24,10 +24,10 @@
         type: String,
         default: '100%'
       },
-        mountainsShadow: {
-            type: String,
-            default: '100px -300px'
-        },
+      mountainsShadow: {
+          type: String,
+          default: '100px -300px'
+      },
       montainsTransform: {
         type: String,
         default: 'rotate(45deg) translate(30%, 70%)'

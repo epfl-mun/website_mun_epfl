@@ -15,7 +15,7 @@
           <span class="text-red-primary">MUN EPFL</span> is a simulation of the United Nations where students play the role of delegates from different countries and attempt to solve real world issues with the policies and perspectives of their assigned country. 
         </p>
 
-        <button class="bg-red-primary text-white bg-red-primary font-bold py-2 px-4 rounded-xl my-10">
+        <button class="bg-red-primary text-white bg-red-primary font-bold py-2 px-4 rounded-md my-10 text-lg hover:scale-105 duration-200 hover:bg-red-700">
           Learn More
         </button>
       </div>
