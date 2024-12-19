@@ -13,6 +13,8 @@ import conferenceEn from './locales/en/conference.json';
 import conferenceFr from './locales/fr/conference.json';
 import conference2024En from './locales/en/conference_2024.json';
 import conference2024Fr from './locales/fr/conference_2024.json';
+import navbarEn from './locales/en/navbar.json';
+import navbarFr from './locales/fr/navbar.json';
 
 // Define the messages for each language
 const messages = {
@@ -23,6 +25,7 @@ const messages = {
     team: teamEn,
     conference: conferenceEn,
     conference_2024: conference2024En,
+    navbar: navbarEn,
 
     // Add other pages as needed
   },
@@ -33,6 +36,7 @@ const messages = {
     team: teamFr,
     conference: conferenceFr,
     conference_2024: conference2024Fr,
+    navbar: navbarFr,
 
     // Add other pages as needed
   }
