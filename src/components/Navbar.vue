@@ -17,13 +17,22 @@
         </div>
       </div>
       <router-link to="/contact" class="text-black" active-class="text-red-600">Contact</router-link>
+      <div class="ml-auto">
+        <button @click="changeLanguage('en')" class="mx-2">EN</button>
+        <button @click="changeLanguage('fr')" class="mx-2">FR</button>
+      </div>
     </div>
   </nav>
 </template>
 
 <script>
 export default {
-  name: 'Navbar'
+  name: 'Navbar',
+  methods: {
+    changeLanguage(lang) {
+      this.$i18n.locale = lang;
+    }
+  }
 }
 </script>
 

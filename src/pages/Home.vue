@@ -12,14 +12,14 @@
     <section class="w-full flex justify-center items-center">
       <div class="container max-w-3xl flex justify-center flex-col items-center">
         <h1 class="text-center font-bold text-6xl my-10">
-          Welcome to <span class="text-red-primary">MUN EPFL</span>
+          {{ $t("home.welcome") }} <span class="text-red-primary">MUN EPFL</span>
         </h1>
         <p class="text-center text-xl">
-          <span class="text-red-primary">MUN EPFL</span> is a simulation of the United Nations where students play the role of delegates from different countries and attempt to solve real world issues with the policies and perspectives of their assigned country. 
+          <span class="text-red-primary">MUN EPFL</span> {{ $t("home.description") }} 
         </p>
 
         <router-link to="/about" class="bg-red-primary text-white font-bold py-2 px-4 rounded-md my-10 text-lg transform transition-transform duration-200 hover:scale-105 hover:bg-red-700">
-          Learn More
+          {{ $t("home.learnMore") }}
         </router-link>
       </div>
     </section>

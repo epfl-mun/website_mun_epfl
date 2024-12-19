@@ -7,15 +7,15 @@
       <h2 class="text-2xl font-bold mb-5 mt-5">{{ event.title }}</h2>
       <div class="flex flex-col justify-left text-left gap-3 px-8 mb-5">
         <div>
-            <div class="font-bold">Date</div>
+            <div class="font-bold"> {{ $t("events.date") }}</div>
             <p>{{ event.date }}</p>
         </div>
         <div>
-            <div class="font-bold">Location</div>
+            <div class="font-bold">{{ $t("events.location") }}</div>
             <p>{{  event.location }}</p>
         </div>
     </div>
-    <router-link :to="'/event/'+event.id" class="rounded-md bg-red-primary text-white px-4 py-2 text-lg duration-200 hover:bg-red-700">Learn more</router-link>
+    <router-link :to="'/event/'+event.id" class="rounded-md bg-red-primary text-white px-4 py-2 text-lg duration-200 hover:bg-red-700">{{ $t("events.learnMore") }}</router-link>
     </div>
 
 
