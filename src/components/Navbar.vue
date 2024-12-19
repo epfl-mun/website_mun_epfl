@@ -2,7 +2,7 @@
   <nav class="navbar h-16 bg-gray-100 flex justify-center items-center font-bold text-lg">
     <div class="container flex justify-left items-center max-w-6xl gap-10">
       <router-link to="/" class="text-black" active-class="text-red-600">
-        <img src="/svg/logo/EPFLMUN.svg" alt="Logo" class="h-10" />
+        <img src="/svg/logos/EPFLMUN.svg" alt="Logo" class="h-10" />
       </router-link>
       <router-link to="/" class="text-black" active-class="text-red-600">Home</router-link>
       <router-link to="/about" class="text-black" active-class="text-red-600">About</router-link>

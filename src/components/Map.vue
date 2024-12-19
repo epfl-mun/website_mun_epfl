@@ -53,6 +53,7 @@
   /* Optional: Customize map styles */
   #map {
     border: 1px solid #ccc;
+    z-index: 40; /* This is so that the dropdown menu of the navbar does not collide with it */
   }
   </style>
   
