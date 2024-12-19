@@ -11,6 +11,8 @@
 <script>
 import Navbar from './components/Navbar.vue';
 import Footer from './components/Footer.vue';
+import 'leaflet/dist/leaflet.css';
+
 
 export default {
   name: 'App',

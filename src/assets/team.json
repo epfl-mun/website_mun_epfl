@@ -40,8 +40,80 @@
         "poste" : "Head of Sponsoring",
         "name" : "Jan Staszewicz",
         "description" : "Jan is currently pursuing his Bachelor's degree in Computer Science at EPFL. Thanks to his experience in developing entrepreneurial projects, he has acquired solid skills in making contact with companies and creating partnerships. This experience has enabled him to strengthen his communication and negotiation skills, making him a key asset in securing the financial and collaborative support needed for the association's initiatives.",
-        "image" : "/pictures/team/Incognito.webp",
+        "image" : "/pictures/team/Jan.jpg",
         "linkedin" : "https://www.linkedin.com/in/jan-staszewicz-75bb101b2/",
         "mail" : "jan.staszewich@mun-epfl.ch"
+    },
+    {
+        "id" : 6,
+        "poste" : "Head of Logistics",
+        "name" : "Béatrice Serrurier",
+        "description" : "Béatrice is a second-year student at EPFL, majoring mathematics. Her experience in organizing events and her strong organizational skills make her the perfect person to ensure that everything runs smoothly during the conference.",
+        "image" : "/pictures/team/Béatrice.jpg",
+        "linkedin" : "https://www.linkedin.com/in/b%C3%A9atrice-serrurier-1b1b3b1b3/",
+        "mail" : ""
+    },
+    {
+        "id" : 7,
+        "poste" : "Head of Design",
+        "name" : "Blanche",
+        "description" : "The graphical experience of Blanche is incredible, and she has been able to create a unique visual identity for MUN EPFL. Her creativity and attention to detail are key to the success of the association.",
+        "image" : "/pictures/team/Blanche.jpg",
+        "linkedin" : "https://www.linkedin.com/in/blanche-1b1b3b1b3/",
+        "mail" : ""
+    },
+    {
+        "id" : 8,
+        "poste" : "Head of public relations",
+        "name" : "Ishita",
+        "description" : "Ishita is a second-year student at EPFL, majoring in computer science. Her experience in public relations and her strong communication skills make her the perfect person to ensure that the association's message is heard by as many people as possible.",
+        "image" : "/pictures/team/Ishita.jpg",
+        "linkedin" : "https://www.linkedin.com/in/ishita-1b1b3b1b3/",
+        "mail" : ""
+    },
+    {
+        "id" : 9,
+        "poste" : "Associate head of Sponsoring",
+        "name" : "Noah",
+        "description" : "Noah is a second-year student at EPFL, majoring in computer science. His experience in developing entrepreneurial projects and his strong communication skills make him the perfect person to ensure that the association's message is heard by as many people as possible.",
+        "image" : "/pictures/team/Noah.jpg",
+        "linkedin" : "https://www.linkedin.com/in/noah-1b1b3b1b3/",
+        "mail" : ""
+    },
+    {
+        "id" : 10,
+        "poste" : "Head of communication",
+        "name" : "Omar",
+        "description" : "Omar is a master student at EPFL, majoring mechanical engennering. His experience in developing entrepreneurial projects and his strong communication skills make him the perfect person to ensure that the association's message is heard by as many people as possible.",
+        "image" : "/pictures/team/Omar.jpg",
+        "linkedin" : "https://www.linkedin.com/in/omar-1b1b3b1b3/",
+        "mail" : ""
+    },
+    {
+        "id" : 11,
+        "poste" : "Head of ...",
+        "name" : "Rayan",
+        "description" : "Rayan is a second-year student at EPFL, majoring in computer science. His experience in developing entrepreneurial projects and his strong communication skills make him the perfect person to ensure that the association's message is heard by as many people as possible.",
+        "image" : "/pictures/team/Rayan.jpg",
+        "linkedin" : "https://www.linkedin.com/in/rayan-1b1b3b1b3/",
+        "mail" : ""
+    },
+    {
+        "id" : 12,
+        "poste" :"Head of ...",
+        "name" : "Timothy",
+        "description" : "Timothy is a second-year student at EPFL, majoring in computer science. His experience in developing entrepreneurial projects and his strong communication skills make him the perfect person to ensure that the association's message is heard by as many people as possible.",
+        "image" : "/pictures/team/Timothy.jpg",
+        "linkedin" : "https://www.linkedin.com/in/timothy-1b1b3b1b3/",
+        "mail" : ""
+    },
+    {
+        "id" : 13,
+        "poste" : "Head of IT",
+        "name" : "Emmanuel",
+        "description" : "Emmanuel studies computer science at EPFL. He has a strong background in IT and has been able to create a unique website for MUN EPFL. The custom solutions he proposes are always innovative and efficient, and allows more liberty and possibilities",
+        "image" : "/pictures/team/Emmanuel.jpg",
+        "linkedin" : "https://www.linkedin.com/in/omont-emmanuel",
+        "mail" : ""
     }
 ]
