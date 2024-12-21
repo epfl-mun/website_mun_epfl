@@ -1,7 +1,7 @@
 [
     {
         "id" : 1,
-        "poste" : "President",
+        "poste" : "President & Secretary-General",
         "name" : "Louis Cresci",
         "description" : "Louis is a third-year EPFL student majoring in computer science. With over five years of experience in the world of MUN, he led the restructuring of the association to raise awareness of MUN across the entire campus. He has contributed to organizing several events for the association, showing solid skills in planning and managing EPFLMUN conference successfully.",
         "image" : "/pictures/team/Louis.jpg",
@@ -10,7 +10,7 @@
     },
     {
         "id" : 2,
-        "poste" : "Vice President",
+        "poste" : "Vice President & Treasurer",
         "name" : "Amyelle Noppeney",
         "description" : "Amyelle is a master’s student in political science at the University of Lausanne. Her deep expertise in politics and international relations brings a different perspective to highly technological MUN EPFL. She initially joined MUN EPFL as the Under-Secretary-General of Public Relations, playing a key role in organizing last year’s conference. This experience inspired her to further dedicate herself to the association and its mission.",
         "image" : "/pictures/team/Amyelle.jpg",
@@ -46,7 +46,7 @@
     },
     {
         "id" : 6,
-        "poste" : "Head of Logistics",
+        "poste" : "Member team Logistics",
         "name" : "Béatrice Serrurier",
         "description" : "Béatrice is a second-year student at EPFL, majoring mathematics. Her experience in organizing events and her strong organizational skills make her the perfect person to ensure that everything runs smoothly during the conference.",
         "image" : "/pictures/team/Béatrice.jpg",
@@ -55,7 +55,7 @@
     },
     {
         "id" : 7,
-        "poste" : "Head of Design",
+        "poste" : "Member team Marketing",
         "name" : "Blanche",
         "description" : "The graphical experience of Blanche is incredible, and she has been able to create a unique visual identity for MUN EPFL. Her creativity and attention to detail are key to the success of the association.",
         "image" : "/pictures/team/Blanche.jpg",
@@ -64,7 +64,7 @@
     },
     {
         "id" : 8,
-        "poste" : "Head of public relations",
+        "poste" : "Member team Academics",
         "name" : "Ishita",
         "description" : "Ishita is a second-year student at EPFL, majoring in computer science. Her experience in public relations and her strong communication skills make her the perfect person to ensure that the association's message is heard by as many people as possible.",
         "image" : "/pictures/team/Ishita.jpg",
@@ -73,7 +73,7 @@
     },
     {
         "id" : 9,
-        "poste" : "Associate head of Sponsoring",
+        "poste" : "Member team Sponsoring",
         "name" : "Noah",
         "description" : "Noah is a second-year student at EPFL, majoring in computer science. His experience in developing entrepreneurial projects and his strong communication skills make him the perfect person to ensure that the association's message is heard by as many people as possible.",
         "image" : "/pictures/team/Noah.jpg",
@@ -82,7 +82,7 @@
     },
     {
         "id" : 10,
-        "poste" : "Head of communication",
+        "poste" : "Member team Marketing",
         "name" : "Omar",
         "description" : "Omar is a master student at EPFL, majoring mechanical engennering. His experience in developing entrepreneurial projects and his strong communication skills make him the perfect person to ensure that the association's message is heard by as many people as possible.",
         "image" : "/pictures/team/Omar.jpg",
@@ -91,7 +91,7 @@
     },
     {
         "id" : 11,
-        "poste" : "Head of ...",
+        "poste" : "Member team Sponsoring",
         "name" : "Rayan",
         "description" : "Rayan is a second-year student at EPFL, majoring in computer science. His experience in developing entrepreneurial projects and his strong communication skills make him the perfect person to ensure that the association's message is heard by as many people as possible.",
         "image" : "/pictures/team/Rayan.jpg",
@@ -100,7 +100,7 @@
     },
     {
         "id" : 12,
-        "poste" :"Head of ...",
+        "poste" :"Member team Sponsoring",
         "name" : "Timothy",
         "description" : "Timothy is a second-year student at EPFL, majoring in computer science. His experience in developing entrepreneurial projects and his strong communication skills make him the perfect person to ensure that the association's message is heard by as many people as possible.",
         "image" : "/pictures/team/Timothy.jpg",
@@ -109,7 +109,7 @@
     },
     {
         "id" : 13,
-        "poste" : "Head of IT",
+        "poste" : "Member team IT",
         "name" : "Emmanuel",
         "description" : "Emmanuel studies computer science at EPFL. He has a strong background in IT and has been able to create a unique website for MUN EPFL. The custom solutions he proposes are always innovative and efficient, and allows more liberty and possibilities",
         "image" : "/pictures/team/Emmanuel.jpg",

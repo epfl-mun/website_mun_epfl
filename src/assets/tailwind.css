@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html, body {
-  font-family: 'Nunito', sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 #app {

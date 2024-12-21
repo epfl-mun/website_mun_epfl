@@ -1,26 +1,56 @@
 [
-    {
-      "id": 1,
-      "title": "First debate Session",
-      "date": "October 8",
-      "location" : "CM1 121",
-      "description": "<p>All the informations for the debate, knowing the subject, the country choice and the study guide, are available <a href='#'>here</a>.</p>",
-      "image": "/pictures/conferences/delegate_focus.jpg"
+  {
+    "id": 1,
+    "positionFirstPage": 1,
+    "title": {
+      "en": "Kick off meeting",
+      "fr": "Première réunion"
     },
-    {
-      "id": 2,
-      "title": "Kick off meeting",
-      "date": "October 1st",
-      "location": "CM1 121",
-      "description": "<p>Are you interested in MUN debates? Whether you want to participate or just watch, you can come and attend exciting debates. The debate is open to everyone, whether you are a novice or an expert. And it will be followed by a friendly aperitif!</p>",
-      "image": "/pictures/weekly_sessions/first_session.jpg"
+    "date": {
+      "en" : "October 1st",
+      "fr" : "1er octobre"
     },
-    {
-      "id": 3,
-      "title": "Trip to Kamun",
-      "date": "November 12-15",
-      "location": "Karshruhe",
-      "description": "<p>If you participated in the first debate sessions, you have the possibility to register to go on a trip with the MUN delegation. This trip is partly reimbursed by the Association (the precise reimbursement conditions will be indicated during registration).</p>",
-      "image": "/pictures/trips/train.jpg"
-    }
-  ]
+    "location": "CM1 121",
+    "description": {
+      "en": "Are you interested in MUN debates? Whether you want to participate or just watch, you can come and attend exciting debates. The debate is open to everyone, whether you are a novice or an expert. And it will be followed by a friendly aperitif!",
+      "fr": "Vous êtes intéressé par les débats MUN ? Que vous souhaitiez participer ou simplement regarder, vous pouvez venir et participer à des débats passionnants. Les débats sont ouverts à tous, que vous soyez novices ou experts. Et ils seront suivis d'un apéritif convivial !"
+    },
+    "image": "/pictures/weekly_sessions/first_session.jpg"
+  },
+  {
+    "id": 2,
+    "positionFirstPage": 2,
+    "title": {
+      "en": "First debate Session",
+      "fr": "Première séance de débat"
+    },
+    "date": {
+      "en": "October 8th",
+      "fr": "8 octobre"
+    },
+    "location": "CM1 121",
+    "description": {
+      "en": "All the informations for the debate, knowing the subject, the country choice and the study guide, are available <a href='https://linktr.ee/epflmun' style='color: #0000FF; text-decoration: underline;'>here</a>.",
+      "fr": "Toutes les informations pour le débat, connaissant le sujet, le choix du pays et le study guide, sont disponibles <a href='https://linktr.ee/epflmun' style='color: #0000FF; text-decoration: underline;'>ici</a>."
+    },
+    "image": "/pictures/conferences/delegate_focus.jpg"
+  },
+  {
+    "id": 3,
+    "positionFirstPage": 3,
+    "title": {
+      "en": "Trip to Kamun",
+      "fr": "Voyage à KAMUN"
+    },
+    "date": {
+      "en": "November 12-15",
+      "fr": "12-15 novembre"
+    },
+    "location": "Karshruhe",
+    "description": {
+      "en": "If you participated in the first debate sessions, you have the possibility to register to go on a trip with the MUN delegation. This trip is partly reimbursed by the Association (the precise reimbursement conditions will be indicated during registration).",
+      "fr": "Si vous avez participé aux premières séances de débat, vous avez la possibilité de vous inscrire pour un voyage avec la délégation MUN. Ce voyage est partiellement remboursé par l'association (les conditions de remboursement précises seront indiquées lors de l'inscription)."
+    },
+    "image": "/pictures/trips/train.jpg"
+  }
+]

@@ -1,0 +1,75 @@
+{
+  "home": {
+    "welcome": "Qui sommes-nous ?",
+    "description": "est une association de simulation des Nations Unies fondée en 2004. Notre mission est de défendre et de promouvoir les idéaux et les principes des Nations Unies en offrant aux étudiants l'opportunité de s'engager dans un débat sur un large éventail de questions mondiales.",
+    "buttons":{ 
+      "association": "Association",
+      "conference": "Conférence"
+    },
+    "events": {
+      "title": "Nos événements",
+      "button": "Voir tous les événements"
+    }
+  },
+  "society": {
+    "title": "À propos de nous",
+    "description": "Nous sommes une association étudiante de l'EPFL qui vise à promouvoir la diplomatie et les relations internationales à travers les conférences des Nations Unies.",
+    "weeklySessions": {
+        "title": "Sessions Hebdomadaires",
+        "description": "Nous organisons des sessions hebdomadaires pour pratiquer la prise de parole en public, le débat et apprendre les relations internationales."
+    },
+    "objectives": {
+        "title": "Un objectif : représenter MUN EPFL lors des conférences",
+        "description1": "Deux fois par semestre, MUN EPFL part en voyage de week-end, en Suisse ou à l'étranger, et participe à des conférences d'autres associations de Modèle des Nations Unies.",
+        "description2": "Certains membres ont l'opportunité de participer à ces voyages et de débattre avec des étudiants du monde entier.",
+        "description3": "Le voyage est partiellement financé par l'association."
+    }
+  },
+  "events": {
+    "title": "Événements",
+    "description": "Notre association organise diverses événements tout au long de l'année. Voici toutes les informations sur nos événements.",
+    "date": "Date",
+    "location": "Lieu",
+    "learnMore": "En savoir plus"
+  },
+  "team": {
+    "title": "Notre Équipe"
+  },
+  "conference": {
+    "title": "Conférence EPFL Model United Nations",
+    "description1": "La conférence EPFL Model United Nations est une simulation de relations internationales de trois jours.",
+    "description2": "Rejoignez-nous pour une expérience inoubliable de diplomatie et de débat.",
+    "epflmunIs": "EPFLMUN c'est",
+    "participate2025": "Participez à EPFLMUN 2025",
+    "registerNow": "Inscrivez-vous maintenant"
+  },
+  "conference_2024": {
+    "title": "EPFLMUN 2024",
+    "date": "22-24 Mars 2024",
+    "thankYou": "Merci !",
+    "thankYouMessage1": "Nous tenons à exprimer notre sincère gratitude à tous les participants, présidents et organisateurs qui ont fait d'EPFLMUN 2024 un incroyable succès.",
+    "thankYouMessage2": "Votre dévouement, votre enthousiasme et votre esprit diplomatique ont rendu cette conférence vraiment mémorable.",
+    "thankYouMessage3": "Nous avons hâte de vous revoir lors des prochaines conférences EPFLMUN !",
+    "committees": "Nos Comités"
+  },
+  "navbar": {
+    "pastConferences": "Conférences passées",
+    "items": {
+      "home": "Accueil",
+      "society": "Association",
+      "events": "Événements",
+      "team": "Équipe",
+      "conference": "EPFLMUN2025",
+      "conference2024": "EPFLMUN2024",
+      "contact": "Contact"
+    }
+  },
+  "footer": {
+    "allRightsReserved": "Tous droits réservés."
+  },
+  "error": {
+    "oops": "Oups !",
+    "pageNotFound": "La page que vous recherchez n'existe pas.",
+    "goHome": "Retour à l'accueil"
+  }
+} 

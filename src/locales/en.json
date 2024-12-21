@@ -1,0 +1,76 @@
+{
+  "home": {
+    "welcome": "Who are we?",
+    "description": "is a Model United Nations association founded in 2004. Our mission is to defend and promote the ideals and principles of the United Nations by offering students the opportunity to engage in debate on a wide range of global issues.",
+    "buttons":{
+      "association": "Society",
+      "conference": "Conference"
+    },
+    "events": {
+      "title": "Our Events",
+      "button": "View All Events"
+    }
+  },
+  "society": {
+    "title": "About Us",
+    "description": "We are a student association at EPFL that aims to promote diplomacy and international relations through Model United Nations conferences.",
+    "weeklySessions": {
+        "title": "Weekly Sessions",
+        "description": "The weekly sessions develop students' skills for conference representation. We begin by covering the Rules of Procedure and debate rules, then introduce a debate topic that spans 4 sessions. Members research their assigned countries, develop strategies, and enhance their speaking, negotiation, and communication skills. In the final session, some members may present resolutions, which represent a set of responses to the problem posed by the subject of the debate."
+    },
+    "plusForStudents": "A + for students",
+    "objectives": {
+        "title": "One Objective: Represent MUN EPFL at Conferences",
+        "description1": "Twice a semester, MUN EPFL goes on a weekend trip, either in Switzerland or abroad, and participates in Model United Nations conferences of other associations.",
+        "description2": "Some members have the opportunity to participate in these trips and debate with students from all over the world.",
+        "description3": "The trip is partially funded by the association."
+    }
+  },
+  "events": {
+    "title": "Events",
+    "description": "Our association organizes various events throughout the year. Here you can find all the information about our events.",
+    "date": "Date",
+    "location": "Location",
+    "learnMore": "Learn More"
+  },
+  "team": {
+    "title": "Our Team"
+  },
+  "conference": {
+    "title": "EPFL Model United Nations Conference",
+    "description1": "EPFL Model United Nations Conference is a three-day international relations simulation.",
+    "description2": "Join us for an unforgettable experience of diplomacy and debate.",
+    "epflmunIs": "EPFLMUN is",
+    "participate2025": "Participate in EPFLMUN 2025",
+    "registerNow": "Register Now"
+  },
+  "conference_2024": {
+    "title": "EPFLMUN 2024",
+    "date": "March 22-24, 2024",
+    "thankYou": "Thank You!",
+    "thankYouMessage1": "We want to express our sincere gratitude to all participants, chairs, and organizers who made EPFLMUN 2024 an incredible success.",
+    "thankYouMessage2": "Your dedication, enthusiasm, and diplomatic spirit made this conference truly memorable.",
+    "thankYouMessage3": "We look forward to seeing you at future EPFLMUN conferences!",
+    "committees": "Our Committees"
+  },
+  "navbar": {
+    "pastConferences": "Past Conferences",
+    "items": {
+      "home": "Home",
+      "society": "Society",
+      "events": "Events",
+      "team": "Team",
+      "conference": "EPFLMUN2025",
+      "conference2024": "EPFLMUN2024",
+      "contact": "Contact"
+    }
+  },
+  "footer": {
+    "allRightsReserved": "All rights reserved."
+  },
+  "error": {
+    "oops": "Oops!",
+    "pageNotFound": "The page you're looking for doesn't exist.",
+    "goHome": "Go Home"
+  }
+} 

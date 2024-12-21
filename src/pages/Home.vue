@@ -1,43 +1,88 @@
 <template>
-    <section class="relative h-1/2 w-full bg-cover bg-center" style="height: 500px;">
-      <div class="flex items-center justify-center h-full">
-        <div class="image-overlay h-full w-full">
-          <LazyImage src="/pictures/team/team_fun_on_logo.jpg" alt="committee on EPFL logo" height="100%" montainsTransform="rotate(45deg) translate(50%, 70%)" sunOrigin="1000px 5000px" sunSize="5%" />
-          <div class="overlay absolute top-0 left-0 w-full h-full bg-black opacity-70"></div>
-        </div>        
-      <img v-show="!loading" src="/svg/logos/Mun_EPFL_long_reversed.svg" alt="Logo" class="logo absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" style="height : 80%">
+    <section class="relative w-full">
+      <div class="relative w-full pt-[35%] hidden sm:block">
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="image-overlay h-full w-full">
+            <img src="/pictures/team/team_fun_on_logo.jpg" alt="committee on EPFL logo" class="w-full h-full object-cover object-[center_30%]"/>
+            <div class="overlay absolute top-0 left-0 w-full h-full bg-black opacity-70"></div>
+          </div>        
+          <img v-show="!loading" src="/pictures/logos/logo-mainpage.png" alt="Logo" class="logo absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-4/5">
+        </div>
       </div>
+
+      <div class="relative w-full pb-[40%] sm:hidden">
+        <div class="absolute flex items-center justify-center h-full w-full">
+            <div class="relative rounded-2xl m-6 mt-16 overflow-hidden w-full h-full">
+              <img src="/pictures/team/team_fun_on_logo.jpg" alt="committee on EPFL logo" class="absolute h-full w-full object-cover"/>
+              <div class="absolute inset-0 bg-black opacity-70"></div>
+              <img src="/pictures/logos/logo-mainpage.png" alt="Logo" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-4/5">
+            </div>
+        </div>
+      </div>
+     
     </section>
 
     <section class="w-full flex justify-center items-center">
       <div class="container max-w-3xl flex justify-center flex-col items-center">
-        <h1 class="text-center font-bold text-6xl my-10">
-          {{ $t("home.welcome") }} <span class="text-red-primary">MUN EPFL</span>
+        <h1 class="text-center font-bold text-5xl sm:text-6xl pt-12 sm:pt-6 mb-4 mx-4">
+          {{ $t("home.welcome") }}
         </h1>
-        <p class="text-center text-xl">
+        <p class="text-center text-xl mx-8">
           <span class="text-red-primary">MUN EPFL</span> {{ $t("home.description") }} 
         </p>
 
-        <router-link to="/about" class="bg-red-primary text-white font-bold py-2 px-4 rounded-md my-10 text-lg transform transition-transform duration-200 hover:scale-105 hover:bg-red-700">
-          {{ $t("home.learnMore") }}
-        </router-link>
+        <div class="flex gap-4 my-6">
+          <RedButton to="/society" class="text-lg">
+            {{ $t("home.buttons.association") }}
+          </RedButton>
+          <RedButton to="/conference">
+            {{ $t("home.buttons.conference") }}
+          </RedButton>
+        </div>
       </div>
     </section>
 
-    <section>
-      <Events />
+    <section class="w-full bg-gray-100 py-4 px-6">
+        <div class="max-w-5xl mx-auto">
+          <h2 class="text-center font-bold text-4xl sm:text-6xl mt-2 mb-4 mx-4">
+            {{ $t("home.events.title") }}
+          </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <HomeEventCard v-for="event in sortedEvents" 
+                    :key="event.id" 
+                    :id="event.id" 
+                    :title="event.title[$i18n.locale]" 
+                    :date="event.date[$i18n.locale]" 
+                    :location="event.location" 
+                    :description="event.description[$i18n.locale]"
+                    :imageUrl="event.image" />
+            </div>
+            <div class="flex justify-center pt-2">
+                <RedButton to="/events">
+                    {{ $t("home.events.button") }}
+                </RedButton> 
+            </div>
+        </div>
     </section>
-  </template>
+</template>
   
-  <script>
-import Events from '@/components/Events.vue';
-import LazyImage from '@/components/LazyImage.vue';
+<script>
+import RedButton from '@/components/RedButton.vue';
+import HomeEventCard from '@/components/HomeEventCard.vue';
+import eventsData from '@/assets/events.json';
 
-  export default {
+export default {
     name: 'HomePage',
     components: {
-      Events,
-      LazyImage
+        RedButton,
+        HomeEventCard
     },
-  }
-  </script>
+    computed: {
+        sortedEvents() {
+            return eventsData
+                .filter(event => event.positionFirstPage)
+                .sort((a, b) => a.positionFirstPage - b.positionFirstPage);
+        }
+    }
+}
+</script>

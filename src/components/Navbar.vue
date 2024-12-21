@@ -1,23 +1,58 @@
 <template>
-  <nav class="navbar h-16 bg-gray-100 flex justify-center items-center font-bold text-lg">
-    <div class="container flex justify-left items-center max-w-6xl gap-10">
-      <router-link to="/" class="text-black" active-class="text-red-600">
-        <img src="/svg/logos/EPFLMUN.svg" alt="Logo" class="h-10" />
+  <!-- Desktop Navbar -->
+  <nav class="navbar h-16 bg-gray-100 flex justify-center items-center font-bold text-lg hidden lg:flex">
+    <div class="container flex items-center max-w-6xl gap-10 px-4">
+      <router-link to="/" class="text-black">
+        <img src="/svg/logos/EPFLMUN.svg" alt="Logo" class="h-14" />
       </router-link>
-      <router-link to="/" class="text-black" active-class="text-red-600">{{ $t('navbar.home') }}</router-link>
-      <router-link to="/about" class="text-black" active-class="text-red-600">{{ $t('navbar.about') }}</router-link>
-      <router-link to="/events" class="text-black" active-class="text-red-600">{{ $t('navbar.events') }}</router-link>
-      <router-link to="/team" class="text-black" active-class="text-red-600">{{ $t('navbar.team') }}</router-link>
-      <div class="relative group">
-        <button class="text-black">{{ $t('navbar.conference') }}</button>
-        <div class="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-50">
-          <router-link to="/conference" class="block px-4 py-2 text-black hover:bg-gray-100">{{ $t('navbar.conference') }}</router-link>
-          <router-link to="/conference_2024" class="block px-4 py-2 text-black hover:bg-gray-100">{{ $t('navbar.conference2024') }}</router-link>
-          <router-link to="/conference" class="block px-4 py-2 text-black hover:bg-gray-100">{{ $t('navbar.epflmun2025') }}</router-link>
-        </div>
+      <div class="flex-1 flex justify-center items-center gap-10">
+        <router-link 
+          v-for="item in navItems" 
+          :key="item.path"
+          :to="item.path" 
+          class="text-black relative py-2 hover:text-black"
+          active-class="text-red-600"
+          @mouseenter="item.path === '/conference' ? isConferenceHovered = true : null"
+          @mouseleave="item.path === '/conference' ? isConferenceHovered = false : null"
+        >
+          {{ $t(item.translationKey) }}
+          
+          <!-- Conference Popover -->
+          <Transition
+            enter-active-class="transition ease-out duration-200"
+            enter-from-class="opacity-0 translate-y-1"
+            enter-to-class="opacity-100 translate-y-0"
+            leave-active-class="transition ease-in duration-150"
+            leave-from-class="opacity-100 translate-y-0"
+            leave-to-class="opacity-0 translate-y-1"
+          >
+            <div v-if="isConferenceHovered && item.path === '/conference'" class="relative z-50">
+              <!-- Invisible bridge to prevent hover gap -->
+              <div class="absolute h-2 w-full -bottom-2"></div>
+              
+              <div class="absolute top-full left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5"
+                   @mouseenter="isConferenceHovered = true"
+                   @mouseleave="isConferenceHovered = false">
+                <div class="py-1">
+                  <router-link
+                    v-for="confItem in conferenceNavItems"
+                    :key="confItem.path"
+                    :to="confItem.path"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                    active-class="text-red-600"
+                  >
+                    {{ $t(confItem.translationKey) }}
+                  </router-link>
+                </div>
+              </div>
+            </div>
+          </Transition>
+        </router-link>
+        
       </div>
-      <router-link to="/contact" class="text-black" active-class="text-red-600">{{ $t('navbar.contact') }}</router-link>
-      <div class="ml-auto flex items-center">
+
+      <!-- Language switcher remains on the right -->
+      <div class="flex items-center">
         <button @click="changeLanguage('en')" class="mx-2">
           <img src="/svg/flags/english.svg" alt="UK Flag" class="h-6" />
         </button>
@@ -27,21 +62,154 @@
       </div>
     </div>
   </nav>
+
+  <!-- Mobile Navbar -->
+  <nav class="navbar h-16 bg-gray-100 flex lg:hidden justify-between items-center font-bold text-lg px-4">
+    <router-link to="/" class="text-black">
+      <img src="/svg/logos/EPFLMUN.svg" alt="Logo" class="h-14" />
+    </router-link>
+    
+    <!-- Hamburger Button -->
+    <button @click="isMenuOpen = !isMenuOpen" class="text-black">
+      <Bars3Icon v-if="!isMenuOpen" class="h-6 w-6" />
+      <XMarkIcon v-else class="h-6 w-6" />
+    </button>
+
+    <!-- Mobile Menu -->
+    <Transition
+    enter-active-class="duration-200 ease-out"
+    enter-from-class="opacity-0 scale-95"
+    enter-to-class="opacity-100 scale-100"
+    leave-active-class="duration-100 ease-in"
+    leave-from-class="opacity-100 scale-100"
+    leave-to-class="opacity-0 scale-95"
+    >
+      <div v-if="isMenuOpen" 
+           class="absolute top-16 left-0 right-0 z-50 py-2">
+        <div class="flex flex-col bg-white rounded-lg shadow-lg mx-5 border border-gray-200">
+          <!-- Main nav items -->
+          <router-link 
+            v-for="item in navItems" 
+            :key="item.path"
+            :to="item.path" 
+            class="px-4 py-3 text-black flex items-center gap-3 hover:bg-gray-50 transition-colors duration-200" 
+            active-class="text-red-600"
+          >
+            <component :is="item.icon" class="h-5 w-5" />
+            {{ $t(item.translationKey) }}
+          </router-link>
+
+          <!-- Conference section at the bottom -->
+          <div class="mt-4 py-2 border-t border-gray-200">
+            <div class="px-4 py-2 text-sm font-semibold text-gray-500">{{ $t('navbar.pastConferences') }}</div>
+            <router-link 
+              v-for="item in conferenceNavItems" 
+              :key="item.path"
+              :to="item.path" 
+              class="px-4 py-2 text-black flex items-center gap-3 hover:text-gray-500 transition-colors duration-200" 
+              active-class="text-red-600"
+            >
+              {{ $t(item.translationKey) }}
+            </router-link>
+          </div>
+
+          <!-- Language Switcher -->
+          <div class="flex justify-center gap-4 py-3">
+            <button @click="changeLanguage('en')" class="mx-2">
+              <img src="/svg/flags/english.svg" alt="UK Flag" class="h-6" />
+            </button>
+            <button @click="changeLanguage('fr')" class="mx-2">
+              <img src="/svg/flags/france.svg" alt="FR Flag" class="h-6" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </Transition>
+  </nav>
+
+
 </template>
 
 <script>
+import { 
+  Bars3Icon, 
+  XMarkIcon,
+  HomeIcon,
+  BriefcaseIcon,
+  CalendarIcon,
+  UsersIcon,
+  EnvelopeIcon,
+  AcademicCapIcon
+} from '@heroicons/vue/24/outline';
+
 export default {
   name: 'Navbar',
+  components: {
+    Bars3Icon,
+    XMarkIcon,
+    HomeIcon,
+    BriefcaseIcon,
+    CalendarIcon,
+    UsersIcon,
+    EnvelopeIcon,
+    AcademicCapIcon
+  },
+  data() {
+    return {
+      isMenuOpen: false,
+      isConferenceOpen: false,
+      isConferenceHovered: false,
+      navItems: [
+        {
+          path: '/',
+          icon: HomeIcon,
+          translationKey: 'navbar.items.home'
+        },
+        {
+          path: '/society',
+          icon: BriefcaseIcon,
+          translationKey: 'navbar.items.society'
+        },
+        {
+          path: '/conference',
+          icon: AcademicCapIcon,
+          translationKey: 'navbar.items.conference'
+        },
+        {
+          path: '/events',
+          icon: CalendarIcon,
+          translationKey: 'navbar.items.events'
+        },
+        {
+          path: '/team',
+          icon: UsersIcon,
+          translationKey: 'navbar.items.team'
+        },
+        {
+          path: '/contact',
+          icon: EnvelopeIcon,
+          translationKey: 'navbar.items.contact'
+        }
+      ],
+      conferenceNavItems: [
+        {
+          path: '/conference_2024',
+          icon: AcademicCapIcon,
+          translationKey: 'navbar.items.conference2024'
+        }
+      ]
+    }
+  },
   methods: {
     changeLanguage(lang) {
       this.$i18n.locale = lang;
     }
+  },
+  watch: {
+    $route() {
+      this.isMenuOpen = false;
+      this.isConferenceOpen = false;
+    }
   }
 }
 </script>
-
-<style>
-.group:hover .group-hover\:opacity-100 {
-  opacity: 1;
-}
-</style>

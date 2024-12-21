@@ -1,12 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from './pages/Home.vue'
-import About from './pages/About.vue'
+import Society from './pages/Society.vue'
 import Events from './pages/Events.vue'
 import EventDetail from './pages/EventDetail.vue'
 import Team from './pages/Team.vue'
 import Conference from './pages/Conference.vue'
 import Conference_2024 from './pages/Conference_2024.vue'
 import Contact from './pages/Contact.vue'
+import Error from './pages/Error.vue'
 
 const routes = [
   {
@@ -15,9 +16,9 @@ const routes = [
     component: Home
   },
   {
-    path: '/about',
-    name: 'About',
-    component: About,
+    path: '/society',
+    name: 'Society',
+    component: Society,
   },
   {
     path : '/events',
@@ -49,6 +50,11 @@ const routes = [
     path : "/contact",
     name : "Contact",
     component : Contact
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'Error',
+    component: Error
   }
 ]
 
