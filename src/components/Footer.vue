@@ -1,8 +1,5 @@
 <template>
-    <footer class="flex flex-col justify-center items-center py-6 px-6 gap-6">
-        <div class="flex items-center justify-center gap-3 text-gray-600 text-sm">
-            <a href="mailto:info@mun-epfl.ch">info@mun-epfl.ch</a>
-        </div>
+    <footer class="flex flex-col justify-center items-center py-6 px-6 gap-6 border-t border-gray-200">
 
         <div class="text-gray-600 text-sm text-center">La Coupole CO 116, Case Postale Station 10, 1015 Lausanne, Suisse</div>
 
@@ -15,7 +12,7 @@
                    rel="noopener noreferrer"
                    class="h-6"
                 >
-                    <img :src="`/svg/footer/${link.name.toLowerCase()}.svg`"
+                    <img :src="`/svg/socialLinks/${link.name.toLowerCase()}.svg`"
                          :alt="link.name"
                          class="h-full"
                     />
@@ -26,7 +23,7 @@
                rel="noopener noreferrer"
                class="text-sm text-gray-600 hover:text-gray-800"
             >
-                Status
+                {{ $t('footer.status') }}
             </router-link>
         </div>
 
@@ -37,33 +34,14 @@
 </template>
 
 <script>
+import socialLinks from '@/assets/socialLinks.json';
+
 export default {
     data() {
         return {
-            socialLinks: [
-                //icons at icons8.fr, style : iOS17 Glyph
-            {
-                    name: 'Mail',
-                    url: 'mailto:info@mun-epfl.ch'
-                },
-                {
-                    name: 'Whatsapp',
-                    url: 'https://wa.me/+41772019335'
-                },
-                {
-                    name: 'Instagram',
-                    url: 'https://www.instagram.com/mun.epfl'
-                },
-                {
-                    name: 'Facebook',
-                    url: 'https://facebook.com/mun.epfl'
-                },
-                {
-                    name: 'LinkedIn',
-                    url: 'https://www.linkedin.com/company/mun-epfl'
-                },
-            ]
+            socialLinks: socialLinks
         }
     }
+
 }
 </script>

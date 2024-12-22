@@ -70,12 +70,16 @@
 import RedButton from '@/components/RedButton.vue';
 import HomeEventCard from '@/components/HomeEventCard.vue';
 import eventsData from '@/assets/events.json';
+import { seo } from '@/composables/seo'
 
 export default {
     name: 'HomePage',
     components: {
         RedButton,
         HomeEventCard
+    },
+    setup() {
+        seo('home')
     },
     computed: {
         sortedEvents() {

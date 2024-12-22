@@ -7,7 +7,7 @@
         </div>
     </div>
     
-    <div class="flex flex-col items-center justify-start w-full px-10 lg:px-20 mx-auto">
+    <div class="flex flex-col items-center justify-start w-full px-10 lg:px-20 mx-auto pb-4">
         <EventsLongCard
             v-for="event in events"
             :key="event.id"
@@ -24,6 +24,7 @@
 <script>
 import EventsLongCard from '@/components/EventsLongCard.vue';
 import eventsData from '@/assets/events.json';
+import { seo } from '@/composables/seo';
 
 export default {
     name: 'HomePage',
@@ -34,6 +35,9 @@ export default {
         return {
             events: eventsData.sort((a, b) => b.id - a.id)
         }
+    },
+    setup() {
+        seo('events')
     }
 }
 </script>

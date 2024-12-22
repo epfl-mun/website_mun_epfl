@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Mail",
+        "url": "mailto:info@mun-epfl.ch"
+    },
+    {
+        "name": "Whatsapp",
+        "url": "https://wa.me/+41772019335"
+    },
+    {
+        "name": "Instagram",
+        "url": "https://instagram.com/mun.epfl"
+    },
+    {
+        "name": "Facebook",
+        "url": "https://facebook.com/mun.epfl"
+    },
+    {
+        "name": "LinkedIn",
+        "url": "https://linkedin.com/company/mun-epfl"
+    }
+]

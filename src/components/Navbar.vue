@@ -193,7 +193,7 @@ export default {
       ],
       conferenceNavItems: [
         {
-          path: '/conference_2024',
+          path: '/conference/2024',
           icon: AcademicCapIcon,
           translationKey: 'navbar.items.conference2024'
         }

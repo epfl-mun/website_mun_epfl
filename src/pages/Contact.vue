@@ -1,52 +1,104 @@
 <template>
-    <div class="flex flex-col items-center justify-start">
-      <div class="max-w-7xl mt-12 flex w-full gap-5">
-        <div class="w-1/2 flex flex-col items-start">
+  <div class="w-full p-10 pb-4">
+      <div class="flex flex-col items-center gap-4">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold">{{ $t('contact.title') }}</h1>
+      </div>
+  </div>
 
-          <h2 class="text-4xl font-bold mb-5">Contact</h2>
-          <div class="bg-slate-200 px-8 py-5 rounded-md flex flex-col items-start gap-5 w-full">
-            <div class="flex flex-col items-start">
-              <div class="flex items-center gap-2">
-                <font-awesome-icon :icon="['fas', 'location-dot']" size="2x" />
-                <h3 class="text-3xl font-bold">Adresse</h3>
+  <div class="container mx-auto px-4 py-8">
+    <div class="flex flex-col lg:flex-row items-start justify-between gap-8 items-center">
+      
+      <!-- Contact Information Section -->
+      <div class="px-5 w-full sm:w-3/4 sm:px-0 lg:w-1/2">
+        <div class="bg-white shadow-lg rounded-lg p-6 space-y-4 border-2 border-gray-200">
+          
+          <!-- Address -->
+          <div v-for="link in allLinks" 
+               :key="link.name"
+               class="group cursor-pointer"
+          >
+            <a 
+              :href="link.url"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="block hover:translate-x-1 transition-transform"
+            >
+              <div class="flex items-center gap-3 mb-2">
+                <component 
+                  :is="link.icon" 
+                  v-if="link.isHeroIcon"
+                  class="w-6 text-black"
+                />
+                <img 
+                  v-else
+                  :src="`/svg/socialLinks/${link.name.toLowerCase()}.svg`"
+                  :alt="link.name"
+                  class="text-black w-6 h-6"
+                />
+                <h3 class="text-2xl font-semibold text-gray-800">{{ link.name }}</h3>
               </div>
-              <p class="text-left">La Coupole CO116, Case Postale Station 10 <br />1015 Lausanne, Suisse</p>
-            </div>
-            <div>
-              <div class="flex items-center gap-2">
-                <font-awesome-icon :icon="['fas', 'phone']" size="2x" />
-                <h3 class="text-3xl font-bold">Phone</h3>
+              <div class="ml-9 text-start">
+                <span class="text-gray-600 group-hover:text-red-500 transition-colors">
+                  {{ getSocialLabel(link.name) }}
+                </span>
               </div>
-              <p>+41772019335</p>
-            </div>
-            <div>
-              <div class="flex items-center gap-2">
-                <font-awesome-icon :icon="['fas', 'envelope']" size="2x" />
-                <h3 class="text-3xl font-bold">Email</h3>
-              </div>
-              <p><a href="mailto:info@mun-epfl.ch">info@mun-epfl.ch</a></p>
-            </div>
+            </a>
           </div>
-        </div>
-        <div class="mt-10 h-96 w-1/2 rounded-xl overflow-hidden">
-          <Map/>
+
         </div>
       </div>
-    </div>
-  </template>
-  
-  <script>
-import Map from '@/components/Map.vue';
 
-  
-  export default {
-    name: 'Contact',
-    components: {
-      Map
+      <!-- Map Section -->
+      <div class="w-full lg:w-1/2 h-[400px] rounded-lg overflow-hidden shadow-lg">
+        <Map />
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import Map from '@/components/Map.vue';
+import socialLinks from '@/assets/socialLinks.json';
+import { MapPinIcon } from '@heroicons/vue/24/solid';
+import { seo } from '@/composables/seo';
+
+export default {
+  name: 'Contact',
+  components: {
+    MapPinIcon,
+    Map
+  },
+  setup(){
+    seo('contact')
+  },
+  data() {
+    return {
+      socialLinks
+    }
+  },
+  computed: {
+    allLinks() {
+      return [{
+        name: this.$t('contact.address'),
+        url: 'https://maps.google.com',
+        icon: MapPinIcon,
+        isHeroIcon: true
+      }, ...this.socialLinks]
+    }
+  },
+  methods: {
+    getSocialLabel(name) {
+      const labels = {
+        'Address': 'La Coupole CO116, Case Postale Station 10, 1015 Lausanne, Switzerland',
+        'Adresse': 'La Coupole CO116, Case Postale Station 10, 1015 Lausanne, Switzerland',
+        'Instagram': '@mun.epfl',
+        'LinkedIn': this.$t('contact.linkedin'),
+        'Facebook': '@MUNEPFL',
+        'Whatsapp': '+41 77 201 93 35',
+        'Mail': 'info@mun-epfl.ch'
+      };
+      return labels[name];
     }
   }
-  </script>
-  
-  <style>
-  /* Add any necessary styles here */
-  </style>
+}
+</script>

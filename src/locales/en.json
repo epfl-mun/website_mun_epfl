@@ -18,6 +18,20 @@
         "title": "Weekly Sessions",
         "description": "The weekly sessions develop students' skills for conference representation. We begin by covering the Rules of Procedure and debate rules, then introduce a debate topic that spans 4 sessions. Members research their assigned countries, develop strategies, and enhance their speaking, negotiation, and communication skills. In the final session, some members may present resolutions, which represent a set of responses to the problem posed by the subject of the debate."
     },
+    "cards": [
+      {
+        "title": "Weekly sessions",
+        "description": "Every week, MUN EPFL members meet in a friendly setting to debate. Some debates are followed by a relaxed aperitif."
+      },
+      {
+        "title": "Develop oral skills",
+        "description": "Debates allow members to improve their eloquence, negotiation techniques, and communication skills."
+      },
+      {
+        "title": "International political issues",
+        "description": "Members have the opportunity to debate current and long-standing international political and geopolitical issues."
+      }
+    ],
     "plusForStudents": "A + for students",
     "objectives": {
         "title": "One Objective: Represent MUN EPFL at Conferences",
@@ -34,7 +48,22 @@
     "learnMore": "Learn More"
   },
   "team": {
-    "title": "Our Team"
+    "title": "Our Team",
+    "description": "Our team is made up of passionate students who are dedicated to organizing events and our annual conference.",
+    "sections": {
+      "direction": {
+        "title": "Direction",
+        "description": "This team is responsible for the direction of the association and is responsible for the management of events."
+      },
+      "usgs": {
+        "title": "Under-Secretary-Generals",
+        "description": "Each of them is responsible for the management of a part of the events and communication."
+      },
+      "members": {
+        "title": "Members",
+        "description": "Members have each a role in the organization of the association's events."
+      }
+    }
   },
   "conference": {
     "title": "EPFL Model United Nations Conference",
@@ -53,6 +82,11 @@
     "thankYouMessage3": "We look forward to seeing you at future EPFLMUN conferences!",
     "committees": "Our Committees"
   },
+  "contact": {
+    "title": "Contact Us",
+    "address": "Address",
+    "linkedin": "Connect with us on LinkedIn"
+  },
   "navbar": {
     "pastConferences": "Past Conferences",
     "items": {
@@ -66,11 +100,34 @@
     }
   },
   "footer": {
+    "status": "Status",
     "allRightsReserved": "All rights reserved."
   },
   "error": {
     "oops": "Oops!",
     "pageNotFound": "The page you're looking for doesn't exist.",
     "goHome": "Go Home"
+  },
+  "seo": {
+    "home": {
+      "title" : "MUN EPFL",
+      "descritpion" : "MUN EPFL is a Model United Nations association founded in 2004, promoting UN ideals and principles through student engagement in global issues debates."
+    },
+    "society": {
+      "title" : "The association",
+      "descritpion" : "Our association organizes weekly debate sessions and several trips to conferences."
+    },
+    "events": {
+      "title" : "Our events",
+      "descritpion" : "Our association organizes various events throughout the year."
+    },
+    "team": {
+      "title" : "Our team",
+      "descritpion" : "Our team is made up of passionate students who are dedicated to organizing events and our annual conference."
+    },
+    "contact": {
+      "title" : "Contact us",
+      "descritpion" : "Contact us for more information about our association & our conference."
+    }
   }
 } 

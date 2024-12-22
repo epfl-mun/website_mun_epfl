@@ -2,10 +2,9 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from './pages/Home.vue'
 import Society from './pages/Society.vue'
 import Events from './pages/Events.vue'
-import EventDetail from './pages/EventDetail.vue'
 import Team from './pages/Team.vue'
-import Conference from './pages/Conference.vue'
-import Conference_2024 from './pages/Conference_2024.vue'
+import Conference from './pages/conference/Conference.vue'
+import Conference_2024 from './pages/conference/2024.vue'
 import Contact from './pages/Contact.vue'
 import Error from './pages/Error.vue'
 
@@ -26,12 +25,6 @@ const routes = [
     component : Events
   },
   {
-    path: '/event/:id',
-    name: 'EventDetail',
-    component: EventDetail,
-    props: true
-  },
-  {
     path : '/team',
     name : "Team",
     component : Team
@@ -42,7 +35,7 @@ const routes = [
     component : Conference
   },
   {
-    path : "/conference_2024",
+    path : "/conference/2024",
     name : "Conference 2024",
     component : Conference_2024
   },

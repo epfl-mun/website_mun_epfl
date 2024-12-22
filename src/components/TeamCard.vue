@@ -1,15 +1,14 @@
 <template>
-    <div class="card flex flex-col">
+    <div class="card flex flex-col relative overflow-hidden border border-gray-300 m-2 rounded-lg shadow-md">
       <div style="width: 100%; height : 300px" class="mb-5 bg-slate-100">
         <LazyImage :src="`${person.image}`" :alt="person.name + ' picture'" montainsTransform="rotate(45deg) translate(40%, 70%)" mountainsShadow="50px -100px" sunOrigin="200px 1000px" sunSize="10%" />
       </div>
-      <!-- <img :src="`${person.image}`" :alt="person.name + ' picture'" style="width: 100%; height : 300px" class="mb-5 object-cover bg-slate-100"> -->
       <div class="flex flex-col justify-between text-left px-8 mb-5 flex-grow">
         <div class="">
-          <h3 class="text-lg font-bold">{{ person.poste }}</h3>
-          <h2 class="text-2xl font-bold mb-5">{{ person.name }}</h2>
-          <p class="text-left text-base">
-              {{ person.description }}
+          <h2 class="text-3xl font-bold mb-1">{{ person.name }}</h2>
+          <h3 class="text-md text-red-600 font-bold mb-5">{{ person.poste[$i18n.locale] }}</h3>
+          <p class="text-left text-sm">
+              {{ person.description[$i18n.locale] }}
             </p>
         </div>
             
@@ -31,7 +30,6 @@
 import LazyImage from './LazyImage.vue';
 
   export default {
-    name: 'EventCard',
     props: {
       person: {
         type: Object,
@@ -43,14 +41,3 @@ import LazyImage from './LazyImage.vue';
     }
   }
   </script>
-  
-  <style>
-  .card {
-    z-index: 1;
-    overflow: hidden;
-    border: 1px solid #ccc;
-    margin: 8px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  </style>

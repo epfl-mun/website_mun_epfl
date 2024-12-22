@@ -13,11 +13,26 @@
   },
   "society": {
     "title": "À propos de nous",
-    "description": "Nous sommes une association étudiante de l'EPFL qui vise à promouvoir la diplomatie et les relations internationales à travers les conférences des Nations Unies.",
+    "description": "Nous sommes une association étudiant de l'EPFL qui vise à promouvoir la diplomatie et les relations internationales à travers des conférences Model United Nations.",
     "weeklySessions": {
         "title": "Sessions Hebdomadaires",
-        "description": "Nous organisons des sessions hebdomadaires pour pratiquer la prise de parole en public, le débat et apprendre les relations internationales."
+        "description": "Les sessions hebdomadaires permettent aux étudiants de développer leurs compétences pour représenter l'association lors des conférences. Nous commençons par étudier les \"Rules of Procedure\" avant d'initier progressivement le débat. Un sujet est maintenu pendant 4 sessions, permettant aux membres d'approfondir leur connaissance du pays qu'ils représentent et de développer des stratégies diplomatiques. Ces sessions développent particulièrement l'éloquence, la négociation et la communication. Lors de la dernière session, les membres peuvent présenter des résolutions pour répondre à la problématique débattue."
     },
+    "plusForStudents": "Un + pour les étudiants",
+    "cards": [
+      {
+        "title": "Sessions hebdomadaires",
+        "description": "Chaque semaine, les membres de MUN EPFL se réunissent dans un cadre convivial pour débattre. Chaque débat est suivi d'un apéritif."
+      },
+      {
+        "title": "Développer des compétences orales",
+        "description": "Les débats permettent aux membres d'améliorer leur éloquence, leurs techniques de négociation et leurs compétences en communication."
+      },
+      {
+        "title": "Problèmes politiques internationaux",
+        "description": "Les membres ont l'opportunité de débattre des enjeux politiques internationaux actuels et des problèmes de géopolitique internationale."
+      }
+    ],
     "objectives": {
         "title": "Un objectif : représenter MUN EPFL lors des conférences",
         "description1": "Deux fois par semestre, MUN EPFL part en voyage de week-end, en Suisse ou à l'étranger, et participe à des conférences d'autres associations de Modèle des Nations Unies.",
@@ -33,7 +48,22 @@
     "learnMore": "En savoir plus"
   },
   "team": {
-    "title": "Notre Équipe"
+    "title": "Notre Équipe",
+    "description": "Notre équipe est composée d'étudiants passionnés qui sont dévoués à organiser des événements et notre conférence annuelle.",
+    "sections": {
+      "direction": {
+        "title": "Direction",
+        "description": "Cette équipe assure la direction de l'association et est responsable de la gestion des événements."
+      },
+      "usgs": {
+        "title": "Under-Secretary-Generals",
+        "description": "Ils sont chacun responsables de la gestion d'une partie des événements et de la communication."
+      },
+      "members": {
+        "title": "Membres",
+        "description": "Les membres ont chacun un rôle dans l'organisation des événements de l'association."
+      }
+    }
   },
   "conference": {
     "title": "Conférence EPFL Model United Nations",
@@ -52,6 +82,11 @@
     "thankYouMessage3": "Nous avons hâte de vous revoir lors des prochaines conférences EPFLMUN !",
     "committees": "Nos Comités"
   },
+  "contact": {
+    "title": "Contactez-nous",
+    "address": "Adresse",
+    "linkedin": "Connectez-vous avec nous sur LinkedIn"
+  },
   "navbar": {
     "pastConferences": "Conférences passées",
     "items": {
@@ -65,11 +100,34 @@
     }
   },
   "footer": {
+    "status": "Statuts",
     "allRightsReserved": "Tous droits réservés."
   },
   "error": {
     "oops": "Oups !",
     "pageNotFound": "La page que vous recherchez n'existe pas.",
     "goHome": "Retour à l'accueil"
+  },
+  "seo": {
+    "home": {
+      "title": "MUN EPFL FR",
+      "description": "MUN EPFL is a Model United Nations association founded in 2004, promoting UN ideals and principles through student engagement in global issues debates."
+    },
+    "society": {
+      "title": "L'association",
+      "description": "Notre association organise des sessions de débat hebdomadaires et plusieurs voyages en conférences."
+    },
+    "events": {
+      "title": "Nos événements",
+      "description": "Notre association organise divers événements tout au long de l'année."
+    },
+    "team": {
+      "title": "Notre équipe",
+      "description": "Notre équipe est composée d'étudiants passionnés qui sont dévoués à organiser des événements et notre conférence annuelle."
+    },
+    "contact": {
+      "title": "Contactez-nous",
+      "description": "Contactez-nous pour plus d'informations sur notre association et notre conférence."
+    }
   }
 } 

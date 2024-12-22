@@ -21,12 +21,12 @@
         <p class="text-gray-600 mb-2 flex-grow" v-html="description"></p>
         
         <!-- Date and location row -->
-        <div class="grid grid-cols-2 text-gray-500 mx-2">
+        <div class="grid grid-cols-2 text-gray-500 sm:px-2">
           <div class="flex items-center">
             <CalendarIcon class="w-5 h-5 mr-1" />
             <span class="text-base">{{ date }}</span>
           </div>
-          <div class="flex items-center">
+          <div class="flex items-center justify-end">
             <MapPinIcon class="w-5 h-5 mr-1" />
             <span class="text-base">{{ location }}</span>
           </div>

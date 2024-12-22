@@ -9,7 +9,7 @@
 
         <div class="flex flex-col md:flex-row items-center p-4 md:p-10 bg-gray-100">
           <div class="w-2/3 md:w-1/2 aspect-[4/3] overflow-hidden rounded">
-            <LazyImage src="/pictures/society/weekly-session.png" alt="Committee debating" class="w-full h-full object-cover" />
+            <img src="/pictures/society/weekly-session.png" alt="Committee debating" class="w-full h-full object-cover" />
           </div>
           <div class="flex flex-col justify-start items-center gap-4 w-full lg:w-1/2 pt-5 md:pl-10">
             <h2 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-black">{{ $t('society.weeklySessions.title') }}</h2>
@@ -19,7 +19,7 @@
 
         <Section class="max-w-4xl p-10">
           <h2 class="text-4xl mb-5 font-bold text-black">{{ $t('society.plusForStudents') }}</h2>
-          <CardSection />
+          <SocietyCardSection />
         </Section>
         
         <div class="flex flex-col md:flex-row items-center p-4 md:p-10 bg-gray-100">
@@ -33,7 +33,7 @@
           </div>
 
           <div class="w-2/3 md:w-1/2 aspect-[4/3] overflow-hidden rounded order-1 md:order-2">
-            <LazyImage src="/pictures/society/delegation.jpeg" alt="committee on EPFL logo" class="" />
+            <img src="/pictures/society/delegation.jpeg" alt="committee on EPFL logo" class="w-full h-full object-cover" />
           </div>
         </div>
 
@@ -43,14 +43,15 @@
 </template>
   
   <script>
+    import SocietyCardSection from "@/components/SocietyCardSection.vue";
+    import { seo } from '@/composables/seo'
 
-import LazyImage from '@/components/LazyImage.vue';
-import CardSection from "@/components/CardSection.vue";
-
-  export default {
-    components: {
-      LazyImage,
-      CardSection,
+    export default {
+      components: {
+        SocietyCardSection,
+      },
+      setup() {
+        seo('society')
+      }
     }
-  }
   </script>
