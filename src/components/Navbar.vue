@@ -1,6 +1,8 @@
 <template>
+  <!-- Pseudo element to do as if the navbar was real in the dom -->
+   <div class="h-16"></div>
   <!-- Desktop Navbar -->
-  <nav class="navbar h-16 bg-gray-100 flex justify-center items-center font-bold text-lg hidden lg:flex">
+  <nav :class="['navbar fixed left-0 right-0 h-16 z-50 bg-gray-100 flex justify-center items-center font-bold text-lg hidden lg:flex transition-transform duration-300', { 'top-0 z-50 bg-opacity-90': isOverlay, '-translate-y-full': !isVisible }]" ref="navbar">
     <div class="container flex items-center max-w-6xl gap-10 px-4">
       <router-link to="/" class="text-black">
         <img src="/svg/logos/EPFLMUN.svg" alt="Logo" class="h-14" />
@@ -64,7 +66,7 @@
   </nav>
 
   <!-- Mobile Navbar -->
-  <nav class="navbar h-16 bg-gray-100 flex lg:hidden justify-between items-center font-bold text-lg px-4">
+  <nav :class="['navbar fixed right-0 left-0 h-16 bg-gray-100 flex lg:hidden justify-between items-center font-bold text-lg px-4 transition-transform duration-300', { 'top-0 z-50 bg-opacity-90': isOverlay, '-translate-y-full': !isVisible }]" ref="navbar">
     <router-link to="/" class="text-black">
       <img src="/svg/logos/EPFLMUN.svg" alt="Logo" class="h-14" />
     </router-link>
@@ -126,8 +128,6 @@
       </div>
     </Transition>
   </nav>
-
-
 </template>
 
 <script>
@@ -159,6 +159,9 @@ export default {
       isMenuOpen: false,
       isConferenceOpen: false,
       isConferenceHovered: false,
+      isVisible: true,
+      isOverlay: false,
+      lastScrollY: 0,
       navItems: [
         {
           path: '/',
@@ -203,7 +206,23 @@ export default {
   methods: {
     changeLanguage(lang) {
       this.$i18n.locale = lang;
+    },
+    handleScroll() {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > this.lastScrollY && currentScrollY > 100) {
+        this.isVisible = false;
+      } else if (currentScrollY < this.lastScrollY) {
+        this.isVisible = true;
+        this.isOverlay = currentScrollY > 0;
+      }
+      this.lastScrollY = currentScrollY;
     }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  beforeUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
   },
   watch: {
     $route() {
@@ -213,3 +232,9 @@ export default {
   }
 }
 </script>
+
+<style>
+.navbar {
+  transition: transform 0.3s ease-in-out;
+}
+</style>
