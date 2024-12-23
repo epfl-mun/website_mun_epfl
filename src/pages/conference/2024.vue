@@ -21,7 +21,7 @@
   <section>
     <div class="flex flex-col items-center justify-center py-7 bg-red-primary">
       <h2 class="text-6xl text-white font-bold mb-10">{{ $t('conference_2024.committees') }}</h2>
-      <div class="flex max-w-7xl">
+      <div class="flex flex-col lg:flex-row gap-6 max-w-7xl">
         <div v-for="committee in committees" :key="committee.title" class="flex-1">
           <div class="flex flex-col items-center gap-4">
             <div class="rounded-full bg-white p-2">
@@ -37,7 +37,7 @@
   <section>
     <div class="flex flex-col items-center justify-center py-7">
       <h2 class="text-6xl font-bold mb-10">{{ $t('conference_2024.partners') }}</h2>
-      <div class="flex max-w-7xl">
+      <div class="flex flex-col lg:flex-row gap-6 max-w-7xl">
         <div v-for="partner in partners" :key="partner.title" class="flex-1">
           <div class="flex flex-col items-center gap-4">
             <div class="rounded-full p-2">

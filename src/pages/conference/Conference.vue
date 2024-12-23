@@ -13,7 +13,7 @@
   <section class="bg-red-primary">
     <div class="bg-red-primary py-6 flex flex-col items-center justify-normal">
       <h2 class="text-6xl font-bold text-white mb-10">{{ $t('conference.epflmunIs') }}</h2>
-      <div class="flex max-w-7xl">
+      <div class="flex flex-col lg:flex-row gap-6 max-w-7xl">
         <div v-for="element in elements" :key="element.title" class="flex-1">
           <div class="flex flex-col items-center gap-4">
             <div class="rounded-full bg-white p-2">

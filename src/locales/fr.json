@@ -97,7 +97,18 @@
     "thankYouMessage1": "Nous tenons à exprimer notre sincère gratitude à tous les participants, présidents et organisateurs qui ont fait d'EPFLMUN 2024 un incroyable succès.",
     "thankYouMessage2": "Votre dévouement, votre enthousiasme et votre esprit diplomatique ont rendu cette conférence vraiment mémorable.",
     "thankYouMessage3": "Nous avons hâte de vous revoir lors des prochaines conférences EPFLMUN !",
-    "committees": "Nos Comités"
+    "committees": "Nos Comités",
+    "committeesList" : [
+      {"title": "Comité du désarmement et de la sécurité internationale (DISEC)"},
+      {"title": "Conseil des droits de l'homme des Nations Unies (UNHRC)"},
+      {"title": "Conseil de sécurité des Nations Unies (UNSC)"},
+      {"title": "Comité de crise : Chute de la République de Novgorod"} 
+    ],
+    "partners" : "Nos partenaires",
+    "partnersList" : [
+      {"title" : "ZUMUN"},
+      {"title" : "SIMUN"}
+    ]
   },
   "contact": {
     "title": "Contactez-nous",
