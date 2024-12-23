@@ -71,7 +71,24 @@
     "description2": "Rejoignez-nous pour une expérience inoubliable de diplomatie et de débat.",
     "epflmunIs": "EPFLMUN c'est",
     "participate2025": "Participez à EPFLMUN 2025",
-    "registerNow": "Inscrivez-vous maintenant"
+    "registerNow": "Inscrivez-vous maintenant",
+    "elements" : [
+      {
+        "title": "150+ participants internationaux"
+      },
+      {
+        "title" : "6 commissions en français et en anglais"
+      },
+      {
+        "title": "Invités d'honneur"
+      },
+      {
+        "title": "Des opportunités post-conférence"
+      },
+      {
+        "title": "3 jours incroyables, du 21 au 23 mars"
+      }
+    ]
   },
   "conference_2024": {
     "title": "EPFLMUN 2024",

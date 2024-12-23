@@ -71,7 +71,24 @@
     "description2": "Join us for an unforgettable experience of diplomacy and debate.",
     "epflmunIs": "EPFLMUN is",
     "participate2025": "Participate in EPFLMUN 2025",
-    "registerNow": "Register Now"
+    "registerNow": "Register Now",
+    "elements" : [
+      {
+        "title": "150+ international participants"
+      },
+      {
+        "title": "6 commissions in French and English"
+      },
+      {
+        "title": "Honor guests"
+      },
+      {
+        "title": "Post-conference opportunities"
+      },
+      {
+        "title": "3 incredible days, from March 21 to 23"
+      }
+    ]
   },
   "conference_2024": {
     "title": "EPFLMUN 2024",
