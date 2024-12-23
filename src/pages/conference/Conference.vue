@@ -2,7 +2,7 @@
   <section>
     <div style="height: 600px; width: 100%;" class="relative">
       <LazyImage src="/pictures/team/home_page_picture.jpg" alt="committee on EPFL logo" height="100%" montainsTransform="rotate(45deg) translate(50%, 70%)" sunOrigin="1000px 5000px" sunSize="5%" />
-      <div v-show="!loading" class="logo absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white max-w-3xl p-10">
+      <div v-show="!loading" class="logo absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-md opacity-90 max-w-3xl p-10">
         <h1 class="text-red-primary font-bold text-7xl mb-5">{{ $t('conference.title') }}</h1>
         <p class="text-center text-lg mb-5">{{ $t('conference.description1') }}</p>
         <p class="text-center text-lg">{{ $t('conference.description2') }}</p>
