@@ -66,7 +66,7 @@
   </nav>
 
   <!-- Mobile Navbar -->
-  <nav :class="['navbar fixed right-0 left-0 h-16 bg-gray-100 flex lg:hidden justify-between items-center font-bold text-lg px-4 transition-transform duration-300', { 'top-0 z-50 bg-opacity-90': isOverlay, '-translate-y-full': !isVisible }]" ref="navbar">
+  <nav :class="['navbar fixed right-0 z-50 left-0 h-16 bg-gray-100 flex lg:hidden justify-between items-center font-bold text-lg px-4 transition-transform duration-300', { 'top-0 bg-opacity-90': isOverlay, '-translate-y-full': !isVisible }]" ref="navbar">
     <router-link to="/" class="text-black">
       <img src="/svg/logos/EPFLMUN.svg" alt="Logo" class="h-14" />
     </router-link>
