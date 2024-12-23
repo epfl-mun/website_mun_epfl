@@ -32,7 +32,7 @@
         </p>
 
         <div class="flex gap-4 my-6">
-          <RedButton to="/society" class="text-lg">
+          <RedButton to="/society" class="text-lg hover:scale-105">
             {{ $t("home.buttons.association") }}
           </RedButton>
           <RedButton to="/conference">
