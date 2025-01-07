@@ -145,6 +145,14 @@
       "title": "L'association",
       "description": "Notre association organise des sessions de débat hebdomadaires et plusieurs voyages en conférences."
     },
+    "conference": {
+      "title": "Conférence EPFLMUN2025",
+      "description": "La conférence EPFLMUN se déroule du 21 au 23 mars 2025.",
+      "2024": {
+        "title": "Conférence EPFLMUN2024",
+        "description": "La conférence EPFLMUN s'est tenue du 8 au 10 mars 2024."
+      }
+    },
     "events": {
       "title": "Nos événements",
       "description": "Notre association organise divers événements tout au long de l'année."
@@ -156,6 +164,7 @@
     "contact": {
       "title": "Contactez-nous",
       "description": "Contactez-nous pour plus d'informations sur notre association et notre conférence."
-    }
+    },
+    "keywords": "Model United Nations, EPFLMUN, EPFL, MUN, Conférence, Diplomatie, Suisse, Débat, Simulation, Nations Unies, EPFLMUN2025, EPFLMUN2024"
   }
 } 

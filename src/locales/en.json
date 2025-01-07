@@ -145,6 +145,14 @@
       "title" : "The association",
       "descritpion" : "Our association organizes weekly debate sessions and several trips to conferences."
     },
+    "conference": {
+      "title" : "Conference EPFLMUN2025",
+      "descritpion" : "The EPFLMUN conference takes place from March 21 to 23, 2025.",
+      "2024": {
+        "title" : "Conference EPFLMUN2024",
+        "descritpion" : "The EPFLMUN conference took place from March 8 to 10, 2024."
+      }
+    },
     "events": {
       "title" : "Our events",
       "descritpion" : "Our association organizes various events throughout the year."
@@ -156,6 +164,7 @@
     "contact": {
       "title" : "Contact us",
       "descritpion" : "Contact us for more information about our association & our conference."
-    }
+    },
+    "keywords": "Model United Nations, EPFLMUN, EPFL, MUN, Conference, Diplomacy, Switzerland, Debate, Simulation, United Nations, EPFLMUN2025, EPFLMUN2024"
   }
 } 

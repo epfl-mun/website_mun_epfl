@@ -70,6 +70,7 @@
 <script>
 import LazyImage from '@/components/LazyImage.vue';
 import { Carousel, Slide, Navigation, Pagination } from 'vue3-carousel';
+import { seo } from '@/composables/seo';
 
 export default {
   name: 'Conference_2024',
@@ -79,6 +80,9 @@ export default {
     Slide,
     Navigation,
     Pagination
+  },
+  setup(){
+    seo('conference.2024')
   },
   data() {
     return {

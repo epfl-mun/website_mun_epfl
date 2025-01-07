@@ -2,7 +2,7 @@
   <!-- Pseudo element to do as if the navbar was real in the dom -->
    <div class="h-16"></div>
   <!-- Desktop Navbar -->
-  <nav :class="['navbar fixed left-0 right-0 h-16 z-50 bg-gray-100 flex justify-center items-center font-bold text-lg hidden lg:flex transition-transform duration-300', { 'top-0 z-50 bg-opacity-90': isOverlay, '-translate-y-full': !isVisible }]" ref="navbar">
+  <nav :class="['navbar fixed left-0 right-0 h-16 z-50 bg-gray-100 flex justify-center items-center font-bold text-lg hidden lg:flex transition-transform duration-300', { 'top-0 z-50': isOverlay, '-translate-y-full': !isVisible }]" ref="navbar">
     <div class="container flex items-center max-w-6xl gap-10 px-4">
       <router-link to="/" class="text-black">
         <img src="/svg/logos/EPFLMUN.svg" alt="Logo" class="h-14" />
@@ -66,7 +66,7 @@
   </nav>
 
   <!-- Mobile Navbar -->
-  <nav :class="['navbar fixed right-0 z-50 left-0 h-16 bg-gray-100 flex lg:hidden justify-between items-center font-bold text-lg px-4 transition-transform duration-300', { 'top-0 bg-opacity-90': isOverlay, '-translate-y-full': !isVisible }]" ref="navbar">
+  <nav :class="['navbar fixed right-0 z-50 left-0 h-16 bg-gray-100 flex lg:hidden justify-between items-center font-bold text-lg px-4 transition-transform duration-300', { 'top-0': isOverlay, '-translate-y-full': !isVisible }]" ref="navbar">
     <router-link to="/" class="text-black">
       <img src="/svg/logos/EPFLMUN.svg" alt="Logo" class="h-14" />
     </router-link>
@@ -131,6 +131,7 @@
 </template>
 
 <script>
+
 import { 
   Bars3Icon, 
   XMarkIcon,
@@ -141,6 +142,7 @@ import {
   EnvelopeIcon,
   AcademicCapIcon
 } from '@heroicons/vue/24/outline';
+import { useI18n } from 'vue-i18n';
 
 export default {
   name: 'Navbar',
@@ -153,6 +155,11 @@ export default {
     UsersIcon,
     EnvelopeIcon,
     AcademicCapIcon
+  },
+  setup() {
+    const { locale } = useI18n();
+    console.log(locale.value);
+    document.documentElement.lang = locale.value;
   },
   data() {
     return {
@@ -206,10 +213,11 @@ export default {
   methods: {
     changeLanguage(lang) {
       this.$i18n.locale = lang;
+      document.documentElement.lang = lang;
     },
     handleScroll() {
       const currentScrollY = window.scrollY;
-      if (currentScrollY > this.lastScrollY && currentScrollY > 100) {
+      if (currentScrollY > this.lastScrollY && currentScrollY > 300) {
         this.isVisible = false;
       } else if (currentScrollY < this.lastScrollY) {
         this.isVisible = true;

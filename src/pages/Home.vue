@@ -3,19 +3,19 @@
       <div class="relative w-full pt-[35%] hidden sm:block">
         <div class="absolute inset-0 flex items-center justify-center">
           <div class="image-overlay h-full w-full">
-            <img src="/pictures/team/team_fun_on_logo.jpg" alt="committee on EPFL logo" class="w-full h-full object-cover object-[center_30%]"/>
+            <img src="/pictures/home/team_fun.jpeg" alt="committee on EPFL logo" class="w-full h-full object-cover object-[center_30%]"/>
             <div class="overlay absolute top-0 left-0 w-full h-full bg-black opacity-70"></div>
           </div>        
-          <img v-show="!loading" src="/pictures/logos/logo-mainpage.png" alt="Logo" class="logo absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-4/5">
+          <img src="/pictures/home/logo_long_reversed.png" alt="Logo" class="logo absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-4/5">
         </div>
       </div>
 
       <div class="relative w-full pb-[40%] sm:hidden">
         <div class="absolute flex items-center justify-center h-full w-full">
             <div class="relative rounded-2xl m-6 mt-16 overflow-hidden w-full h-full">
-              <img src="/pictures/team/team_fun_on_logo.jpg" alt="committee on EPFL logo" class="absolute h-full w-full object-cover"/>
+              <img src="/pictures/home/team_fun.jpeg" alt="committee on EPFL logo" class="absolute h-full w-full object-cover"/>
               <div class="absolute inset-0 bg-black opacity-70"></div>
-              <img src="/pictures/logos/logo-mainpage.png" alt="Logo" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-4/5">
+              <img src="/pictures/home/logo_long_reversed.png" alt="Logo" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-4/5">
             </div>
         </div>
       </div>

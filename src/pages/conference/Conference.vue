@@ -1,7 +1,7 @@
 <template>
   <section>
     <div style="height: 600px; width: 100%;" class="relative">
-      <LazyImage src="/pictures/team/home_page_picture.jpg" alt="committee on EPFL logo" height="100%" montainsTransform="rotate(45deg) translate(50%, 70%)" sunOrigin="1000px 5000px" sunSize="5%" />
+      <LazyImage src="/pictures/events/conference2024.jpeg" alt="committee on EPFL logo" height="100%" montainsTransform="rotate(45deg) translate(50%, 70%)" sunOrigin="1000px 5000px" sunSize="5%" />
       <div v-show="!loading" class="logo absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-md opacity-90 max-w-3xl p-10">
         <h1 class="text-red-primary font-bold text-7xl mb-5">{{ $t('conference.title') }}</h1>
         <p class="text-center text-lg mb-5">{{ $t('conference.description1') }}</p>
@@ -54,6 +54,7 @@
 import LazyImage from '@/components/LazyImage.vue';
 import 'vue3-carousel/dist/carousel.css';
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
+import { seo } from '@/composables/seo';
 
 export default {
   name: 'Conference',
@@ -63,6 +64,9 @@ export default {
     Slide,
     Pagination,
     Navigation
+  },
+  setup(){
+    seo('conference')
   },
   data() {
     return {

@@ -5,7 +5,7 @@ export function seo(path) {
 
   const domain = 'https://mun-epfl.ch'
 
-  const titleSuffix = path !== 'conference' && path !== 'home' ? ' | MUN EPFL' : ''
+  const titleSuffix = !path.includes('conference') && path !== 'home' ? ' | MUN EPFL' : ''
   
   const defaultMeta = {
     title: t(`seo.${path}.title`) + titleSuffix,
@@ -21,6 +21,14 @@ export function seo(path) {
       {
         property: 'og:description',
         content: t(`seo.${path}.description`)
+      },
+      {
+        name: 'keywords',
+        content: t(`seo.keywords`)
+      },
+      {
+        name: 'language',
+        content: 'fr-CH, en-CH'
       }
     ],
     link: [

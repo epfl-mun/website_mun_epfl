@@ -1,7 +1,6 @@
 [
   {
     "id": 1,
-    "positionFirstPage": 1,
     "title": {
       "en": "Kick off meeting",
       "fr": "Première réunion"
@@ -15,7 +14,7 @@
       "en": "Are you interested in MUN debates? Whether you want to participate or just watch, you can come and attend exciting debates. The debate is open to everyone, whether you are a novice or an expert. And it will be followed by a friendly aperitif!",
       "fr": "Vous êtes intéressé par les débats MUN ? Que vous souhaitiez participer ou simplement regarder, vous pouvez venir et participer à des débats passionnants. Les débats sont ouverts à tous, que vous soyez novices ou experts. Et ils seront suivis d'un apéritif convivial !"
     },
-    "image": "/pictures/weekly_sessions/first_session.jpg"
+    "image": "/pictures/events/kick-off.jpeg"
   },
   {
     "id": 2,
@@ -52,5 +51,23 @@
       "fr": "Si vous avez participé aux premières séances de débat, vous avez la possibilité de vous inscrire pour un voyage avec la délégation MUN. Ce voyage est partiellement remboursé par l'association (les conditions de remboursement précises seront indiquées lors de l'inscription)."
     },
     "image": "/pictures/trips/train.jpg"
+  },
+  {
+    "id": 4,
+    "positionFirstPage": 1,
+    "title": {
+      "en": "EPFLMUN Conference",
+      "fr": "Conférence EPFLMUN"
+    },
+    "date": {
+      "en": "21-23 Mars 2025",
+      "fr": "March 21-23rd 2025"
+    },
+    "location": "EPFL",
+    "description": {
+      "en": "We are glad to organize the 4th edition of EPFLMUN! You can register as chairs, delegates or delegations on <a href='https://mymun.com/conferences/epflmun-2025' style='color: #0000FF; text-decoration: underline;'>MyMUN</a>.",
+      "fr": "Nous sommes ravis de préparer la 4ème édition de EPFLMUN ! Vous pouvez vous inscrire en tant que chairs, délégués ou délégations sur <a href='https://mymun.com/conferences/epflmun-2025' style='color: #0000FF; text-decoration: underline;'>MyMUN</a>."
+    },
+    "image": "/pictures/events/conference2024.jpeg"
   }
 ]
