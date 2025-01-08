@@ -35,6 +35,12 @@ export function seo(path) {
       {
         rel: 'canonical',
         href: `${domain}${window.location.pathname}`
+      },
+      {
+        rel: 'sitemap',
+        type: 'application/xml',
+        title: 'Sitemap',
+        href: `${domain}/sitemap.xml`
       }
     ]
   }
