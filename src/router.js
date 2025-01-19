@@ -7,7 +7,7 @@ import Conference from './pages/conference/Conference.vue'
 import Conference_2024 from './pages/conference/2024.vue'
 import Contact from './pages/Contact.vue'
 import Error from './pages/Error.vue'
-
+import Signature from './pages/other/signature.vue'
 const routes = [
   {
     path: '/',
@@ -48,6 +48,11 @@ const routes = [
     path: '/:pathMatch(.*)*',
     name: 'Error',
     component: Error
+  },
+  {
+    path: '/other/signature',
+    name: 'Signature',
+    component: Signature
   }
 ]
 
