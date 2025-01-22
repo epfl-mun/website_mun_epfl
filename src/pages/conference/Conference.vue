@@ -33,37 +33,17 @@
     </div>
   </section>
 
-  <section>
-    <div class="max-w-6xl m-auto">
-      <Carousel :items-to-show="1" :navigation-enabled="true">
-        <Slide v-for="(image, index) in images" :key="index">
-          <div style="width: 1200px; aspect-ratio: 16/9;">
-            <img :src="image" alt="Slider Image" class="w-full h-auto object-cover" />
-          </div>
-        </Slide>
-        <template #addons>
-          <Navigation />
-          <Pagination />
-        </template>
-      </Carousel>
-    </div>
-  </section>
 </template>
 
 <script>
 import LazyImage from '@/components/LazyImage.vue';
 import 'vue3-carousel/dist/carousel.css';
-import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
 import { seo } from '@/composables/seo';
 
 export default {
   name: 'Conference',
   components: {
     LazyImage,
-    Carousel,
-    Slide,
-    Pagination,
-    Navigation
   },
   setup(){
     seo('conference')
