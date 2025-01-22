@@ -1,7 +1,7 @@
 <template>
   <section>
     <div style="height: 600px; width: 100%;" class="relative">
-      <LazyImage src="/pictures/team/home_page_picture.jpg" alt="committee on EPFL logo" height="100%" montainsTransform="rotate(45deg) translate(50%, 70%)" sunOrigin="1000px 5000px" sunSize="5%" />
+      <LazyImage src="/pictures/events/conference2024.jpg" alt="committee on EPFL logo" height="100%" montainsTransform="rotate(45deg) translate(50%, 70%)" sunOrigin="1000px 5000px" sunSize="5%" />
       <div v-show="!loading" class="logo absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-md opacity-90 max-w-3xl p-10">
         <h1 class="text-red-primary font-bold text-7xl mb-5">{{ $t('conference_2024.title') }}</h1>
         <p class="text-center mb-5 font-bold text-xl">{{ $t('conference_2024.date') }}</p>
@@ -115,10 +115,14 @@ export default {
         }
       ],
       images: [
-        '/pictures/conference-not-debate/rolex_welcoming.jpg',
-        '/pictures/conference-not-debate/swisstech_talk.jpg',
-        '/pictures/conferences/reunion_with_6_people.jpg',
-        '/pictures/conference-not-debate/rolex_speaker_front.jpg',
+        '/pictures/conf_2024/pictures/group_photo.jpg',
+        '/pictures/conf_2024/pictures/debate_mod.jpg',
+        '/pictures/conf_2024/pictures/debate_opening_speech.jpg',
+        '/pictures/conf_2024/pictures/debate_serious.jpg',
+        '/pictures/conf_2024/pictures/debate_unmod.jpg',
+        '/pictures/conf_2024/pictures/party.jpg',
+        '/pictures/conf_2024/pictures/debate_chill.jpeg',
+        '/pictures/conf_2024/pictures/best_meme_award.jpg',
       ]
     };
   }
