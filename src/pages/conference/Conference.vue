@@ -33,6 +33,14 @@
     </div>
   </section>
 
+  <section>
+    <div class="py-6 flex flex-col items-center justify-normal hover:cursor-pointer">
+      <a class="max-w-7xl" href="https://mymun.com/conferences/EPFLMUN-2025/" target="_blank" rel="noopener noreferrer">
+        <LazyImage src="/pictures/events/screen_mymun.png" alt="image" class="w-full" />
+      </a>
+    </div>
+  </section>
+
 </template>
 
 <script>
