@@ -44,7 +44,7 @@
   <section>
     <div class="flex flex-col items-center justify-center py-7">
       <h2 class="text-6xl font-bold mb-10">{{ $t('conference.partners') }}</h2>
-      <div class="flex flex-col lg:flex-row gap-6 max-w-7xl overflow-x-scroll overflow-y-hidden">
+      <div class="flex flex-col lg:flex-row gap-6 max-w-7xl pb-5 overflow-x-scroll overflow-y-hidden">
         <div v-for="partner in partners" :key="partner.title" class="flex-1">
           <a class="flex flex-col items-center gap-4" :href="partner.url" target="_blank" rel="noopener noreferrer">
             <div class="rounded-full p-2">
