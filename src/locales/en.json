@@ -88,6 +88,17 @@
       {
         "title": "3 incredible days, from March 21 to 23"
       }
+    ],
+    "partners" : "Our Partners",
+    "partnersList" : [
+      {"title" : "ZUMUN"},
+      {"title" : "SIMUN"},
+      {"title" : "GiMUN"},
+      {"title" : "KAMUN"},
+      {"title" : "IEUMUN"},
+      {"title" : "fMUN"},
+      {"title" : "UABMUN"},
+      {"title" : "SIMUN"}
     ]
   },
   "conference_2024": {

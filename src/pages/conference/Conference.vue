@@ -41,6 +41,23 @@
     </div>
   </section>
 
+  <section>
+    <div class="flex flex-col items-center justify-center py-7">
+      <h2 class="text-6xl font-bold mb-10">{{ $t('conference.partners') }}</h2>
+      <div class="flex flex-col lg:flex-row gap-6 max-w-7xl overflow-x-scroll overflow-y-hidden">
+        <div v-for="partner in partners" :key="partner.title" class="flex-1">
+          <a class="flex flex-col items-center gap-4" :href="partner.url" target="_blank" rel="noopener noreferrer">
+            <div class="rounded-full p-2">
+              <LazyImage :src="`/pictures/conf_2025/partners/${partner.image}.png`" :alt="partner.title" width="150px" height="150px" />
+            </div>
+            <h3 class="text-xl text-black">{{ $t(`conference.partnersList[${partners.indexOf(partner)}].title`) }}</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
 </template>
 
 <script>
@@ -85,7 +102,41 @@ export default {
         '/pictures/conference-not-debate/swisstech_talk.jpg',
         '/pictures/conferences/reunion_with_6_people.jpg',
         '/pictures/conference-not-debate/rolex_speaker_front.jpg',
-      ]
+      ],
+      partners: [
+        {
+          image: "ZuMUN",
+          url : "https://zumun.ch/",
+        },
+        {
+          image: "LakeMUN",
+          url : "https://www.lakemun-conference.com/",
+        },
+        {
+          image : "GiMUN",
+          url : "https://www.gimun.org/?lang=en",
+        },
+        {
+          image : "KAMUN",
+          url : "https://kamun.org/",
+        },
+        {
+          image : "IEUMUN",
+          url : "https://ieumun.com/ieumun/",
+        },
+        {
+          image : "fMUN",
+          url : "https://www.fdnu.fr/",
+        },
+        {
+          image : "UABMUN",
+          url : "https://www.uab.cat/web/life-on-campus/participation/join-the-debate/uabmun-1345840008865.html",
+        },
+        {
+          image: "SIMUN",
+          url : "https://fondation.pantheonsorbonne.fr/evenements/sorbonne-international-model-united-nations-simun",
+        }
+      ],
     };
   }
 }

@@ -28,7 +28,7 @@
         </div>
 
         <div class="text-gray-500 text-xs">
-            © 2004-2024 MUN EPFL. {{ $t('footer.allRightsReserved') }}
+            © 2004-2025 MUN EPFL. {{ $t('footer.allRightsReserved') }}
         </div>
     </footer>
 </template>
