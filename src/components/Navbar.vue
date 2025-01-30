@@ -140,7 +140,8 @@ import {
   CalendarIcon,
   UsersIcon,
   EnvelopeIcon,
-  AcademicCapIcon
+  AcademicCapIcon,
+  LinkIcon
 } from '@heroicons/vue/24/outline';
 import { useI18n } from 'vue-i18n';
 
@@ -154,7 +155,8 @@ export default {
     CalendarIcon,
     UsersIcon,
     EnvelopeIcon,
-    AcademicCapIcon
+    AcademicCapIcon,
+    LinkIcon
   },
   setup() {
     const { locale } = useI18n();
@@ -194,6 +196,11 @@ export default {
           path: '/team',
           icon: UsersIcon,
           translationKey: 'navbar.items.team'
+        },
+        {
+          path : "/partners",
+          icon : LinkIcon,
+          translationKey : "navbar.items.partners"
         },
         {
           path: '/contact',

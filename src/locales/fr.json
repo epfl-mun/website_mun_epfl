@@ -110,6 +110,10 @@
       {"title" : "SIMUN"}
     ]
   },
+  "partners" : {
+    "title" : "Nos Partenaires",
+    "description" : "Nous sommes fiers de travailler avec de telles entreprises, qui participent à la diffusion de l'esprit MUN mondialement."
+  },
   "contact": {
     "title": "Contactez-nous",
     "address": "Adresse",
@@ -124,6 +128,7 @@
       "team": "Équipe",
       "conference": "EPFLMUN2025",
       "conference2024": "EPFLMUN2024",
+      "partners" : "Partenaires",
       "contact": "Contact"
     }
   },

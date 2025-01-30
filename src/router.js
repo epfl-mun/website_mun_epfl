@@ -8,6 +8,7 @@ import Conference_2024 from './pages/conference/2024.vue'
 import Contact from './pages/Contact.vue'
 import Error from './pages/Error.vue'
 import Signature from './pages/other/signature.vue'
+import Partners from './pages/Partners.vue'
 const routes = [
   {
     path: '/',
@@ -43,6 +44,11 @@ const routes = [
     path : "/contact",
     name : "Contact",
     component : Contact
+  },
+  {
+    path : "/partners",
+    name : "Partners",
+    component : Partners
   },
   {
     path: '/:pathMatch(.*)*',

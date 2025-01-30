@@ -1,0 +1,11 @@
+[
+    {
+        "name" : "Infomaniak",
+        "picture" : "infomaniak.png",
+        "url" : "https://www.infomaniak.com",
+        "description" : {
+            "en" : "Infomaniak is a Swiss web hosting provider, which also offers quality solutions for individuals and businesses, including a suite of collaboration and communication tools.",
+            "fr" : "Infomaniak est un hébergeur web suisse, qui propose également des solutions de qualité pour les particuliers et les entreprises, notamment une suite d'outils de collaboration et de communication."
+        }
+    }
+]

@@ -121,6 +121,10 @@
       {"title" : "SIMUN"}
     ]
   },
+  "partners" : {
+    "title" : "Our Partners",
+    "description" : "We are proud to work with such companies, who contribute to expand the MUN spirit WorldWide!"
+  },
   "contact": {
     "title": "Contact Us",
     "address": "Address",
@@ -135,6 +139,7 @@
       "team": "Team",
       "conference": "EPFLMUN2025",
       "conference2024": "EPFLMUN2024",
+      "partners" : "Partners",
       "contact": "Contact"
     }
   },
