@@ -9,7 +9,7 @@
             </div>
         </div>
 
-        <div class="flex flex-col lg:flex-row items-center justify-center p-4 md:p-10 bg-gray-100">
+        <div class="flex flex-col gap-8 lg:gap-12 lg:flex-row items-center justify-center p-4 md:p-10 bg-gray-100">
             <a v-for="partner in partners" v-bind:key="partner.name" class="lg:w-1/4 min-w-lg w-full max-w-lg cursor-pointer" :href="partner.url" target="_blank">
                 <div class="flex flex-col items-center gap-4 w-full">
                     <div class="w-full">

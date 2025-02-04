@@ -57,10 +57,10 @@
 </template>
 
 <script>
-import Map from '@/components/Map.vue';
 import socialLinks from '@/assets/socialLinks.json';
 import { MapPinIcon } from '@heroicons/vue/24/solid';
 import { seo } from '@/composables/seo';
+import Map from '@/components/maps/MapContact.vue';
 
 export default {
   name: 'Contact',

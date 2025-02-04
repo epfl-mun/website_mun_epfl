@@ -99,7 +99,23 @@
       {"title" : "fMUN"},
       {"title" : "UABMUN"},
       {"title" : "SIMUN"}
-    ]
+    ],
+    "informationTitle" : "Main Informations",
+    "informationPlaces" : "Main places",
+    "places" : {
+      "BC" : "EPFL, BC Building (debates)",
+      "starling" : "Starling Hotel (special discount for EPFLMUN conference, the prices of the weekend have been lowered)",
+      "trainStations" : "Lausanne and Renens train stations",
+      "campus" : "EPFL Campus (ceremonies)",
+      "cityCenter" : "City center (socials)"
+    },
+    "transportations" : "Transportations",
+    "generalInformationTitle" : "General information",
+    "generalInformationContent" : "There exist 2 metro lines at Lausanne. The M2 is north-south in the city center and the M1 is east-west in Lausanne and Renens. To get on the campus with the metro, you need to descend at the \"EPFL\" metro station, located on the M1 Line. There also exist line buses (we recommand using the metro if you can). You can use the",
+    "mainTransportation" : "Main transportation",
+    "LausanneGareEPFL" : "Lausanne Gare - EPFL: take the M2 at Lausanne Gare (in the Croisettes direction), and descend at Lausanne Flon. Make the connection with the M1 in the same station (in the direction of Renens VD), and descend at EPFL",
+    "RenensVDGareEPFL" : "Renens VD Gare - EPFL: take the M1 at Renens VD Gare (in the direction of Lausanne Flon), and descend at EPFL",
+    "EPFLMetroBC" : "EPFL metro station - BC Building: follow the green line on the map just below (more informations incoming)"
   },
   "conference_2024": {
     "title": "EPFLMUN 2024",

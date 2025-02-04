@@ -7,5 +7,14 @@
             "en" : "Infomaniak is a Swiss web hosting provider, which also offers quality solutions for individuals and businesses, including a suite of collaboration and communication tools.",
             "fr" : "Infomaniak est un hébergeur web suisse, qui propose également des solutions de qualité pour les particuliers et les entreprises, notamment une suite d'outils de collaboration et de communication."
         }
+    },
+    {
+        "name" : "EPFL",
+        "picture" : "EPFL.png",
+        "url" : "https://epfl.ch",
+        "description" : {
+            "en" : "The EPFL is the university where our association operates. They support us each year since the creation of the association",
+            "fr" : "L'EPFL est l'université où notre association organise ses évènements. Ils nous soutiennent chaque année depuis la création de l'association"
+        }
     }
 ]

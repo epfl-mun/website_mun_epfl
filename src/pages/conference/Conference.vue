@@ -57,6 +57,86 @@
     </div>
   </section>
 
+  <section class="flex flex-col items-center justify-center py-7">
+    <h2 class="text-6xl font-bold mb-10">{{ $t('conference.informationTitle') }}</h2>
+    <article class="w-full m-auto flex flex-col items-center max-w-7xl">
+      <h3 class="text-3xl mb-5">{{ $t('confernece.informationPlaces') }}</h3>
+      <div class="flex flex-col items-start gap-1">
+        <div class="flex gap-4 items-center">
+          <img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png" class="object-fill w-4 h-auto"/>
+          <p>{{ $t('conference.places.BC') }}</p>
+        </div>
+        <div class="flex gap-4 items-center">
+          <img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png" class="object-fill w-4 h-auto"/>
+          <p>{{ $t('conference.places.starling') }}</p>
+        </div>
+        
+        <div class="flex gap-4 items-center">
+          <img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png" class="object-fill w-4 h-auto"/>
+          <p>{{ $t('conference.places.trainStations') }}</p>
+        </div>
+        <div class="flex gap-4 items-center">
+          <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="2" width="26" height="26" fill="rgba(0, 0, 255, 0.5)" stroke="blue" stroke-width="2" />
+          </svg>
+          <p>{{ $t('conference.places.campus') }}</p>
+        </div>
+        <div class="flex gap-4 items-center">
+          <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="2" width="26" height="26" fill="rgba(83, 255, 17, 0.5)" stroke="green" stroke-width="2" />
+          </svg>
+          <p>{{ $t('conference.places.cityCenter') }}</p>
+        </div>
+      </div>
+      <div class="max-w-7xl w-full rounded-lg overflow-hidden my-5">
+        <MapConference />
+      </div>
+    </article>
+
+    <article class="max-w-7xl mx-5">
+      <h3 class="text-3xl mb-5">{{ $t('conference.transportations') }}</h3>
+      <div class="flex flex-col items-start text-left gap-2">
+        <div>
+          <h4 class="text-xl">{{ $t('conference.generalInformationTitle') }}</h4>
+          <p>
+            {{ $t('conference.generalInformationContent') }}
+            <a class="underline" href="https://sbb.ch" target="_blank" rel="noopener noreferrer">SBB app</a>
+          </p>
+        </div>
+
+        <div>   
+          <h4 class="text-xl mb-1">{{ $t('conference.mainTransportation') }}</h4>
+          <div class="flex flex-col gap-2">
+
+            <div class="flex items-center gap-2">
+              <svg width="40" height="30" xmlns="http://www.w3.org/2000/svg">
+                <line x1="10" y1="15" x2="30" y2="15" stroke="blue" stroke-width="2" />
+              </svg>
+              <p>{{ $t('conference.LausanneGareEPFL') }}</p>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <svg width="40" height="30" xmlns="http://www.w3.org/2000/svg">
+                <line x1="10" y1="15" x2="30" y2="15" stroke="red" stroke-width="2" />
+              </svg>
+              <p>{{ $t('conference.RenensVDGareEPFL') }}</p>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <svg width="40" height="30" xmlns="http://www.w3.org/2000/svg">
+                <line x1="10" y1="15" x2="30" y2="15" stroke="green" stroke-width="2" />
+              </svg>
+              <p>{{ $t('conference.EPFLMetroBC') }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-7xl w-full rounded-lg overflow-hidden my-5">
+        <MapTransports />
+      </div>
+    </article>
+  </section>
+
 
 </template>
 
@@ -64,11 +144,15 @@
 import LazyImage from '@/components/LazyImage.vue';
 import 'vue3-carousel/dist/carousel.css';
 import { seo } from '@/composables/seo';
+import MapConference from '@/components/maps/MapConference.vue';
+import MapTransports from '@/components/maps/MapTransports.vue';
 
 export default {
   name: 'Conference',
   components: {
     LazyImage,
+    MapConference,
+    MapTransports
   },
   setup(){
     seo('conference')
