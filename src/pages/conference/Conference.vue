@@ -42,9 +42,9 @@
   </section>
 
   <section>
-    <div class="flex flex-col items-center justify-center py-7">
+    <div class="flex flex-col items-center justify-center py-7 px-5">
       <h2 class="text-6xl font-bold mb-10">{{ $t('conference.partners') }}</h2>
-      <div class="flex flex-col lg:flex-row gap-6 max-w-7xl pb-5 overflow-x-scroll overflow-y-hidden">
+      <div class="flex flex-col lg:flex-row gap-6 max-w-7xl w-full pb-5 overflow-x-scroll overflow-y-hidden">
         <div v-for="partner in partners" :key="partner.title" class="flex-1">
           <a class="flex flex-col items-center gap-4" :href="partner.url" target="_blank" rel="noopener noreferrer">
             <div class="rounded-full p-2">
@@ -57,10 +57,10 @@
     </div>
   </section>
 
-  <section class="flex flex-col items-center justify-center py-7">
+  <section class="flex flex-col items-center justify-center py-7 text-left">
     <h2 class="text-6xl font-bold mb-10">{{ $t('conference.informationTitle') }}</h2>
-    <article class="w-full m-auto flex flex-col items-center max-w-7xl">
-      <h3 class="text-3xl mb-5">{{ $t('confernece.informationPlaces') }}</h3>
+    <article class="w-full m-auto flex flex-col items-center max-w-7xl px-5">
+      <h3 class="text-3xl mb-5">{{ $t('conference.informationPlaces') }}</h3>
       <div class="flex flex-col items-start gap-1">
         <div class="flex gap-4 items-center">
           <img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png" class="object-fill w-4 h-auto"/>
