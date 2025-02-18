@@ -1,6 +1,6 @@
 <template>
     <div @click="navigateToEvent" class="m-2 overflow-hidden border border-gray-300 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out hover:cursor-pointer lg:pb-2">
-      <div class="w-full">
+      <div class="w-full h-1/2">
         <img :src="imageUrl" alt="Event Image" class="object-cover w-full h-full" />
       </div>
       <h2 class="text-2xl font-bold mb-5 mt-5 mx-2">{{ title }}</h2>

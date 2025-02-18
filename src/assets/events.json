@@ -2,8 +2,8 @@
   {
     "id": 1,
     "title": {
-      "en": "Kick off meeting",
-      "fr": "Première réunion"
+      "en": "Kick off Autumn 2024",
+      "fr": "Kick off Automne 2024"
     },
     "date": {
       "en" : "October 1st",
@@ -18,10 +18,9 @@
   },
   {
     "id": 2,
-    "positionFirstPage": 2,
     "title": {
-      "en": "First debate Session",
-      "fr": "Première séance de débat"
+      "en": "First debate Session Autumn 2024",
+      "fr": "Première séance de débat Automne 2024"
     },
     "date": {
       "en": "October 8th",
@@ -36,7 +35,6 @@
   },
   {
     "id": 3,
-    "positionFirstPage": 3,
     "title": {
       "en": "Trip to Kamun",
       "fr": "Voyage à KAMUN"
@@ -53,7 +51,43 @@
     "image": "/pictures/trips/train.jpg"
   },
   {
-    "id": 4,
+    "id" : 4,
+    "positionFirstPage" : 2,
+    "title" : {
+      "en" : "Kick-off Spring 2025",
+      "fr" : "Kick-off Printemps 2025"
+    },
+    "date" : {
+      "en" : "February 25th, 19h",
+      "fr" : "25 Février, 19h"
+    },
+    "location" : "TBD",
+    "description": {
+      "en": "Are you interested in MUN debates? Whether you want to participate or just watch, you can come and attend exciting debates. The debate is open to everyone, whether you are a novice or an expert. And it will be followed by a friendly aperitif!",
+      "fr": "Vous êtes intéressé par les débats MUN ? Que vous souhaitiez participer ou simplement regarder, vous pouvez venir et participer à des débats passionnants. Les débats sont ouverts à tous, que vous soyez novices ou experts. Et ils seront suivis d'un apéritif convivial !"
+    },
+    "image" : "/pictures/team/Team.jpg"
+  },
+  {
+    "id" : 5,
+    "positionFirstPage" : 3,
+    "title" : {
+      "en" : "First debate Session Spring 2025",
+      "fr" : "Première séance de débat Printemps 2025"
+    },
+    "date" : {
+      "en" : "March 4th, 19h",
+      "fr" : "4 Mars, 19h"
+    },
+    "location" : "TBD",
+    "description": {
+      "en": "All the informations for the debate, knowing the subject, the country choice and the study guide, are available <a href='https://linktr.ee/epflmun' style='color: #0000FF; text-decoration: underline;'>here</a>.",
+      "fr": "Toutes les informations pour le débat, connaissant le sujet, le choix du pays et le study guide, sont disponibles <a href='https://linktr.ee/epflmun' style='color: #0000FF; text-decoration: underline;'>ici</a>."
+    },
+    "image": "/pictures/conf_2024/pictures/debate_mod.jpg"
+  },
+  {
+    "id": 6,
     "positionFirstPage": 1,
     "title": {
       "en": "EPFLMUN Conference",
