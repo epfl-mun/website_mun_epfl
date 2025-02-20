@@ -35,6 +35,7 @@
   },
   {
     "id": 3,
+    "positionFirstPage": 3,
     "title": {
       "en": "Trip to Kamun",
       "fr": "Voyage à KAMUN"
@@ -63,31 +64,13 @@
     },
     "location" : "TBD",
     "description": {
-      "en": "Are you interested in MUN debates? Whether you want to participate or just watch, you can come and attend exciting debates. The debate is open to everyone, whether you are a novice or an expert. And it will be followed by a friendly aperitif!",
-      "fr": "Vous êtes intéressé par les débats MUN ? Que vous souhaitiez participer ou simplement regarder, vous pouvez venir et participer à des débats passionnants. Les débats sont ouverts à tous, que vous soyez novices ou experts. Et ils seront suivis d'un apéritif convivial !"
+      "en": "Are you interested in MUN debates? Whether you want to participate or just watch, you can come and attend exciting debates. The debate is open to everyone, whether you are a novice or an expert. And it will be followed by a friendly aperitif! All the informations for the debate, knowing the subject, the country choice and the study guide, are available <a href='https://linktr.ee/epflmun' style='color: #0000FF; text-decoration: underline;'>here</a>.",
+      "fr": "Vous êtes intéressé par les débats MUN ? Que vous souhaitiez participer ou simplement regarder, vous pouvez venir et participer à des débats passionnants. Les débats sont ouverts à tous, que vous soyez novices ou experts. Et ils seront suivis d'un apéritif convivial ! Toutes les informations pour le débat, connaissant le sujet, le choix du pays et le study guide, sont disponibles <a href='https://linktr.ee/epflmun' style='color: #0000FF; text-decoration: underline;'>ici</a>."
     },
-    "image" : "/pictures/team/Team.jpg"
+    "image" : "/pictures/conf_2024/pictures/debate_mod.jpg"
   },
   {
-    "id" : 5,
-    "positionFirstPage" : 3,
-    "title" : {
-      "en" : "First debate Session Spring 2025",
-      "fr" : "Première séance de débat Printemps 2025"
-    },
-    "date" : {
-      "en" : "March 4th, 19h",
-      "fr" : "4 Mars, 19h"
-    },
-    "location" : "TBD",
-    "description": {
-      "en": "All the informations for the debate, knowing the subject, the country choice and the study guide, are available <a href='https://linktr.ee/epflmun' style='color: #0000FF; text-decoration: underline;'>here</a>.",
-      "fr": "Toutes les informations pour le débat, connaissant le sujet, le choix du pays et le study guide, sont disponibles <a href='https://linktr.ee/epflmun' style='color: #0000FF; text-decoration: underline;'>ici</a>."
-    },
-    "image": "/pictures/conf_2024/pictures/debate_mod.jpg"
-  },
-  {
-    "id": 6,
+    "id": 5,
     "positionFirstPage": 1,
     "title": {
       "en": "EPFLMUN Conference",
