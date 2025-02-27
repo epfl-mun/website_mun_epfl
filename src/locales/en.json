@@ -92,13 +92,14 @@
     "partners" : "Our Partners",
     "partnersList" : [
       {"title" : "ZUMUN"},
-      {"title" : "SIMUN"},
+      {"title" : "LAKEMUN"},
       {"title" : "GiMUN"},
       {"title" : "KAMUN"},
       {"title" : "IEUMUN"},
       {"title" : "fMUN"},
       {"title" : "UABMUN"},
-      {"title" : "SIMUN"}
+      {"title" : "SIMUN"},
+      {"title" : "YEREMUN"}
     ],
     "informationTitle" : "Main Informations",
     "informationPlaces" : "Main places",

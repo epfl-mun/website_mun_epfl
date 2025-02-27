@@ -1,14 +1,24 @@
 <template>
-  <section>
+  <section class="relative">
     <div style="height: 600px; width: 100%;" class="relative p-1">
       <LazyImage src="/pictures/events/conference2024.jpeg" alt="committee on EPFL logo" height="100%" montainsTransform="rotate(45deg) translate(50%, 70%)" sunOrigin="1000px 5000px" sunSize="5%" class="rounded-xl overflow-hidden" />
       <div v-show="!loading" class="logo absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-md opacity-90 max-w-3xl p-10">
         <h1 class="text-red-primary font-bold text-7xl mb-5">{{ $t('conference.title') }}</h1>
         <p class="text-center text-lg mb-5">{{ $t('conference.description1') }}</p>
         <p class="text-center text-lg">{{ $t('conference.description2') }}</p>
+        <nav class="shadow-md py-4 justify-center items-center border-gray-300 border-t mt-3">
+          <div class="max-w-7xl mx-auto px-4">
+            <ul class="flex flex-col lg:flex-row lg:gap-8 gap-2 justify-center items-center text-xl font-bold underline">
+              <li v-for="section in sections" :key="section.id" class="items-center justify-center">
+                <a :href="'#' + section.id" class="text-center">{{ section.name }}</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </div>
   </section>
+
 
   <section class="bg-red-primary">
     <div class="bg-red-primary py-6 flex flex-col items-center justify-normal">
@@ -26,9 +36,11 @@
     </div>
   </section>
 
-  <section>
+  <hr class="border-t-2 border-solid border-gray-300 my-10">
+
+  <section id="participate">
     <div class="py-6 flex flex-col items-center justify-normal">
-      <h2 class="text-6xl font-bold mb-5">{{ $t('conference.participate2025') }}</h2>
+      <h2 class="text-6xl font-bold mb-5 text-center">{{ $t('conference.participate2025') }}</h2>
       <a href="https://mymun.com/conferences/EPFLMUN-2025/" target="_blank" rel="noopener noreferrer" class="bg-red-primary text-white font-bold px-8 py-4 rounded-full mt-4 duration-300 hover:scale-105 hover:bg-red-700 text-2xl">{{ $t('conference.registerNow') }}</a>
     </div>
   </section>
@@ -41,9 +53,12 @@
     </div>
   </section>
 
-  <section>
+  <hr class="border-t-2 border-solid border-gray-300 my-10">
+
+
+  <section id="partners">
     <div class="flex flex-col items-center justify-center py-7 px-5">
-      <h2 class="text-6xl font-bold mb-10">{{ $t('conference.partners') }}</h2>
+      <h2 class="text-6xl font-bold mb-10 text-center">{{ $t('conference.partners') }}</h2>
       <div class="flex flex-col lg:flex-row gap-6 max-w-7xl w-full pb-5 overflow-x-scroll overflow-y-hidden">
         <div v-for="partner in partners" :key="partner.title" class="flex-1">
           <a class="flex flex-col items-center gap-4" :href="partner.url" target="_blank" rel="noopener noreferrer">
@@ -57,8 +72,10 @@
     </div>
   </section>
 
-  <section class="flex flex-col items-center justify-center py-7 text-left">
-    <h2 class="text-6xl font-bold mb-10">{{ $t('conference.informationTitle') }}</h2>
+  <hr class="border-t-2 border-solid border-gray-300 my-10">
+
+  <section class="flex flex-col items-center justify-center py-7 text-left" id="maps">
+    <h2 class="text-6xl font-bold mb-10 text-center">{{ $t('conference.informationTitle') }}</h2>
     <article class="w-full m-auto flex flex-col items-center max-w-7xl px-5">
       <h3 class="text-3xl mb-5">{{ $t('conference.informationPlaces') }}</h3>
       <div class="flex flex-col items-start gap-1">
@@ -219,8 +236,17 @@ export default {
         {
           image: "SIMUN",
           url : "https://fondation.pantheonsorbonne.fr/evenements/sorbonne-international-model-united-nations-simun",
+        },
+        {
+          image : "YEREMUN",
+          url : "https://www.yeremun.com/",
         }
       ],
+      sections: [
+          { id: 'participate', name: 'Participate' },
+          { id: 'partners', name: 'Partners' },
+          { id: 'maps', name: 'Transports' },
+        ],
     };
   }
 }

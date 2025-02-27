@@ -25,5 +25,32 @@
             "en" : "The EPFL is the university where our association operates. They support us each year since the creation of the association",
             "fr" : "L'EPFL est l'université où notre association organise ses évènements. Ils nous soutiennent chaque année depuis la création de l'association"
         }
+    },
+    {
+        "name" : "NAS",
+        "picture" : "nas.png",
+        "url" : "https://naslausanne.ch/",
+        "description" : {
+            "en" : "Nas is a well known food truck company in Lausanne. Inspired by the streets of America, they offer a wide range of delicious burgers and fries.",
+            "fr" : "Nas est une entreprise de food truck bien connue à Lausanne. Inspirée par les rues d'Amérique, ils proposent une large gamme de délicieux burgers et frites."
+        }
+    },
+    {
+        "name" : "El tony Maté",
+        "picture" : "eltonymate.svg",
+        "url" : "https://eltonymate.com/",
+        "description" : {
+            "en" : "El Tony Maté is a Swiss company that produces and sells maté, one of the favorites drink of the Swiss. They offer a wide range of flavors.",
+            "fr" : "El Tony Maté est une entreprise suisse qui produit et vend du maté, une des boissons favorites des Suisses. Ils proposent une large gamme de saveurs."
+        }
+    },
+    {
+        "name" : "Dieci Pizza",
+        "picture" : "dieci.svg",
+        "url" : "https://www.dieci.ch/fr/livraison-pizza-lausanne-ouest",
+        "description" : {
+            "en" : "Dieci Pizza is a well known pizza delivery company in Lausanne. They offer a wide range of delicious pizzas and pasta.",
+            "fr" : "Dieci Pizza est une entreprise de livraison de pizza bien connue à Lausanne. Ils proposent une large gamme de délicieuses pizzas et pâtes."
+        }
     }
 ]

@@ -9,16 +9,18 @@
             </div>
         </div>
 
-        <div class="flex flex-col gap-8 lg:gap-12 lg:flex-row items-center justify-center p-4 md:p-10 bg-gray-100">
-            <a v-for="partner in partners" v-bind:key="partner.name" class="lg:w-1/4 min-w-lg w-full max-w-lg cursor-pointer" :href="partner.url" target="_blank">
-                <div class="flex flex-col items-center gap-4 w-full">
-                    <div class="w-full">
-                        <img :src="'/pictures/partners/' + partner.picture" alt="committee on EPFL logo" class="w-full h-full object-cover" />
+        <div class="flex justify-center items-center">
+            <div class="flex flex-wrap gap-8 lg:gap-12 items-center justify-center p-4 md:p-10 max-w-7xl ">
+                <a v-for="partner in partners" v-bind:key="partner.name" class="lg:w-1/4 w-full max-w-lg cursor-pointer" :href="partner.url" target="_blank">
+                    <div class="flex flex-col items-center gap-4 w-full">
+                        <div class="w-full">
+                            <img :src="'/pictures/partners/' + partner.picture" alt="committee on EPFL logo" class="w-full h-full object-cover" />
+                        </div>
+                        <h2 class="text-4xl">{{ partner.name }}</h2>
+                        <p>{{ partner.description[$i18n.locale] }}</p>
                     </div>
-                    <h2 class="text-4xl">{{ partner.name }}</h2>
-                    <p>{{ partner.description[$i18n.locale] }}</p>
-                </div>
-            </a>
+                </a>
+            </div>
         </div>
     </section>
 </template>
