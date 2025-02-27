@@ -16,7 +16,7 @@
       const blue_icon = "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png"
       // Initialize the map
       this.center = [46.528, 6.600]
-      this.zoom = 14
+      this.zoom = 14     
       
       this.map = L.map(this.$refs.mapContainer).setView(this.center, this.zoom);
       
@@ -76,9 +76,10 @@
             [46.522, 6.566], // métro epfl
             [46.522, 6.565],
             [46.520, 6.565],
-            [46.5188, 6.563],
-            [46.519, 6.563],
-            [46.519, 6.5618],
+            [46.51877, 6.5632],
+            [46.519, 6.56287],
+            [46.5189, 6.56275],
+            [46.5189, 6.5618],
             [46.5187, 6.5618], // bc building
         ]
 
