@@ -104,7 +104,23 @@
     "mainTransportation" : "Principaux transports",
     "LausanneGareEPFL" : "Lausanne Gare - EPFL: Prendre le M2 à Lausanne Gare (direction Croisettes), et descendre à Lausanne Flon. Faire le changement pour prendre le M1 dans la même station (direction Renens VD), et descendre à l'EPFL",
     "RenensVDGareEPFL" : "Renens VD Gare - EPFL: Prendre le M1 à Renens VD (direction Lausanne Flon), et descendre à l'EPFL",
-    "EPFLMetroBC" : "Station de métro de l'EPFL - Bâtiment BC: suivre le ligne verte sur le plan ci-dessous (plus d'informations à venir)"
+    "EPFLMetroBC" : "Station de métro de l'EPFL - Bâtiment BC: suivre le ligne verte sur le plan ci-dessous (plus d'informations à venir)",
+    "timetable": {
+      "title" : "Emploi du temps",
+      "Friday" : "Vendredi",
+      "welcoming" : "Check-in & Accueil",
+      "openingCeremony" : "Ceremonie d'ouverture",
+      "Workshop" : "Workshop/Première session de débat",
+      "FirstSocial" : "Premier social",
+      "Saturday" : "Samedi",
+      "breakfast" : "Petit déjeuner",
+      "debate" : "Session de débats",
+      "lunch" : "Déjeuner",
+      "SecondSocial" : "Second social",
+      "Sunday" : "Dimanche",
+      "endOfComittee" : "Fin des sessions de comité",
+      "closingCeremony" : "Cérémonie de clôture"
+    }
   },
   "conference_2024": {
     "title": "EPFLMUN 2024",

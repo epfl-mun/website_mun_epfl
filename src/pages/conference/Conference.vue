@@ -154,6 +154,46 @@
     </article>
   </section>
 
+  <hr class="border-t-2 border-solid border-gray-300 my-10">
+
+  <section class="flex flex-col items-center justify-center py-7 text-left" id="timetable">
+    <h2 class="text-6xl font-bold mb-10 text-center">{{ $t('conference.timetable.title') }}</h2>
+    <article class="m-auto flex flex-col px-5 gap-6">
+      <div>
+
+        <h3 class="text-3xl mb-5">{{ $t('conference.timetable.Friday') }}</h3>
+        <div class="flex flex-col items-start gap-1">
+          <p><strong>14h-15h: </strong>{{ $t('conference.timetable.welcoming') }}</p>
+          <p><strong>15h-16h: </strong>{{ $t('conference.timetable.openingCeremony') }}</p>
+          <p><strong>16h-17h30: </strong>{{ $t('conference.timetable.Workshop') }}</p>
+          <p><strong>21h-2h: </strong>{{ $t('conference.timetable.FirstSocial') }}</p>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-3xl mb-5">{{ $t('conference.timetable.Saturday') }}</h3>
+        <div class="flex flex-col items-start gap-1">
+          <p><strong>8h30-9h: </strong>{{ $t('conference.timetable.breakfeast') }}</p>
+          <p><strong>9-12h30: </strong>{{ $t('conference.timetable.debate') }}</p>
+          <p><strong>12h30-14h: </strong>{{ $t('conference.timetable.lunch') }}</p>
+          <p><strong>14h-18h: </strong>{{ $t('conference.timetable.debate') }}</p>
+          <p><strong>20h-3h: </strong>{{ $t('conference.timetable.SecondSocial') }}</p>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-3xl mb-5">{{ $t('conference.timetable.Sunday') }}</h3>
+        <div class="flex flex-col items-start gap-1">
+          <p><strong>8h30-9h: </strong>{{ $t('conference.timetable.debate') }}</p>
+          <p><strong>9h-12h: </strong>{{ $t('conference.timetable.welcoming') }}</p>
+          <p><strong>12h-13h30: </strong>{{ $t('conference.timetable.lunch') }}</p>
+          <p><strong>13h30-14h: </strong>{{ $t('conference.timetable.endOfComittee') }}</p>
+          <p><strong>14h-15h: </strong>{{ $t('conference.timetable.closingCeremony') }}</p>
+        </div>
+      </div>
+
+    </article>
+  </section>
 
 </template>
 
@@ -246,6 +286,7 @@ export default {
           { id: 'participate', name: 'Participate' },
           { id: 'partners', name: 'Partners' },
           { id: 'maps', name: 'Transports' },
+          { id : "timetable", name : "Timetable"}
         ],
     };
   }
