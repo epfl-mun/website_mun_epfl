@@ -20,7 +20,7 @@
   </section>
 
 
-  <section class="bg-red-primary">
+  <section class="bg-red-primary mt-24 lg:mt-0">
     <div class="bg-red-primary py-6 flex flex-col items-center justify-normal">
       <h2 class="text-6xl font-bold text-white mb-10">{{ $t('conference.epflmunIs') }}</h2>
       <div class="flex flex-col lg:flex-row gap-6 max-w-7xl">
@@ -262,12 +262,12 @@ export default {
           url : "https://kamun.org/",
         },
         {
-          image : "IEUMUN",
-          url : "https://ieumun.com/ieumun/",
-        },
-        {
           image : "LYONMUN",
           url : "https://www.univ-lyon3.fr/lyon-mun",
+        },
+        {
+          image : "IEUMUN",
+          url : "https://ieumun.com/ieumun/",
         },
         {
           image : "fMUN",
