@@ -266,6 +266,10 @@ export default {
           url : "https://ieumun.com/ieumun/",
         },
         {
+          image : "LYONMUN",
+          url : "https://www.univ-lyon3.fr/lyon-mun",
+        },
+        {
           image : "fMUN",
           url : "https://www.fdnu.fr/",
         },
