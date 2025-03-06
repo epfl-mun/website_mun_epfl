@@ -84,13 +84,28 @@
           <p>{{ $t('conference.places.BC') }}</p>
         </div>
         <div class="flex gap-4 items-center">
+          <img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-black.png" class="object-fill w-4 h-auto"/>
+          <p>{{ $t('conference.places.MX') }}</p>
+        </div>
+        <div class="flex gap-4 items-center">
           <img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png" class="object-fill w-4 h-auto"/>
           <p>{{ $t('conference.places.starling') }}</p>
         </div>
-        
         <div class="flex gap-4 items-center">
           <img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png" class="object-fill w-4 h-auto"/>
           <p>{{ $t('conference.places.trainStations') }}</p>
+        </div>
+        <div class="flex gap-4 items-center">
+          <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="2" width="26" height="26" fill="rgba(0, 160, 220, 0.5)" stroke="#0096c7" stroke-width="2" />
+          </svg>
+          <p>{{ $t('conference.places.BC') }}</p>
+        </div>
+        <div class="flex gap-4 items-center">
+          <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="2" width="26" height="26" fill="rgba(34, 17, 31, 0.5)" stroke="black" stroke-width="2" />
+          </svg>          
+          <p>{{ $t('conference.places.MX') }}</p>
         </div>
         <div class="flex gap-4 items-center">
           <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
@@ -184,8 +199,8 @@
       <div>
         <h3 class="text-3xl mb-5">{{ $t('conference.timetable.Sunday') }}</h3>
         <div class="flex flex-col items-start gap-1">
-          <p><strong>8h30-9h: </strong>{{ $t('conference.timetable.debate') }}</p>
-          <p><strong>9h-13h: </strong>{{ $t('conference.timetable.welcoming') }}</p>
+          <p><strong>8h30-9h: </strong>{{ $t('conference.timetable.breakfeast') }}</p>
+          <p><strong>9h-13h: </strong>{{ $t('conference.timetable.debate') }}</p>
           <p><strong>13h-14h: </strong>{{ $t('conference.timetable.lunch') }}</p>
           <!-- <p><strong>14h-14h: </strong>{{ $t('conference.timetable.endOfComittee') }}</p> -->
           <p><strong>14h-15h: </strong>{{ $t('conference.timetable.closingCeremony') }}</p>

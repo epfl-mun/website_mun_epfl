@@ -14,6 +14,7 @@
       const green_icon = "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png"
       const red_icon = "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png"
       const blue_icon = "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png"
+      const black_icon = "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-black.png"
       // Initialize the map
       this.center = [46.528, 6.600]
       this.zoom = 14     
@@ -99,6 +100,9 @@
 
         const bc_building = [46.5187, 6.5618]
         L.marker(bc_building, { icon: defaultIcon(green_icon) }).addTo(this.map).bindPopup("BC Building");
+
+        const mx_building = [46.5192, 6.5636]
+        L.marker(mx_building, { icon: defaultIcon(black_icon) }).addTo(this.map).bindPopup("MX Building");
     },
     beforeUnmount() {
       // Clean up the map when the component is unmounted
