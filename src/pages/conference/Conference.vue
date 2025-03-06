@@ -2,8 +2,8 @@
   <section class="relative">
     <div style="height: 600px; width: 100%;" class="relative p-1">
       <LazyImage src="/pictures/events/conference2024.jpeg" alt="committee on EPFL logo" height="100%" montainsTransform="rotate(45deg) translate(50%, 70%)" sunOrigin="1000px 5000px" sunSize="5%" class="rounded-xl overflow-hidden" />
-      <div v-show="!loading" class="logo absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-md opacity-90 max-w-3xl p-10">
-        <h1 class="text-red-primary font-bold text-7xl mb-5">{{ $t('conference.title') }}</h1>
+      <div v-show="!loading" class="logo absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-md opacity-90 lg:max-w-3xl w-3/4 p-10">
+        <h1 class="text-red-primary font-bold lg:text-7xl text-3xl mb-5">{{ $t('conference.title') }}</h1>
         <p class="text-center text-lg mb-5">{{ $t('conference.description1') }}</p>
         <p class="text-center text-lg">{{ $t('conference.description2') }}</p>
         <nav class="shadow-md py-4 justify-center items-center border-gray-300 border-t mt-3">
@@ -20,7 +20,7 @@
   </section>
 
 
-  <section class="bg-red-primary mt-24 lg:mt-0">
+  <section class="bg-red-primary">
     <div class="bg-red-primary py-6 flex flex-col items-center justify-normal">
       <h2 class="text-6xl font-bold text-white mb-10">{{ $t('conference.epflmunIs') }}</h2>
       <div class="flex flex-col lg:flex-row gap-6 max-w-7xl">
