@@ -46,10 +46,10 @@
     },
     "location": "Karshruhe",
     "description": {
-      "en": "If you participated in the first debate sessions, you have the possibility to register to go on a trip with the MUN delegation. This trip is partly reimbursed by the Association (the precise reimbursement conditions will be indicated during registration).",
-      "fr": "Si vous avez participé aux premières séances de débat, vous avez la possibilité de vous inscrire pour un voyage avec la délégation MUN. Ce voyage est partiellement remboursé par l'association (les conditions de remboursement précises seront indiquées lors de l'inscription)."
+      "en": "In November, a delegation went to Karslruhe for the KAMUN conference. Along with our teammates from Zurich, we represented Switerland with our delegation, PolyMUN. We successfully won an award from the conference.",
+      "fr": "En novembre, une délégation est allée à Karlsruhe pour la conférence KAMUN. Avec nos coéquipiers de Zurich, nous avons représenté la Suisse avec notre délégation, PolyMUN. Nous avons remporté avec succès un prix de la conférence."
     },
-    "image": "/pictures/trips/train.jpg"
+    "image": "/pictures/society/delegation.jpeg"
   },
   {
     "id" : 4,
@@ -86,5 +86,23 @@
       "fr": "Nous sommes ravis de préparer la 4ème édition de EPFLMUN ! Vous pouvez vous inscrire en tant que chairs, délégués ou délégations sur <a href='https://mymun.com/conferences/epflmun-2025' style='color: #0000FF; text-decoration: underline;'>MyMUN</a>."
     },
     "image": "/pictures/events/conference2024.jpeg"
+  },
+  {
+    "id": 6,
+    "positionFirstPage": 3,
+    "title": {
+      "en": "Trip to ZUMUN",
+      "fr": "Voyage à ZUMUN"
+    },
+    "date": {
+      "en": "April 11-13",
+      "fr": "11-13 Avril"
+    },
+    "location": "Zurich",
+    "description": {
+      "en": "If you participated in the first debate sessions this semester, you have the possibility to register to go on a trip with the MUN delegation. This trip is partly reimbursed by the Association (the precise reimbursement conditions will be indicated during registration).",
+      "fr": "Si vous avez participé aux premières séances de débat ce semestre, vous avez la possibilité de vous inscrire pour un voyage avec la délégation MUN. Ce voyage est partiellement remboursé par l'association (les conditions de remboursement précises seront indiquées lors de l'inscription)."
+    },
+    "image": "/pictures/trips/train.jpg"
   }
 ]

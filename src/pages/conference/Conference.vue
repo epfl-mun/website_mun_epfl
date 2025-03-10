@@ -188,7 +188,7 @@
       <div>
         <h3 class="text-3xl mb-5">{{ $t('conference.timetable.Saturday') }}</h3>
         <div class="flex flex-col items-start gap-1">
-          <p><strong>8h30-9h: </strong>{{ $t('conference.timetable.breakfeast') }}</p>
+          <p><strong>8h30-9h: </strong>{{ $t('conference.timetable.breakfast') }}</p>
           <p><strong>9-12h30: </strong>{{ $t('conference.timetable.debate') }}</p>
           <p><strong>12h30-13h30: </strong>{{ $t('conference.timetable.lunch') }}</p>
           <p><strong>13h30-17h: </strong>{{ $t('conference.timetable.debate') }}</p>
@@ -199,7 +199,7 @@
       <div>
         <h3 class="text-3xl mb-5">{{ $t('conference.timetable.Sunday') }}</h3>
         <div class="flex flex-col items-start gap-1">
-          <p><strong>8h30-9h: </strong>{{ $t('conference.timetable.breakfeast') }}</p>
+          <p><strong>8h30-9h: </strong>{{ $t('conference.timetable.breakfast') }}</p>
           <p><strong>9h-13h: </strong>{{ $t('conference.timetable.debate') }}</p>
           <p><strong>13h-14h: </strong>{{ $t('conference.timetable.lunch') }}</p>
           <!-- <p><strong>14h-14h: </strong>{{ $t('conference.timetable.endOfComittee') }}</p> -->
