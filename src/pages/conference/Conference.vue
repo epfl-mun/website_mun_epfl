@@ -10,7 +10,7 @@
           <div class="max-w-7xl mx-auto px-4">
             <ul class="flex flex-col lg:flex-row lg:gap-8 gap-2 justify-center items-center text-xl font-bold underline">
               <li v-for="section in sections" :key="section.id" class="items-center justify-center">
-                <a :href="'#' + section.id" class="text-center">{{ section.name }}</a>
+                <a :href="'#' + section.id" class="text-center">{{ section.name[$i18n.locale] }}</a>
               </li>
             </ul>
           </div>
@@ -181,7 +181,7 @@
           <p><strong>14h-15h: </strong>{{ $t('conference.timetable.welcoming') }}</p>
           <p><strong>15h-16h: </strong>{{ $t('conference.timetable.openingCeremony') }}</p>
           <p><strong>16h-17h30: </strong>{{ $t('conference.timetable.Workshop') }}</p>
-          <p><strong>21h-2h: </strong>{{ $t('conference.timetable.FirstSocial') }}</p>
+          <p><strong>21h-2h: </strong>{{ $t('conference.timetable.FirstSocial') }} (Jaja, Rue de la Barre 1, 1005 Lausanne)</p>
         </div>
       </div>
 
@@ -192,7 +192,7 @@
           <p><strong>9-12h30: </strong>{{ $t('conference.timetable.debate') }}</p>
           <p><strong>12h30-13h30: </strong>{{ $t('conference.timetable.lunch') }}</p>
           <p><strong>13h30-17h: </strong>{{ $t('conference.timetable.debate') }}</p>
-          <p><strong>20h-3h: </strong>{{ $t('conference.timetable.SecondSocial') }}</p>
+          <p><strong>22h-3h: </strong>{{ $t('conference.timetable.SecondSocial') }} (Base Bar, Av. De Sévelin 46, 1004 Lausanne)</p>
         </div>
       </div>
 
@@ -302,10 +302,10 @@ export default {
         }
       ],
       sections: [
-          { id: 'participate', name: 'Participate' },
-          { id: 'partners', name: 'Partners' },
-          { id: 'maps', name: 'Transports' },
-          { id : "timetable", name : "Timetable"}
+          { id: 'participate', name: {"en" : 'Participate', "fr" : "Participer"} },
+          { id: 'partners', name: {"en" : 'Partners', "fr" : "Partenaires"} },
+          { id: 'maps', name: {"en" : 'Transports', "fr" : "Transports"} },
+          { id : "timetable", name : {"en" : "Timetable", "fr" : "Emploi du temps"}}
         ],
     };
   }
