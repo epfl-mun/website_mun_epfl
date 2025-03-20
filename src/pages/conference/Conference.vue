@@ -96,6 +96,10 @@
           <p>{{ $t('conference.places.trainStations') }}</p>
         </div>
         <div class="flex gap-4 items-center">
+          <img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-orange.png" class="object-fill w-4 h-auto"/>     
+          <p>{{ $t('conference.places.socials') }}</p>
+        </div>
+        <div class="flex gap-4 items-center">
           <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
             <rect x="2" y="2" width="26" height="26" fill="rgba(0, 160, 220, 0.5)" stroke="#0096c7" stroke-width="2" />
           </svg>
@@ -106,12 +110,6 @@
             <rect x="2" y="2" width="26" height="26" fill="rgba(34, 17, 31, 0.5)" stroke="black" stroke-width="2" />
           </svg>          
           <p>{{ $t('conference.places.MX') }}</p>
-        </div>
-        <div class="flex gap-4 items-center">
-          <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
-            <rect x="2" y="2" width="26" height="26" fill="rgba(34, 17, 31, 0.5)" stroke="black" stroke-width="2" />
-          </svg>          
-          <p>{{ $t('conference.places.socials') }}</p>
         </div>
         <div class="flex gap-4 items-center">
           <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
