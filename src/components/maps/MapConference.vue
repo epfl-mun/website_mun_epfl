@@ -15,6 +15,7 @@
       const red_icon = "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png"
       const blue_icon = "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png"
       const black_icon = "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-black.png"
+      const orange_icon = "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-orange.png"
       
       // Initialize the map
       this.center = [46.527, 6.600]
@@ -40,17 +41,17 @@
         }
       )};
 
-      const center_bounds = [
-        [46.525, 6.635], // Center point
-        [46.521, 6.641], // Point 1
-        [46.515, 6.637], // Point 1
-        [46.513, 6.630], // Point 1
-        [46.514, 6.625], // Point 2
-        [46.518, 6.618], // Point 2
-        [46.522, 6.612], // Point 2
-        [46.526, 6.618] // Point 2
-      ]
-      L.polygon(center_bounds, { color: "#33ff11", weight: 2 }).addTo(this.map).bindPopup("City center");
+      // const center_bounds = [
+      //   [46.525, 6.635], // Center point
+      //   [46.521, 6.641], // Point 1
+      //   [46.515, 6.637], // Point 1
+      //   [46.513, 6.630], // Point 1
+      //   [46.514, 6.625], // Point 2
+      //   [46.518, 6.618], // Point 2
+      //   [46.522, 6.612], // Point 2
+      //   [46.526, 6.618] // Point 2
+      // ]
+      // L.polygon(center_bounds, { color: "#33ff11", weight: 2 }).addTo(this.map).bindPopup("City center");
 
       const epfl_bounds = [
         [46.524, 6.564], // Center point
@@ -98,6 +99,11 @@
       const mx_building = [46.5192, 6.5636]
       L.marker(mx_building, { icon: defaultIcon(black_icon) }).addTo(this.map).bindPopup("MX Building");
 
+      const jaja_bar = [46.52530, 6.635873]
+      L.marker(jaja_bar, { icon: defaultIcon(orange_icon) }).addTo(this.map).bindPopup("Jaja Bar");
+      
+      const base_bar = [46.522262, 6.617297]
+      L.marker(base_bar, { icon: defaultIcon(orange_icon) }).addTo(this.map).bindPopup("Base Bar");
     },
     beforeUnmount() {
       // Clean up the map when the component is unmounted

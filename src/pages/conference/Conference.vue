@@ -109,6 +109,12 @@
         </div>
         <div class="flex gap-4 items-center">
           <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="2" width="26" height="26" fill="rgba(34, 17, 31, 0.5)" stroke="black" stroke-width="2" />
+          </svg>          
+          <p>{{ $t('conference.places.socials') }}</p>
+        </div>
+        <div class="flex gap-4 items-center">
+          <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
             <rect x="2" y="2" width="26" height="26" fill="rgba(0, 0, 255, 0.5)" stroke="blue" stroke-width="2" />
           </svg>
           <p>{{ $t('conference.places.campus') }}</p>
