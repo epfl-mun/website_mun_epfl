@@ -193,7 +193,7 @@
         <h3 class="text-3xl mb-5">{{ $t('conference.timetable.Saturday') }}</h3>
         <div class="flex flex-col items-start gap-1">
           <p><strong>8h30-9h: </strong>{{ $t('conference.timetable.breakfast') }}</p>
-          <p><strong>9-12h30: </strong>{{ $t('conference.timetable.debate') }}</p>
+          <p><strong>9h-12h30: </strong>{{ $t('conference.timetable.debate') }}</p>
           <p><strong>12h30-13h30: </strong>{{ $t('conference.timetable.lunch') }}</p>
           <p><strong>13h30-17h: </strong>{{ $t('conference.timetable.debate') }}</p>
           <p><strong>22h-3h: </strong>{{ $t('conference.timetable.SecondSocial') }} (Base Bar, Av. De Sévelin 46, 1004 Lausanne)</p>
