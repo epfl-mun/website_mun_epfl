@@ -14,7 +14,7 @@
       const green_icon = "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png"
       const red_icon = "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png"
       const blue_icon = "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png"
-      const black_icon = "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-black.png"
+      // const black_icon = "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-black.png"
       // Initialize the map
       this.center = [46.528, 6.600]
       this.zoom = 14     
@@ -73,18 +73,18 @@
         L.polyline(epfl_renens, {color: "red", weight: 4}).addTo(this.map).bindPopup("Renens");
         
 
-        const metro_bc = [
-            [46.522, 6.566], // métro epfl
-            [46.522, 6.565],
-            [46.520, 6.565],
-            [46.51877, 6.5632],
-            [46.519, 6.56287],
-            [46.5189, 6.56275],
-            [46.5189, 6.5618],
-            [46.5187, 6.5618], // bc building
-        ]
+        // const metro_bc = [
+        //     [46.522, 6.566], // métro epfl
+        //     [46.522, 6.565],
+        //     [46.520, 6.565],
+        //     [46.51877, 6.5632],
+        //     [46.519, 6.56287],
+        //     [46.5189, 6.56275],
+        //     [46.5189, 6.5618],
+        //     [46.5187, 6.5618], // bc building
+        // ]
 
-        L.polyline(metro_bc, {color: "green", weight: 4}).addTo(this.map).bindPopup("Métro M1");
+        // L.polyline(metro_bc, {color: "green", weight: 4}).addTo(this.map).bindPopup("Métro M1");
 
         const gare_lausanne = [46.517, 6.629]
         L.marker(gare_lausanne, { icon: defaultIcon(blue_icon) }).addTo(this.map).bindPopup("Lausanne train station");
@@ -98,11 +98,11 @@
         const epfl = [46.522, 6.566]
         L.marker(epfl, { icon: defaultIcon(green_icon) }).addTo(this.map).bindPopup("EPFL");
 
-        const bc_building = [46.5187, 6.5618]
-        L.marker(bc_building, { icon: defaultIcon(green_icon) }).addTo(this.map).bindPopup("BC Building");
+        // const bc_building = [46.5187, 6.5618]
+        // L.marker(bc_building, { icon: defaultIcon(green_icon) }).addTo(this.map).bindPopup("BC Building");
 
-        const mx_building = [46.5192, 6.5636]
-        L.marker(mx_building, { icon: defaultIcon(black_icon) }).addTo(this.map).bindPopup("MX Building");
+        // const mx_building = [46.5192, 6.5636]
+        // L.marker(mx_building, { icon: defaultIcon(black_icon) }).addTo(this.map).bindPopup("MX Building");
     },
     beforeUnmount() {
       // Clean up the map when the component is unmounted

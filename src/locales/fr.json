@@ -70,8 +70,8 @@
     "description1": "La conférence EPFL Model United Nations est une simulation de relations internationales de trois jours.",
     "description2": "Rejoignez-nous pour une expérience inoubliable de diplomatie et de débat.",
     "epflmunIs": "EPFLMUN c'est",
-    "participate2025": "Participez à EPFLMUN 2025",
-    "registerNow": "Inscrivez-vous maintenant",
+    "participate2025": "Participez à EPFLMUN 2026",
+    "registerNow": "Inscriptions pas encore ouvertes",
     "elements" : [
       {
         "title": "150+ participants internationaux"
@@ -144,6 +144,34 @@
       {"title" : "SIMUN"}
     ]
   },
+  "conference_2025": {
+    "title": "EPFLMUN 2025",
+    "date": "21-23 Mars 2025",
+    "thankYou": "Merci !",
+    "thankYouMessage1": "Nous tenons à exprimer notre sincère gratitude à tous les participants, présidents et organisateurs qui ont fait d'EPFLMUN 2024 un incroyable succès.",
+    "thankYouMessage2": "Votre dévouement, votre enthousiasme et votre esprit diplomatique ont rendu cette conférence vraiment mémorable.",
+    "thankYouMessage3": "Nous avons hâte de vous revoir lors des prochaines conférences EPFLMUN !",
+    "committees": "Nos Comités",
+    "committeesList" : [
+      {"title": "Comité du désarmement et de la sécurité internationale (DISEC)"},
+      {"title": "Conseil des droits de l'homme des Nations Unies (UNHRC)"},
+      {"title": "Conseil de sécurité des Nations Unies (UNSC)"},
+      {"title": "Comité de crise : Chute de la République de Novgorod"} 
+    ],
+    "partners" : "Nos partenaires",
+    "partnersList" : [
+      {"title" : "ZUMUN"},
+      {"title" : "LAKEMUN"},
+      {"title" : "GiMUN"},
+      {"title" : "KAMUN"},
+      {"title" : "LYONMUN"},
+      {"title" : "IEUMUN"},
+      {"title" : "fMUN"},
+      {"title" : "UABMUN"},
+      {"title" : "SIMUN"},
+      {"title" : "YEREMUN"}
+    ]
+  },
   "partners" : {
     "title" : "Nos Partenaires",
     "description" : "Nous sommes fiers de travailler avec de telles entreprises, qui participent à la diffusion de l'esprit MUN mondialement."
@@ -160,8 +188,9 @@
       "society": "Association",
       "events": "Événements",
       "team": "Équipe",
-      "conference": "EPFLMUN2025",
       "conference2024": "EPFLMUN2024",
+      "conference2025" : "EPFLMUN2025",
+      "conference": "EPFLMUN2026",
       "partners" : "Partenaires",
       "contact": "Contact"
     }

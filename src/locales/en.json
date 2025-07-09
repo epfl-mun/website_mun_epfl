@@ -70,8 +70,8 @@
     "description1": "EPFL Model United Nations Conference is a three-day international relations simulation.",
     "description2": "Join us for an unforgettable experience of diplomacy and debate.",
     "epflmunIs": "EPFLMUN is",
-    "participate2025": "Participate in EPFLMUN 2025",
-    "registerNow": "Register Now",
+    "participate2025": "Participate in EPFLMUN 2026",
+    "registerNow": "Applications not yet opened",
     "elements" : [
       {
         "title": "150+ international participants"
@@ -86,7 +86,7 @@
         "title": "Post-conference opportunities"
       },
       {
-        "title": "3 incredible days, from March 21 to 23"
+        "title": "3 incredible days, in March or April 2026"
       }
     ],
     "partners" : "Our Partners",
@@ -110,7 +110,7 @@
       "starling" : "Starling Hotel (partner hotel, contact us if you are interested for the night and/or evening meals)",
       "trainStations" : "Lausanne and Renens train stations",
       "socials" : "Socials (see details on timetable)",
-      "campus" : "EPFL Campus (ceremonies)",
+      "campus" : "EPFL Campus (ceremonies and debates)",
       "cityCenter" : "City center (socials)"
     },
     "transportations" : "Transportations",
@@ -157,6 +157,34 @@
       {"title" : "SIMUN"}
     ]
   },
+  "conference_2025": {
+    "title": "EPFLMUN 2025",
+    "date": "March 21-23, 2025",
+    "thankYou": "Thank You!",
+    "thankYouMessage1": "We want to express our sincere gratitude to all participants, chairs, and organizers who made EPFLMUN 2025 an incredible success.",
+    "thankYouMessage2": "Your dedication, enthusiasm, and diplomatic spirit made this conference truly memorable.",
+    "thankYouMessage3": "We look forward to seeing you at future EPFLMUN conferences!",
+    "committees": "Our Committees",
+    "committeesList" : [
+      {"title" : "Disarmament and International Security Committee (DISEC)"},
+      {"title" : "United Nations Human Rights Council (UNHRC)"},
+      {"title" : "United Nation Security Council (UNSC)"},
+      {"title" : "Crisis committee: Fall of the Novgorod Republic"}
+    ],
+    "partners" : "Our Partners",
+    "partnersList" : [
+      {"title" : "ZUMUN"},
+      {"title" : "LAKEMUN"},
+      {"title" : "GiMUN"},
+      {"title" : "KAMUN"},
+      {"title" : "LYONMUN"},
+      {"title" : "IEUMUN"},
+      {"title" : "fMUN"},
+      {"title" : "UABMUN"},
+      {"title" : "SIMUN"},
+      {"title" : "YEREMUN"}
+    ]
+  },
   "partners" : {
     "title" : "Our Partners",
     "description" : "We are proud to work with such companies, who contribute to expand the MUN spirit WorldWide!"
@@ -173,8 +201,9 @@
       "society": "Society",
       "events": "Events",
       "team": "Team",
-      "conference": "EPFLMUN2025",
       "conference2024": "EPFLMUN2024",
+      "conference2025": "EPFLMUN2025",
+      "conference": "EPFLMUN2026",
       "partners" : "Partners",
       "contact": "Contact"
     }

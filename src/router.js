@@ -5,6 +5,7 @@ import Events from './pages/Events.vue'
 import Team from './pages/Team.vue'
 import Conference from './pages/conference/Conference.vue'
 import Conference_2024 from './pages/conference/2024.vue'
+import Conference_2025 from './pages/conference/2025.vue'
 import Contact from './pages/Contact.vue'
 import Error from './pages/Error.vue'
 import Signature from './pages/other/signature.vue'
@@ -39,6 +40,11 @@ const routes = [
     path : "/conference/2024",
     name : "Conference 2024",
     component : Conference_2024
+  },
+  {
+    path: "/conference/2025",
+    name: "Conference 2025",
+    component: Conference_2025
   },
   {
     path : "/contact",

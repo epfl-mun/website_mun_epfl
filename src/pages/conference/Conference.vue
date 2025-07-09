@@ -41,17 +41,18 @@
   <section id="participate">
     <div class="py-6 flex flex-col items-center justify-normal">
       <h2 class="text-6xl font-bold mb-5 text-center">{{ $t('conference.participate2025') }}</h2>
-      <a href="https://mymun.com/conferences/EPFLMUN-2025/" target="_blank" rel="noopener noreferrer" class="bg-red-primary text-white font-bold px-8 py-4 rounded-full mt-4 duration-300 hover:scale-105 hover:bg-red-700 text-2xl">{{ $t('conference.registerNow') }}</a>
+      <!-- <a href="https://mymun.com/conferences/EPFLMUN-2025/" target="_blank" rel="noopener noreferrer" class="bg-red-primary text-white font-bold px-8 py-4 rounded-full mt-4 duration-300 hover:scale-105 hover:bg-red-700 text-2xl">{{ $t('conference.registerNow') }}</a> -->
+      <a target="_blank" rel="noopener noreferrer" class="bg-red-primary text-white font-bold px-8 py-4 rounded-full mt-4 duration-300 hover:scale-100 hover:opacity-50 cursor-not-allowed text-2xl">{{ $t('conference.registerNow') }}</a>
     </div>
   </section>
 
-  <section>
+  <!-- <section>
     <div class="py-6 flex flex-col items-center justify-normal hover:cursor-pointer">
       <a class="max-w-7xl" href="https://mymun.com/conferences/EPFLMUN-2025/" target="_blank" rel="noopener noreferrer">
         <LazyImage src="/pictures/events/screen_mymun.png" alt="image" class="w-full" />
       </a>
     </div>
-  </section>
+  </section> -->
 
   <hr class="border-t-2 border-solid border-gray-300 my-10">
 
@@ -79,38 +80,38 @@
     <article class="w-full m-auto flex flex-col items-center max-w-7xl px-5">
       <h3 class="text-3xl mb-5">{{ $t('conference.informationPlaces') }}</h3>
       <div class="flex flex-col items-start gap-1">
-        <div class="flex gap-4 items-center">
+        <!-- <div class="flex gap-4 items-center">
           <img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png" class="object-fill w-4 h-auto"/>
           <p>{{ $t('conference.places.BC') }}</p>
-        </div>
-        <div class="flex gap-4 items-center">
+        </div> -->
+        <!-- <div class="flex gap-4 items-center">
           <img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-black.png" class="object-fill w-4 h-auto"/>
           <p>{{ $t('conference.places.MX') }}</p>
-        </div>
-        <div class="flex gap-4 items-center">
+        </div> -->
+        <!-- <div class="flex gap-4 items-center">
           <img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png" class="object-fill w-4 h-auto"/>
           <p>{{ $t('conference.places.starling') }}</p>
-        </div>
+        </div> -->
         <div class="flex gap-4 items-center">
           <img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png" class="object-fill w-4 h-auto"/>
           <p>{{ $t('conference.places.trainStations') }}</p>
         </div>
-        <div class="flex gap-4 items-center">
+        <!-- <div class="flex gap-4 items-center">
           <img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-orange.png" class="object-fill w-4 h-auto"/>     
           <p>{{ $t('conference.places.socials') }}</p>
-        </div>
-        <div class="flex gap-4 items-center">
+        </div> -->
+        <!-- <div class="flex gap-4 items-center">
           <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
             <rect x="2" y="2" width="26" height="26" fill="rgba(0, 160, 220, 0.5)" stroke="#0096c7" stroke-width="2" />
           </svg>
           <p>{{ $t('conference.places.BC') }}</p>
-        </div>
-        <div class="flex gap-4 items-center">
+        </div> -->
+        <!-- <div class="flex gap-4 items-center">
           <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
             <rect x="2" y="2" width="26" height="26" fill="rgba(34, 17, 31, 0.5)" stroke="black" stroke-width="2" />
           </svg>          
           <p>{{ $t('conference.places.MX') }}</p>
-        </div>
+        </div> -->
         <div class="flex gap-4 items-center">
           <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
             <rect x="2" y="2" width="26" height="26" fill="rgba(0, 0, 255, 0.5)" stroke="blue" stroke-width="2" />
@@ -158,12 +159,12 @@
               <p>{{ $t('conference.RenensVDGareEPFL') }}</p>
             </div>
 
-            <div class="flex items-center gap-2">
+            <!-- <div class="flex items-center gap-2">
               <svg width="40" height="30" xmlns="http://www.w3.org/2000/svg">
                 <line x1="10" y1="15" x2="30" y2="15" stroke="green" stroke-width="2" />
               </svg>
               <p>{{ $t('conference.EPFLMetroBC') }}</p>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -177,7 +178,7 @@
 
   <section class="flex flex-col items-center justify-center py-7 text-left" id="timetable">
     <h2 class="text-6xl font-bold mb-10 text-center">{{ $t('conference.timetable.title') }}</h2>
-    <article class="m-auto flex flex-col px-5 gap-6">
+    <!-- <article class="m-auto flex flex-col px-5 gap-6">
       <div>
 
         <h3 class="text-3xl mb-5">{{ $t('conference.timetable.Friday') }}</h3>
@@ -206,12 +207,13 @@
           <p><strong>8h30-9h: </strong>{{ $t('conference.timetable.breakfast') }}</p>
           <p><strong>9h-13h: </strong>{{ $t('conference.timetable.debate') }}</p>
           <p><strong>13h-14h: </strong>{{ $t('conference.timetable.lunch') }}</p>
-          <!-- <p><strong>14h-14h: </strong>{{ $t('conference.timetable.endOfComittee') }}</p> -->
+          <p><strong>14h-14h: </strong>{{ $t('conference.timetable.endOfComittee') }}</p>
           <p><strong>14h-15h: </strong>{{ $t('conference.timetable.closingCeremony') }}</p>
         </div>
       </div>
 
-    </article>
+    </article> -->
+    <h3 class="text-3xl">TBA</h3>
   </section>
 
 </template>

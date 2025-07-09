@@ -3,201 +3,81 @@
         {
             "id" : 1,
             "poste" : {
-                "fr": "Président & Secrétaire Général",
-                "en": "President & Secretary-General"
+                "fr": "Président",
+                "en": "President"
             },
-            "name" : "Louis Cresci",
+            "name" : "Omar Ilyassa",
             "description" : {
-                "fr": "Louis est un étudiant en troisième année à l'EPFL, spécialisé en informatique. Avec plus de cinq ans d'expérience dans le monde du MUN, il a réorganisé l'association pour sensibiliser davantage le campus à MUN. Il a contribué à l'organisation de nombreux événements pour l'association, montrant des compétences solides dans la planification et la gestion de la conférence EPFLMUN avec succès.",
-                "en": "Louis is a third-year EPFL student majoring in computer science. With over five years of experience in the world of MUN, he led the restructuring of the association to raise awareness of MUN across the entire campus. He has contributed to organizing several events for the association, showing solid skills in planning and managing EPFLMUN conference successfully."
+                "fr": "Omar est un étudiant EPFL, actuellement en train de suivre un diplôme de Master en Génie Mécanique. Après plusieurs années au MUN, il a décidé de prendre le poste de président. Son expérience dans le développement de projets entrepreneuriaux et ses compétences en communication font de lui un actif clé dans la diffusion de l'association.",
+                "en": "Omar is an EPFL student, currently pursuing his Master's Degree in Mechanical Engineering. After multiple year at the MUN, he decided to take the presidency. His experience in developing entrepreneurial projects and his strong communication skills make him the perfect person to ensure that the association's message is heard by as many people as possible."
             },
-            "image" : "/pictures/team/Louis.jpg",
-            "linkedin" : "https://www.linkedin.com/in/louis-cresci-86a696218/",
+            "image" : "/pictures/team/Omar.jpg",
+            "linkedin" : "https://www.linkedin.com/in/omar-ilyassa-a85147246/",
             "mail" : "louis.cresci@mun-epfl.ch"
         },
         {
             "id" : 2,
             "poste" : {
-                "fr": "Vice Président & Trésorier",
-                "en": "Vice President & Treasurer"
+                "fr": "Secrétaire Général",
+                "en": "Secretary-General"
             },
-            "name" : "Amyelle Noppeney",
+            "name" : "Rayane Zouagui",
             "description" : {
-                "fr": "Amyelle est étudiante en master en sciences politiques à l'Université de Lausanne. Son expertise en politique et relations internationales apporte une perspective différente à MUN EPFL, très centrée sur l'ingénierie. Elle a rejoint MUN EPFL en tant que USG de la Communication, jouant un rôle clé dans l'organisation de la conférence de l'année précédente. Cette expérience l'a inspirée à se consacrer davantage à l'association et à sa mission.",
-                "en": "Amyelle is a master’s student in political science at the University of Lausanne. Her deep expertise in politics and international relations brings a different perspective to highly technological MUN EPFL. She initially joined MUN EPFL as the USG of Public Relations, playing a key role in organizing last year’s conference. This experience inspired her to further dedicate herself to the association and its mission."
+                "fr": "Rayan est un étudiant EPFL, actuellement en train de suivre un diplôme de Master en Informatique. Son expérience dans le développement de projets entrepreneuriaux et ses compétences en communication font de lui un actif clé dans la recherche de soutien financier et collaboratif pour les initiatives de l'association.",
+                "en": "Rayan is an EPFL student, currently pursuing his Master's Degree in Computer Science. His experience in developing entrepreneurial projects and his strong communication skills make him the perfect person to ensure that the association's message is heard by as many people as possible."
             },
-            "image" : "/pictures/team/Amyelle.jpg",
-            "linkedin" : "https://www.linkedin.com/in/amyelle-noppeney-940782199/",
-            "mail" : "amyelle.noppeney@mun-epfl.ch"
+            "image" : "/pictures/team/Rayan.jpg",
+            "linkedin" : "https://www.linkedin.com/in/rayan-1b1b3b1b3/",
+            "mail" : "rayane.zouagui@mun-epfl.ch"
+        },
+        {
+            "id" : 3,
+            "poste" : {
+                "fr": "Trésorière",
+                "en": "Treasurer"
+            },
+            "name" : "Maya mezghani",
+            "description" : {
+                "fr": "Toujours là pour aider et pour rire, Maya est une étudiante en deuxième année de Système et communication à l'EPFL. Compétente dans la gestion financière et la comptabilité, elle est la personne idéale pour s'assurer que les finances de l'association sont en ordre.",
+                "en": "Always there to help and to laugh, Maya is a second-year student in Systems and Communication at EPFL. Skilled in financial management and accounting, she is the perfect person to ensure that the association's finances are in order."
+            },
+            "image" : "/pictures/team/Incognito.webp",
+            "linkedin" : "https://www.linkedin.com/in/maya-mezghani-7a3629161/",
+            "mail" : "maya.mezghani@mun-epfl.ch"
         }
     ],
     "USGS": [
         {
-            "id" : 3,
-            "poste" : {
-                "fr": "USG & Responsable du Marketing",
-                "en": "USG & Head of Marketing"
-            },
-            "name" : "Miro Svyrydov",
-            "description" : {
-                "fr": "Miro est un ancien étudiant EPFL qui a commencé un voyage dans l'industrie des événements, actuellement en train de suivre un diplôme en gestion d'événements à Dublin en Irlande. Miro a une expérience profonde dans le marketing et une connaissance générale de la structure de l'EPFL qui lui permet de garantir une forte engagement et participation dans toutes les initiatives de MUN EPFL.",
-                "en": "Miro is a former EPFL student who embarked on a journey in the event industry, currently pursuing his degree in Event Management in Dublin, Ireland. Miro's profound experience in Marketing and general knowledge of EPFL's structure allow him to ensure strong engagement and participation in all MUN EPFL's initiatives."
-            },
-            "image" : "/pictures/team/Miro.jpg",
-            "linkedin" : "https://www.linkedin.com/in/myroslav-svyrydov/",
-            "mail" : "miro.svyrydov@mun-epfl.ch"
-        },
-        {
             "id" : 4,
-            "poste" : {
-                "fr": "USG & Responsable des Affaires Académiques",
-                "en": "USG & Head of Academics"
-            },
-            "name" : "Gabriel Guitart",
-            "description" : {
-                "fr": "Gabriel est un étudiant EPFL, actuellement en train de suivre un diplôme de Bachelor en Mathématiques. Gabriel a commencé son voyage dans le MUN en terminale, ce qui lui a permis d'acquérir une expérience de haute qualité pour MUN EPFL. À la fois défenseur et agent de voyage, Gabriel s'assurera que votre expérience de débat à MUN EPFL soit la meilleure possible.",
-                "en": "Gabriel is an EPFL student, currently pursuing his Bachelor's Degree in Mathematics. Gabriel's MUN journey that started back in high school, which is why his experience brings a high level of excellence to MUN EPFL. At times fierce debater and at times travel agency, Gabriel will make sure your debating experience at MUN EPFL is the best it can be."
-            },
-            "image" : "/pictures/team/Gabriel.jpg",
-            "linkedin" : "",
-            "mail" : "gabriel.guitart@mun-epfl.ch"
-        },
-        {
-            "id" : 5,
             "poste" : {
                 "fr": "USG & Responsable des Sponsors",
                 "en": "USG & Head of Sponsoring"
             },
-            "name" : "Jan Staszewicz",
+            "name" : "Chaimaa",
             "description" : {
-                "fr":"Jan est un étudiant EPFL, actuellement en train de suivre un diplôme de Bachelor en Informatique. Grâce à son expérience dans le développement de projets entrepreneuriaux, il a acquis des compétences solides dans la mise en relation avec les entreprises et la création de partenariats. Cette expérience lui a permis d'améliorer ses compétences en communication et négociation, en faisant de lui un actif clé dans la recherche de soutien financier et collaboratif pour les initiatives de l'association.",
-                "en":"Jan is currently pursuing his Bachelor's degree in Computer Science at EPFL. Thanks to his experience in developing entrepreneurial projects, he has acquired solid skills in making contact with companies and creating partnerships. This experience has enabled him to strengthen his communication and negotiation skills, making him a key asset in securing the financial and collaborative support needed for the association's initiatives."
+                "fr":"Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "en":"Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
             },
-            "image" : "/pictures/team/Jan.jpg",
-            "linkedin" : "https://www.linkedin.com/in/jan-staszewicz-75bb101b2/",
-            "mail" : "jan.staszewich@mun-epfl.ch"
+            "image" : "/pictures/team/Incognito.webp",
+            "linkedin" : "",
+            "mail" : ""
+        },
+        {
+            "id" : 5,
+            "poste" : {
+                "fr": "USG & IT",
+                "en": "USG & IT"
+            },
+            "name" : "Emmanuel Omont",
+            "description" : {
+                "fr": "Emmanuel étudie l'informatique à l'EPFL, et est actuellement en échange à l'ETH Zürich, où il fait parti de ZuMUN. Sa prise d'initiative et ses compétences en programmation font de lui la personne idéale pour gérer le pôle IT de l'association. Fun fact : il a un datacenter dans sa chambre.",
+                "en": "Emmanuel is an EPFL student, currently pursuing his Bachelor's Degree in Computer Science, and is for now in exchange at ETH Zürich, where he is part of ZuMUN. His initiative and programming skills make him the perfect person to manage the IT department of the association. Fun fact: he has a datacenter in his room."
+            },
+            "image" : "/pictures/team/Emmanuel.jpg",
+            "linkedin" : "https://www.linkedin.com/in/omont-emmanuel",
+            "mail" : "emmanuel@omont.ch"
         }
     ],
     "members": [
-            {
-                "id" : 6,
-                "poste" : {
-                    "fr": "Logistique",
-                    "en": "Logistics"
-                },
-                "name" : "Béatrice Serrurier",
-                "description" : {
-                    "fr": "Béatrice est une étudiante en deuxième année à l'EPFL, spécialisée en Mathématiques. Son expérience dans l'organisation d'événements et ses compétences en organisation lui permettent de garantir que tout se passe bien lors de la conférence.",
-                    "en": "Béatrice is a second-year student at EPFL, majoring mathematics. Her experience in organizing events and her strong organizational skills make her the perfect person to ensure that everything runs smoothly during the conference."
-                },
-                "image" : "/pictures/team/Béatrice.jpg",
-                "linkedin" : "",
-                "mail" : ""
-            },
-            {
-                "id" : 7,
-                "poste" : {
-                    "fr": "Marketing",
-                    "en": "Marketing"
-                },
-                "name" : "Blanche Harar",
-                "description" : {
-                    "fr": "L'expérience graphique de Blanche est incroyable, et elle a été en mesure de créer une identité visuelle unique pour MUN EPFL. Sa créativité et son attention aux détails sont essentielles au succès de l'association.",
-                    "en": "The graphical experience of Blanche is incredible, and she has been able to create a unique visual identity for MUN EPFL. Her creativity and attention to detail are key to the success of the association."
-                },
-                "image" : "/pictures/team/Blanche.jpg",
-                "linkedin" : "https://www.linkedin.com/in/blanche-harar-6a327a2b3/",
-                "mail" : ""
-            },
-            {
-                "id" : 10,
-                "poste" : {
-                    "fr": "Marketing",
-                    "en": "Marketing"
-                },
-                "name" : "Omar Ilyassa",
-                "description" : {
-                    "fr": "Omar est un étudiant EPFL, actuellement en train de suivre un diplôme de Master en Génie Mécanique. Son expérience dans le développement de projets entrepreneuriaux et ses compétences en communication font de lui un actif clé dans la diffusion de l'association.",
-                    "en": "Omar is an EPFL student, currently pursuing his Master's Degree in Mechanical Engineering. His experience in developing entrepreneurial projects and his strong communication skills make him the perfect person to ensure that the association's message is heard by as many people as possible."
-                },
-                "image" : "/pictures/team/Omar.jpg",
-                "linkedin" : "https://www.linkedin.com/in/omar-ilyassa-a85147246/",
-                "mail" : ""
-            },
-            {
-                "id" : 8,
-                "poste" : {
-                    "fr": "Affaires Académiques",
-                    "en": "Academics"
-                },
-                "name" : "Ishita Poddar",
-                "description" : {
-                    "fr": "Ishita est une étudiante en deuxième année à l'EPFL, spécialisée en Informatique. Son expérience dans la communication et ses compétences en communication font de lui un actif clé dans la diffusion de l'association.",
-                    "en": "Ishita is a second-year student at EPFL, majoring in computer science. Her experience in public relations and her strong communication skills make her the perfect person to ensure that the association's message is heard by as many people as possible."
-                },
-                "image" : "/pictures/team/Ishita.jpg",
-                "linkedin" : "https://www.linkedin.com/in/ishita-poddar-452934238/",
-                "mail" : ""
-            },
-            {
-                "id" : 11,
-                "poste" : {
-                    "fr": "Sponsors",
-                    "en": "Sponsoring"
-                },
-                "name" : "Rayane Zouagui",
-                "description" : {
-                    "fr": "Rayan est un étudiant EPFL, actuellement en train de suivre un diplôme de Master en Informatique. Son expérience dans le développement de projets entrepreneuriaux et ses compétences en communication font de lui un actif clé dans la recherche de soutien financier et collaboratif pour les initiatives de l'association.",
-                    "en": "Rayan is an EPFL student, currently pursuing his Master's Degree in Computer Science. His experience in developing entrepreneurial projects and his strong communication skills make him the perfect person to ensure that the association's message is heard by as many people as possible."
-                },
-                "image" : "/pictures/team/Rayan.jpg",
-                "linkedin" : "https://www.linkedin.com/in/rayan-1b1b3b1b3/",
-                "mail" : "rayane.zouagui@mun-epfl.ch"
-            },
-            {
-                "id" : 12,
-                "poste" : {
-                    "fr": "Sponsors",
-                    "en": "Sponsoring"
-                },
-                "name" : "Timothy Biersohn",
-                "description" : {
-                    "fr": "Timothy est un étudiant EPFL, actuellement en train de suivre un diplôme de Master en Informatique. Son expérience dans le développement de projets entrepreneuriaux et ses compétences en communication font de lui un actif clé dans la recherche de soutien financier et collaboratif pour les initiatives de l'association.",
-                    "en": "Timothy is an EPFL student, currently pursuing his Master's Degree in Computer Science. His experience in developing entrepreneurial projects and his strong communication skills make him the perfect person to ensure that the association's message is heard by as many people as possible."
-                },
-                "image" : "/pictures/team/Timothy.jpg",
-                "linkedin" : "https://www.linkedin.com/in/timothy-biersohn-2a2654284/",
-                "mail" : "timothy.biersohn@mun-epfl.ch"
-            },
-            {
-                "id" : 13,
-                "poste" : {
-                    "fr": "IT",
-                    "en": "IT"
-                },
-                "name" : "Emmanuel Omont",
-                "description" : {
-                    "fr": "Emmanuel étudie l'informatique à l'EPFL. Sa prise d'initiative et ses compétences en programmation font de lui la personne idéale pour gérer le pôle IT de l'association.",
-                    "en": "Emmanuel is an EPFL student, currently pursuing his Bachelor's Degree in Computer Science. His initiative and programming skills make him the perfect person to manage the IT department of the association."
-                },
-                "image" : "/pictures/team/Emmanuel.jpg",
-                "linkedin" : "https://www.linkedin.com/in/omont-emmanuel",
-                "mail" : ""
-            },
-            {
-                "id" : 14,
-                "poste" : {
-                    "fr": "Socials",
-                    "en": "Socials"
-                },
-                "name" : "Noah Dupuis",
-                "description" : {
-                    "fr": "Noah est un étudiant EPFL, actuellement en train de suivre un diplôme de Master en Informatique. Son expérience dans le développement de projets entrepreneuriaux et ses compétences en communication font de lui un actif clé dans la recherche de soutien financier et collaboratif pour les initiatives de l'association.",
-                    "en": "Noah is an EPFL student, currently pursuing his Master's Degree in Computer Science. His experience in developing entrepreneurial projects and his strong communication skills make him the perfect person to ensure that the association's message is heard by as many people as possible."
-                },
-                "image" : "/pictures/team/Noah.jpg",
-                "linkedin" : "",
-                "mail" : ""
-            }
         ]
 }

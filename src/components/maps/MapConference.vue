@@ -12,10 +12,10 @@
     mounted() {
 
       const green_icon = "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png"
-      const red_icon = "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png"
-      const blue_icon = "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png"
-      const black_icon = "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-black.png"
-      const orange_icon = "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-orange.png"
+      // const red_icon = "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png"
+      // const blue_icon = "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png"
+      // const black_icon = "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-black.png"
+      // const orange_icon = "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-orange.png"
       
       // Initialize the map
       this.center = [46.527, 6.600]
@@ -41,17 +41,17 @@
         }
       )};
 
-      // const center_bounds = [
-      //   [46.525, 6.635], // Center point
-      //   [46.521, 6.641], // Point 1
-      //   [46.515, 6.637], // Point 1
-      //   [46.513, 6.630], // Point 1
-      //   [46.514, 6.625], // Point 2
-      //   [46.518, 6.618], // Point 2
-      //   [46.522, 6.612], // Point 2
-      //   [46.526, 6.618] // Point 2
-      // ]
-      // L.polygon(center_bounds, { color: "#33ff11", weight: 2 }).addTo(this.map).bindPopup("City center");
+      const center_bounds = [
+        [46.525, 6.635], // Center point
+        [46.521, 6.641], // Point 1
+        [46.515, 6.637], // Point 1
+        [46.513, 6.630], // Point 1
+        [46.514, 6.625], // Point 2
+        [46.518, 6.618], // Point 2
+        [46.522, 6.612], // Point 2
+        [46.526, 6.618] // Point 2
+      ]
+      L.polygon(center_bounds, { color: "#33ff11", weight: 2 }).addTo(this.map).bindPopup("City center");
 
       const epfl_bounds = [
         [46.524, 6.564], // Center point
@@ -65,27 +65,27 @@
         [46.520, 6.5617], // Center point
       ]
       L.polygon(epfl_bounds, { color: "#1133ff", weight: 2 }).addTo(this.map).bindPopup("EPFL Campus");
-      const bc_building = [46.5185, 6.5619]
+      // const bc_building = [46.5185, 6.5619]
       // Add a marker to the map
-      L.marker(bc_building, { icon: defaultIcon(blue_icon) }).addTo(this.map).bindPopup("BC Building");
+      // L.marker(bc_building, { icon: defaultIcon(blue_icon) }).addTo(this.map).bindPopup("BC Building");
   
-      // Define the bounds of the rectangle (20m by 20m around the center point)
-      const bounds_bc = [
-        [bc_building[0] - 0.00025, bc_building[1] - 0.00025], // Southwest corner
-        [bc_building[0] + 0.00030, bc_building[1] + 0.00030]  // Northeast corner
-      ];
+      // // Define the bounds of the rectangle (20m by 20m around the center point)
+      // const bounds_bc = [
+      //   [bc_building[0] - 0.00025, bc_building[1] - 0.00025], // Southwest corner
+      //   [bc_building[0] + 0.00030, bc_building[1] + 0.00030]  // Northeast corner
+      // ];
 
   
-      // Add a rectangle to the map
-      L.rectangle(bounds_bc, { color: "#0096c7", weight: 1 }).addTo(this.map).bindPopup("BC Building");
+      // // Add a rectangle to the map
+      // L.rectangle(bounds_bc, { color: "#0096c7", weight: 1 }).addTo(this.map).bindPopup("BC Building");
 
-      const mx_bounds = [
-        [46.5194, 6.5637], // Center point
-        [46.5191, 6.5637], // Center point
-        [46.5191, 6.5635], // Center point
-      ]
+      // const mx_bounds = [
+      //   [46.5194, 6.5637], // Center point
+      //   [46.5191, 6.5637], // Center point
+      //   [46.5191, 6.5635], // Center point
+      // ]
 
-      L.rectangle(mx_bounds, { color: "#221133", weight: 2 }).addTo(this.map).bindPopup("MX Building");
+      // L.rectangle(mx_bounds, { color: "#221133", weight: 2 }).addTo(this.map).bindPopup("MX Building");
 
       const gare_lausanne = [46.5165, 6.630]
       L.marker(gare_lausanne, { icon: defaultIcon(green_icon) }).addTo(this.map).bindPopup("Lausanne train station");
@@ -93,17 +93,17 @@
       const gare_renens = [46.5345, 6.586]
       L.marker(gare_renens, { icon: defaultIcon(green_icon) }).addTo(this.map).bindPopup("Renens train station");
 
-      const starling_hotel = [46.5166, 6.5672]
-      L.marker(starling_hotel, { icon: defaultIcon(red_icon) }).addTo(this.map).bindPopup("Starling Hotel");
+      // const starling_hotel = [46.5166, 6.5672]
+      // L.marker(starling_hotel, { icon: defaultIcon(red_icon) }).addTo(this.map).bindPopup("Starling Hotel");
 
-      const mx_building = [46.5192, 6.5636]
-      L.marker(mx_building, { icon: defaultIcon(black_icon) }).addTo(this.map).bindPopup("MX Building");
+      // const mx_building = [46.5192, 6.5636]
+      // L.marker(mx_building, { icon: defaultIcon(black_icon) }).addTo(this.map).bindPopup("MX Building");
 
-      const jaja_bar = [46.52530, 6.635873]
-      L.marker(jaja_bar, { icon: defaultIcon(orange_icon) }).addTo(this.map).bindPopup("Jaja Bar");
+      // const jaja_bar = [46.52530, 6.635873]
+      // L.marker(jaja_bar, { icon: defaultIcon(orange_icon) }).addTo(this.map).bindPopup("Jaja Bar");
       
-      const base_bar = [46.522262, 6.617297]
-      L.marker(base_bar, { icon: defaultIcon(orange_icon) }).addTo(this.map).bindPopup("Base Bar");
+      // const base_bar = [46.522262, 6.617297]
+      // L.marker(base_bar, { icon: defaultIcon(orange_icon) }).addTo(this.map).bindPopup("Base Bar");
     },
     beforeUnmount() {
       // Clean up the map when the component is unmounted
