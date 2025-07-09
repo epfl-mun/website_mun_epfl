@@ -18,6 +18,21 @@
         {
             "id" : 2,
             "poste" : {
+                "fr": "Vice-Président",
+                "en": "Vice-President"
+            },
+            "name" : "Matteo La Macchia",
+            "description" : {
+                "fr": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "en": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            },
+            "image" : "/pictures/team/Incognito.webp",
+            "linkedin" : "",
+            "mail" : ""
+        },
+        {
+            "id" : 3,
+            "poste" : {
                 "fr": "Secrétaire Général",
                 "en": "Secretary-General"
             },
@@ -31,7 +46,7 @@
             "mail" : "rayane.zouagui@mun-epfl.ch"
         },
         {
-            "id" : 3,
+            "id" : 4,
             "poste" : {
                 "fr": "Trésorière",
                 "en": "Treasurer"
@@ -48,7 +63,7 @@
     ],
     "USGS": [
         {
-            "id" : 4,
+            "id" : 5,
             "poste" : {
                 "fr": "USG & Responsable des Sponsors",
                 "en": "USG & Head of Sponsoring"
