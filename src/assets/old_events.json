@@ -1,0 +1,140 @@
+[
+{
+    "id": 1,
+    "title": {
+      "en": "Kick off Autumn 2024",
+      "fr": "Kick off Automne 2024"
+    },
+    "date": {
+      "en" : "October 1st",
+      "fr" : "1er octobre"
+    },
+    "location": "CM1 121",
+    "description": {
+      "en": "Are you interested in MUN debates? Whether you want to participate or just watch, you can come and attend exciting debates. The debate is open to everyone, whether you are a novice or an expert. And it will be followed by a friendly aperitif!",
+      "fr": "Vous êtes intéressé par les débats MUN ? Que vous souhaitiez participer ou simplement regarder, vous pouvez venir et participer à des débats passionnants. Les débats sont ouverts à tous, que vous soyez novices ou experts. Et ils seront suivis d'un apéritif convivial !"
+    },
+    "image": "/pictures/events/kick-off.jpeg"
+  },
+  {
+    "id": 2,
+    "title": {
+      "en": "First debate Session Autumn 2024",
+      "fr": "Première séance de débat Automne 2024"
+    },
+    "date": {
+      "en": "October 8th",
+      "fr": "8 octobre"
+    },
+    "location": "CM1 121",
+    "description": {
+      "en": "All the informations for the debate, knowing the subject, the country choice and the study guide, are available <a href='https://linktr.ee/epflmun' style='color: #0000FF; text-decoration: underline;'>here</a>.",
+      "fr": "Toutes les informations pour le débat, connaissant le sujet, le choix du pays et le study guide, sont disponibles <a href='https://linktr.ee/epflmun' style='color: #0000FF; text-decoration: underline;'>ici</a>."
+    },
+    "image": "/pictures/conferences/delegate_focus.jpg"
+  },
+  {
+    "id": 3,
+    "title": {
+      "en": "Trip to Kamun",
+      "fr": "Voyage à KAMUN"
+    },
+    "date": {
+      "en": "November 12-15",
+      "fr": "12-15 novembre"
+    },
+    "location": "Karshruhe",
+    "description": {
+      "en": "In November, a delegation went to Karslruhe for the KAMUN conference. Along with our teammates from Zurich, we represented Switerland with our delegation, PolyMUN. We successfully won an award from the conference.",
+      "fr": "En novembre, une délégation est allée à Karlsruhe pour la conférence KAMUN. Avec nos coéquipiers de Zurich, nous avons représenté la Suisse avec notre délégation, PolyMUN. Nous avons remporté avec succès un prix de la conférence."
+    },
+    "image": "/pictures/society/delegation.jpeg"
+  },
+  {
+    "id" : 4,
+    "title" : {
+      "en" : "First debate session, Spring 2025",
+      "fr" : "Première session de débat, Printemps 2025"
+    },
+    "date" : {
+      "en" : "February 25th, 19h",
+      "fr" : "25 Février, 19h"
+    },
+    "location" : "CM 1 121",
+    "description": {
+      "en": "Are you interested in MUN debates? Whether you want to participate or just watch, you can come and attend exciting debates. The debate is open to everyone, whether you are a novice or an expert. And it will be followed by a friendly aperitif! All the informations for the debate, knowing the subject, the country choice and the study guide, are available <a href='https://linktr.ee/epflmun' style='color: #0000FF; text-decoration: underline;'>here</a>.",
+      "fr": "Vous êtes intéressé par les débats MUN ? Que vous souhaitiez participer ou simplement regarder, vous pouvez venir et participer à des débats passionnants. Les débats sont ouverts à tous, que vous soyez novices ou experts. Et ils seront suivis d'un apéritif convivial ! Toutes les informations pour le débat, connaissant le sujet, le choix du pays et le study guide, sont disponibles <a href='https://linktr.ee/epflmun' style='color: #0000FF; text-decoration: underline;'>ici</a>."
+    },
+    "image" : "/pictures/conf_2024/pictures/debate_mod.jpg"
+  },
+  {
+    "id": 5,
+    "positionFirstPage": 1,
+    "title": {
+      "en": "EPFLMUN Conference",
+      "fr": "Conférence EPFLMUN"
+    },
+    "date": {
+      "en": "21-23 Mars 2025",
+      "fr": "March 21-23rd 2025"
+    },
+    "location": "EPFL",
+    "description": {
+      "en": "We are glad to organize the 4th edition of EPFLMUN! You can register as chairs, delegates or delegations on <a href='https://mymun.com/conferences/epflmun-2025' style='color: #0000FF; text-decoration: underline;'>MyMUN</a>.",
+      "fr": "Nous sommes ravis de préparer la 4ème édition de EPFLMUN ! Vous pouvez vous inscrire en tant que chairs, délégués ou délégations sur <a href='https://mymun.com/conferences/epflmun-2025' style='color: #0000FF; text-decoration: underline;'>MyMUN</a>."
+    },
+    "image": "/pictures/events/conference2024.jpeg"
+  },
+  {
+    "id": 6,
+    "positionFirstPage": 3,
+    "title": {
+      "en": "Trip to ZUMUN",
+      "fr": "Voyage à ZUMUN"
+    },
+    "date": {
+      "en": "April 11-13",
+      "fr": "11-13 Avril"
+    },
+    "location": "Zurich",
+    "description": {
+      "en": "If you participated in the first debate sessions this semester, you have the possibility to register to go on a trip with the MUN delegation. This trip is partly reimbursed by the Association (the precise reimbursement conditions will be indicated during registration).",
+      "fr": "Si vous avez participé aux premières séances de débat ce semestre, vous avez la possibilité de vous inscrire pour un voyage avec la délégation MUN. Ce voyage est partiellement remboursé par l'association (les conditions de remboursement précises seront indiquées lors de l'inscription)."
+    },
+    "image": "/pictures/trips/train.jpg"
+  },
+  {
+    "id": 7,
+    "title": {
+      "en": "Trip to MaMUN",
+      "fr": "Voyage à MaMUN"
+    },
+    "date": {
+      "en": "April 4-6",
+      "fr": "4-6 Avril"
+    },
+    "location": "Manheim",
+    "description": {
+      "en": "From April 4th to 6th, EPFLMun will send a joint delegation with Zurich to represent PolyMUN at the Manheim conference. Manheim is a city in Germany with a rich historical past and a world-renowned university. The conference is a great opportunity to meet delegates from all over Europe and participate in exciting debates. Registration details will be available soon.",
+      "fr": "Du 4 au 6 Avril, EPFLMun enverra une délégation conjointe avec Zurich pour représenter PolyMUN à la conférence de Manheim. Manheim est une ville en Allemagne avec un riche passé historique et une université de renommée mondiale. La conférence est une excellente occasion de rencontrer des délégués de toute l'Europe et de participer à des débats passionnants. Les détails de l'inscription seront bientôt disponibles."
+    },
+    "image": "/pictures/trips/train.jpg"
+  },
+  {
+    "id": 9,
+    "title": {
+      "en": "Trip to HeidelMUN",
+      "fr": "Voyage à HeidelMUN"
+    },
+    "date": {
+      "en": "May 29-31",
+      "fr": "29-31 Mai"
+    },
+    "location": "Heidelberg",
+    "description": {
+      "en": "After a complete semester, EPFLMun invites all the volunteer members to register for this last trip of the year at HeidelMUN. This german conference is a great opportunity to meet new people and to debate in a different environment.",
+      "fr": "Après un semestre complet, EPFLMun invite tous les membres bénévoles à s'inscrire pour ce dernier voyage de l'année à HeidelMUN. Cette conférence allemande est une excellente occasion de rencontrer de nouvelles personnes et de débattre dans un environnement différent."
+    },
+    "image": "/pictures/trips/train.jpg"
+  }
+]
