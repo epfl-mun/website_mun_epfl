@@ -7,8 +7,8 @@
       "fr" : "Session de débat hebdomadaire, Printemps 2025"
     },
     "date" : {
-      "en" : "Every Tuesday, 19h",
-      "fr" : "Tous les Jeudi, 19h"
+      "en" : "Every Tuesday, 19:15pm",
+      "fr" : "Tous les Jeudi, 19hh15"
     },
     "location" : "CM 1 121",
     "description": {
@@ -25,8 +25,8 @@
       "fr": "Kick off Automne 2025"
     },
     "date": {
-      "en" : "September 25th",
-      "fr" : "25 septembre"
+      "en" : "September 25th, 7:15pm",
+      "fr" : "25 septembre, 19h15"
     },
     "location": "CM 1 221",
     "description": {
