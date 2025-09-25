@@ -26,7 +26,7 @@
                 "fr": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
                 "en": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
             },
-            "image" : "/pictures/team/Incognito.webp",
+            "image" : "/pictures/team/Mateo.jpg",
             "linkedin" : "",
             "mail" : ""
         },
@@ -74,6 +74,21 @@
                 "en":"Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
             },
             "image" : "/pictures/team/Incognito.webp",
+            "linkedin" : "",
+            "mail" : ""
+        },
+        {
+            "id" : 5,
+            "poste" : {
+                "fr": "USG & Responsable des Socials",
+                "en": "USG & Head of Socials"
+            },
+            "name" : "Simo Ibouh",
+            "description" : {
+                "fr":"Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "en":"Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            },
+            "image" : "/pictures/team/Ibouh.jpg",
             "linkedin" : "",
             "mail" : ""
         },
