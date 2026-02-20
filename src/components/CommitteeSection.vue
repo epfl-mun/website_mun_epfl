@@ -14,12 +14,14 @@
           :key="c.id"
           class="rounded-2xl overflow-hidden shadow bg-white/5 border border-white/10"
         >
-          <img
-            :src="c.groupImage"
-            :alt="committeeName(c)"
-            class="w-full h-56 object-cover"
-            loading="lazy"
+        <div class="w-full h-56">
+          <LazyImage
+          :src="c.groupImage"
+          :alt="committeeName(c)"
+          class=""
+          loading="lazy"
           />
+        </div>
 
           <div class="p-4">
             <div class="flex items-center justify-between gap-3">
@@ -38,6 +40,7 @@
 </template>
 
 <script>
+import LazyImage from "./LazyImage.vue";
 export default {
   name: "CommitteeSection",
   props: {
@@ -51,6 +54,9 @@ export default {
       // fallback si jamais fr/en manque
       return (c?.name && (c.name[locale] || c.name.en || c.name.fr)) || "";
     }
+  },
+  components: {
+    LazyImage
   }
 };
 </script>
