@@ -1,7 +1,44 @@
-{
+{   "committee": [
+    {
+        "id": 1,
+        "name": { "fr": "Direction", "en": "Executive Board" },
+        "year": "2026",
+        "groupImage": "/pictures/committee_groups/full_direction.jpg"
+    },
+    {
+        "id": 2,
+        "name": { "fr": "Académique", "en": "Academics" },
+        "year": "2026",
+        "groupImage": "/pictures/committee_groups/academics_committee.jpg"
+    },
+    {
+        "id": 3,
+        "name": { "fr": "Logistique", "en": "Logistics" },
+        "year": "2026",
+        "groupImage": "/pictures/committee_groups/logistics_committee.jpg"
+    },
+    {
+        "id": 4,
+        "name": { "fr": "Sponsoring", "en": "Sponsoring" },
+        "year": "2026",
+        "groupImage": "/pictures/committee_groups/sponsoring_committee.jpg"
+    },
+    {
+        "id": 5,
+        "name": { "fr": "Marketing", "en": "Marketing" },
+        "year": "2026",
+        "groupImage": "/pictures/committee_groups/marketing_committee.jpg"
+    },
+    {
+        "id": 6,
+        "name": { "fr": "Socials", "en": "Socials" },
+        "year": "2026",
+        "groupImage": "/pictures/committee_groups/socials_committee.jpg"
+    }
+    ],
     "direction": [
         {
-            "id" : 1,
+            "id" : 7,
             "poste" : {
                 "fr": "Président",
                 "en": "President"
@@ -11,89 +48,74 @@
                 "fr": "Omar est un étudiant EPFL, actuellement en train de suivre un diplôme de Master en Génie Mécanique. Après plusieurs années au MUN, il a décidé de prendre le poste de président. Son expérience dans le développement de projets entrepreneuriaux et ses compétences en communication font de lui un actif clé dans la diffusion de l'association.",
                 "en": "Omar is an EPFL student, currently pursuing his Master's Degree in Mechanical Engineering. After multiple year at the MUN, he decided to take the presidency. His experience in developing entrepreneurial projects and his strong communication skills make him the perfect person to ensure that the association's message is heard by as many people as possible."
             },
-            "image" : "/pictures/team/Omar.jpg",
+            "image" : "/pictures/team/Omar_new.jpg",
             "linkedin" : "https://www.linkedin.com/in/omar-ilyassa-a85147246/",
             "mail" : "louis.cresci@mun-epfl.ch"
         },
         {
-            "id" : 2,
+            "id" : 8,
             "poste" : {
                 "fr": "Vice-Président",
                 "en": "Vice-President"
             },
-            "name" : "Matteo La Macchia",
+            "name" : "Mateo La Macchia",
             "description" : {
-                "fr": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                "en": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                "fr": "Matéo est un étudiant de l'EPFL, actuellement en train de suivre un diplôme de Bachelor en Systèmes de Communication. Son passé en organisation de differents évènements et ses connaissances dans la vie associative sur le campus font de lui la personne parfaite pour gérer une équipe d'esprits forts et dévoués.",
+                "en": "Matéo is an EPFL student, currently pursuing his Bachelor's degree in Communication Systems. His past in the organisation of different events and his knowledge of the associative life on campus make him the perfect person to manage a team of strong and dedicated minds."
             },
-            "image" : "/pictures/team/Mateo.jpg",
+            "image" : "/pictures/team/Mateo_new.jpg",
             "linkedin" : "",
-            "mail" : ""
+            "mail" : "mateo.lamacchia@mun-epfl.ch"
         },
         {
-            "id" : 3,
+            "id" : 9,
             "poste" : {
                 "fr": "Secrétaire Général",
                 "en": "Secretary-General"
             },
             "name" : "Rayane Zouagui",
             "description" : {
-                "fr": "Rayan est un étudiant EPFL, actuellement en train de suivre un diplôme de Master en Informatique. Son expérience dans le développement de projets entrepreneuriaux et ses compétences en communication font de lui un actif clé dans la recherche de soutien financier et collaboratif pour les initiatives de l'association.",
-                "en": "Rayan is an EPFL student, currently pursuing his Master's Degree in Computer Science. His experience in developing entrepreneurial projects and his strong communication skills make him the perfect person to ensure that the association's message is heard by as many people as possible."
+                "fr": "Rayane est étudiant à l’EPFL et poursuit actuellement un Master en génie mécanique. Après une expérience réussie au sein du pôle Sponsoring, il a su allier son esprit de gestion à de solides compétences en leadership pour assumer le rôle de Secrétaire général. Sa vision stratégique et son exigence d’excellence font de lui une force motrice essentielle dans le développement et le rayonnement de l’association au sein de la communauté EPFL.",
+                "en": "Rayane is an EPFL student currently pursuing his Master’s Degree in Mechanical Engineering. After a successful experience in the Sponsorship Department, he combined his management mindset with strong leadership skills to take on the role of Secretary-General. His strategic vision and commitment to excellence make him a key driving force behind the association’s growth and impact within the EPFL community."
             },
-            "image" : "/pictures/team/Rayan.jpg",
-            "linkedin" : "https://www.linkedin.com/in/rayan-1b1b3b1b3/",
+            "image" : "/pictures/team/Rayan_new.jpg",
+            "linkedin" : "https://www.linkedin.com/in/rayane-zouagui-12963538b/?originalSubdomain=ch",
             "mail" : "rayane.zouagui@mun-epfl.ch"
         },
         {
-            "id" : 4,
+            "id" : 10,
             "poste" : {
                 "fr": "Trésorière",
                 "en": "Treasurer"
             },
-            "name" : "Maya mezghani",
+            "name" : "Chaimaa Ouchicha",
             "description" : {
-                "fr": "Toujours là pour aider et pour rire, Maya est une étudiante en deuxième année de Système et communication à l'EPFL. Compétente dans la gestion financière et la comptabilité, elle est la personne idéale pour s'assurer que les finances de l'association sont en ordre.",
-                "en": "Always there to help and to laugh, Maya is a second-year student in Systems and Communication at EPFL. Skilled in financial management and accounting, she is the perfect person to ensure that the association's finances are in order."
+                "fr":"Chaimaa est étudiante à l’EPFL et poursuit actuellement un Master en génie civil. En tant que trésorière, elle veille à la bonne gestion des finances et au bon fonctionnement de l’association. Sa rigueur et son sens de l’organisation font d’elle un pilier de l’équipe, contribuant activement au développement des activités du MUN et à la réussite de ses projets.",
+                "en":"Chaimaa is an EPFL student, currently pursuing her Master’s Degree in Civil Engineering. As treasurer, she ensures the association’s financial stability and smooth operation. Her rigor and organizational skills make her a key asset to the team, supporting MUN’s activities and contributing to the success of its projects."
             },
-            "image" : "/pictures/team/Incognito.webp",
-            "linkedin" : "https://www.linkedin.com/in/maya-mezghani-7a3629161/",
-            "mail" : "maya.mezghani@mun-epfl.ch"
+            "image" : "/pictures/team/Chaimaa.jpg",
+            "linkedin" : "https://www.linkedin.com/in/chaimaa-ouchicha-83aa21334/",
+            "mail" : "chaima.ouchicha@mun-epfl.ch"
         }
     ],
     "USGS": [
         {
-            "id" : 5,
-            "poste" : {
-                "fr": "USG & Responsable des Sponsors",
-                "en": "USG & Head of Sponsoring"
-            },
-            "name" : "Chaimaa",
-            "description" : {
-                "fr":"Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                "en":"Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-            },
-            "image" : "/pictures/team/Incognito.webp",
-            "linkedin" : "",
-            "mail" : ""
-        },
-        {
-            "id" : 5,
+            "id" : 11,
             "poste" : {
                 "fr": "USG & Responsable des Socials",
                 "en": "USG & Head of Socials"
             },
             "name" : "Simo Ibouh",
             "description" : {
-                "fr":"Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                "en":"Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                "fr":"Étudiant en science politique à l’UNIL, Simo est passionné par la création d’alliances solides, en commençant au sein même de notre association. Son ouverture d’esprit et son sens de la communication font de lui la personne idéale pour renforcer l’esprit de communauté, véritable moteur de notre MUN.",
+                "en":"As a political science student here in Unil, Simo is passionate about building strong alliances, starting within our own association. His open and communicative nature makes him perfectly suited to foster the community spirit that is the lifeblood of our MUN."
             },
-            "image" : "/pictures/team/Ibouh.jpg",
-            "linkedin" : "",
-            "mail" : ""
+            "image" : "/pictures/team/Ibouh_new.jpg",
+            "linkedin" : "https://www.linkedin.com/in/mohamed-ibouh-3806a7395/",
+            "mail" : "mohamed.ibouh@mun-epfl.ch"
         },
         {
-            "id" : 5,
+            "id" : 12,
             "poste" : {
                 "fr": "USG & IT",
                 "en": "USG & IT"
@@ -106,6 +128,81 @@
             "image" : "/pictures/team/Emmanuel.jpg",
             "linkedin" : "https://www.linkedin.com/in/omont-emmanuel",
             "mail" : "emmanuel@omont.ch"
+        },
+        {
+            "id" : 13,
+            "poste" : {
+                "fr": "USG & Logistique",
+                "en": "USG & Logistics"
+            },
+            "name" : "Marie Berbichashvili",
+            "description" : {
+                "fr": "Marie est étudiante à l’EPFL et poursuit actuellement un Master en NeuroX. Bien qu’il s’agisse de sa première année au sein du MUN, ses expériences passées dans différentes associations lui ont permis de développer un solide sens de l’organisation, de la créativité et de la gestion. En tant que responsable du pôle Logistique, elle veille à ce que chaque détail soit pris en charge, permettant ainsi à chacun de profiter pleinement du moment.",
+                "en": "Marie is an EPFL student currently pursuing her Master’s degree in NeuroX. It’s her first year in MUN, but she has past experiences in different associations that have taught her how to keep things organised, creative, and running smoothly. As Head of Logistics, she ensures that every detail is taken care of, allowing others to focus on enjoying the moment."
+            },
+            "image" : "/pictures/team/Marie.jpg",
+            "linkedin" : "",
+            "mail" : ""
+        },
+        {
+            "id" : 14,
+            "poste" : {
+                "fr": "USG & Académique",
+                "en": "USG & Academics"
+            },
+            "name" : "Neila Benlamri",
+            "description" : {
+                "fr": "Neila Benlamri est étudiante en Master en Neuro-X à l’EPFL, passionnée par les neurosciences et la géopolitique. Sa curiosité et son esprit analytique font d’elle la personne idéale pour occuper le poste de responsable du pôle Académique, où elle supervise la sélection et la réflexion autour de thématiques stimulantes pour l’association. Anecdote amusante : elle peut décoder un signal cérébral avec autant d’aisance qu’un débat politique.",
+                "en": "Neila Benlamri is a Master’s student in Neuro-X at EPFL, passionate about neuroscience and geopolitics. Her curiosity and analytical mindset make her a perfect fit as Head of Academics, leading the selection and discussion of thought-provoking topics for the association. Fun fact: she can just as easily decode a brain signal as a political debate."
+            },
+            "image" : "/pictures/team/Neila.jpg",
+            "linkedin" : "https://www.linkedin.com/in/neila-benlamri/",
+            "mail" : ""
+        },
+        {
+            "id" : 15,
+            "poste" : {
+                "fr": "USG & Sponsoring",
+                "en": "USG & Sponsoring"
+            },
+            "name" : "Amin Zayed",
+            "description" : {
+                "fr": "Amin est actuellement étudiant en troisième année de Bachelor à HEC Lausanne. Son expérience professionnelle et son parcours académique font de lui un lien privilégié entre le monde de l’entreprise et MUN EPFL, contribuant activement au développement de partenariats stratégiques pour l’association.",
+                "en": "Amin is currently a third-year Bachelor student at HEC Lausanne. His professional experience and academic background make him the perfect bridge between the corporate world and MUN EPFL, helping the association secure meaningful partnerships."
+            },
+            "image" : "/pictures/team/Amin.jpg",
+            "linkedin" : "https://www.linkedin.com/in/amin-zayed/?originalSubdomain=ch",
+            "mail" : ""
+        },
+        {
+            "id" : 16,
+            "poste" : {
+                "fr": "USG & Marketing",
+                "en": "USG & Marketing"
+            },
+            "name" : "Dany Lachat",
+            "description" : {
+                "fr": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "en": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            },
+            "image" : "/pictures/team/Dany.jpg",
+            "linkedin" : "",
+            "mail" : ""
+        },
+        {
+            "id" : 17,
+            "poste" : {
+                "fr": "USG & Relations Internationales",
+                "en": "USG & International Relations"
+            },
+            "name" : "Michael El Khoury",
+            "description" : {
+                "fr": "Michael est étudiant à l’EPFL et poursuit actuellement un Bachelor en génie mécanique. Bien qu’il s’agisse de sa première année au sein de MUNEPFL, il a débuté en force en remportant une mention honorable à l’IEMUN 2025 tout en représentant MUNEPFL. Il a également créé le pôle Relations internationales afin de renforcer la position de l’association sur la scène mondiale et de gérer les relations avec les autres sociétés MUN à travers le monde. Son aisance à l’oral et ses solides compétences en gestion font de lui la personne idéale pour porter l’association à son plus haut niveau, tant sur le plan local qu’international.",
+                "en": "Michael is an EPFL student, currently pursuing his bachelor’s degree in Mechanical Engineering. Despite this being his first year at MUNEPFL, he started off strong by winning an Honorable Mention award at IEMUN2025 while representing MUNEPFL and created the International Relations department to help strengthen MUNEPFL on the global stage and manage worldwide relations with other MUN societies all around the world. His great public speaking and strong managing skills makes him the perfect person to elevate the association to the highest point it can reach both locally and internationally."
+            },
+            "image" : "/pictures/team/Michael.jpg",
+            "linkedin" : "https://www.linkedin.com/in/michael-el-khoury-900b82389/",
+            "mail" : "michael.elkhoury@mun-epfl.ch"
         }
     ],
     "members": [

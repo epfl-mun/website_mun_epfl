@@ -5,8 +5,24 @@
         <p class="text-lg md:text-xl lg:text-2xl max-w-3xl text-center">{{ $t('team.description') }}</p>
     </div>
   </div>
-  
+
+  <!-- Full Committee Image -->
+  <div class="max-w-6xl mx-auto px-6 md:px-10 mb-16">
+    <img
+      src="/pictures/committee_groups/full_committee_2026.jpg"
+      alt="Full Committee"
+      class="w-full rounded-2xl shadow-lg object-cover"
+    />
+  </div>
+
   <div class="space-y-16 mb-8">
+    <CommitteeSection
+      v-if="team.committee?.length"
+      :title="$t('team.sections.committee.title')"
+      :description="$t('team.sections.committee.description')"
+      :committees="team.committee"
+    />
+
     <TeamCardSection 
       v-if="team.direction?.length"
       :title="$t('team.sections.direction.title')" 
@@ -32,13 +48,15 @@
 
 <script>
 import TeamCardSection from '@/components/TeamCardSection.vue';
+import CommitteeSection from '@/components/CommitteeSection.vue';
 import team from '../assets/team.json';
 import { seo } from '@/composables/seo';
 
 export default {
   name: 'TeamPage',
   components: {
-    TeamCardSection
+    TeamCardSection,
+    CommitteeSection
   },
   data() {
     return {
