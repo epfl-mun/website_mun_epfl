@@ -51,8 +51,12 @@
     "title": "Our Team",
     "description": "Our team is made up of passionate students who are dedicated to organizing events and our annual conference.",
     "sections": {
+      "committee": {
+        "title": "Committee",
+        "description": "Discover the MUN Departments !"
+      },
       "direction": {
-        "title": "Direction",
+        "title": "Executive Board",
         "description": "This team is responsible for the direction of the association and is responsible for the management of events."
       },
       "usgs": {

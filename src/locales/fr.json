@@ -51,6 +51,10 @@
     "title": "Notre Équipe",
     "description": "Notre équipe est composée d'étudiants passionnés qui sont dévoués à organiser des événements et notre conférence annuelle.",
     "sections": {
+      "committee": {
+        "title": "Comité",
+        "description": "Découvrez les départements du MUN !"
+      },
       "direction": {
         "title": "Direction",
         "description": "Cette équipe assure la direction de l'association et est responsable de la gestion des événements."

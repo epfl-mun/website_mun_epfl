@@ -48,6 +48,9 @@
     },
     methods: {
       onLoad() {
+        // setTimeout(() => {
+        //   this.loading = false;
+        // }, 2000) // block à décommenter si on veut faire des tests avec lazyImage
         this.loading = false;
       },
       onError() {
