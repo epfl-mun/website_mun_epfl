@@ -17,7 +17,15 @@
 
       <!-- Content container -->
       <div class="w-full md:w-2/3 p-4 flex flex-col">
-        <h3 class="text-xl font-semibold mb-2">{{ title }}</h3>
+        <h3 class="text-xl font-semibold mb-2 flex items-center gap-2">
+          <span
+            v-if="isUpcoming"
+            class="px-2 py-1 text-xs font-bold rounded bg-red-600 text-white"
+          >
+            {{ $t('events.upcoming') }}
+          </span>
+          <span>{{ title }}</span>
+        </h3>
         <p class="text-gray-600 mb-2 flex-grow" v-html="description"></p>
         
         <!-- Date and location row -->
@@ -50,6 +58,10 @@ export default {
     id: {
       type: Number,
       required: true
+    },
+    isUpcoming: {
+        type: Boolean,
+        default: false
     },
     title: {
       type: String,

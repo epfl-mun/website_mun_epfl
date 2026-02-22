@@ -11,6 +11,7 @@
         <EventsLongCard
             v-for="event in events"
             :key="event.id"
+             :isUpcoming="event.status === 'upcoming'"
             :id="event.id"
             :title="event.title[$i18n.locale]"
             :date="event.date[$i18n.locale]"

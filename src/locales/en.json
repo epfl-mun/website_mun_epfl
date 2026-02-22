@@ -45,7 +45,8 @@
     "description": "Our association organizes various events throughout the year. Here you can find all the information about our events.",
     "date": "Date",
     "location": "Location",
-    "learnMore": "Learn More"
+    "learnMore": "Learn More",
+    "upcoming": "Upcoming"
   },
   "team": {
     "title": "Our Team",
