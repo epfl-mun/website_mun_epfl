@@ -172,7 +172,7 @@
             },
             "image" : "/pictures/team/Amin.jpg",
             "linkedin" : "https://www.linkedin.com/in/amin-zayed/?originalSubdomain=ch",
-            "mail" : ""
+            "mail" : "amin.zayed@unil.ch"
         },
         {
             "id" : 16,
@@ -182,12 +182,12 @@
             },
             "name" : "Dany Lachat",
             "description" : {
-                "fr": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                "en": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                "fr": "Étudiant en bachelor d'informatique à l'EPFL, Dany Lachat est tout aussi passioné par l'innovation et les nouvelles technologies, qu'il se sent concerné par les prises de décision globales et les débats sur les enjeux mondiaux. Rigoureux et créatif, il joignit l'association en tant que responsable marketing, devinant que ses compétences et sont sérieux se prêteraient parfaitement pour ce job.\n\nSon but est d'étendre l'univers MUN au delà de ses membres via la communication et la publicité. Partager les points d'intérêts de l'association et son potentiel est sa priorité principale.\n\nAprès tout, c'est une \"pas si grande\" ambition pour un jeune homme dont les idées et rêves ne trouvent pas de limites.",
+                "en": "Student in the bachelor of computer science in EPFL, Dany Lachat is as passionate by innovation and new technologies as he feels concerned in global decisions and world related debates. Rigorous and creative, he joined the association as the head of marketing, guessing that his skills and his serious would fit pretty well for the job.\n\nHis goal is to expand the MUN universe way beyond its members via communication and advertisement. Share the association's points of interest and potential is his main priority.\n\nAfter all, it's a \"not so huge\" ambition for a young man whose ideas and dreams have no limits."
             },
             "image" : "/pictures/team/Dany.jpg",
             "linkedin" : "",
-            "mail" : ""
+            "mail" : "dany.lachat@mun-epfl.ch"
         },
         {
             "id" : 17,
