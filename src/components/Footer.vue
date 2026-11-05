@@ -18,17 +18,17 @@
                     />
                 </a>
             </div>
-            <router-link to="/other/status.pdf"
+            <a href="/other/statuts-2026.pdf"
                target="_blank"
                rel="noopener noreferrer"
-               class="text-sm text-gray-600 hover:text-gray-800"
+               class="inline-flex items-center justify-center rounded-full bg-red-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2"
             >
                 {{ $t('footer.status') }}
-            </router-link>
+            </a>
         </div>
 
         <div class="text-gray-500 text-xs">
-            © 2004-2025 MUN EPFL. {{ $t('footer.allRightsReserved') }}
+            © 2004-2027 MUN EPFL. {{ $t('footer.allRightsReserved') }}
         </div>
     </footer>
 </template>
