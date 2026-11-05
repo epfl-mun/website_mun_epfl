@@ -11,7 +11,7 @@
         <EventsLongCard
             v-for="event in events"
             :key="event.id"
-             :isUpcoming="event.status === 'upcoming'"
+            :isUpcoming="false"
             :id="event.id"
             :title="event.title[$i18n.locale]"
             :date="event.date[$i18n.locale]"
@@ -34,7 +34,9 @@ export default {
     },
     data() {
         return {
-            events: eventsData.sort((a, b) => b.id - a.id)
+            events: eventsData
+                .filter(event => event.status !== 'upcoming')
+                .sort((a, b) => b.id - a.id)
         }
     },
     setup() {

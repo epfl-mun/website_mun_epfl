@@ -103,7 +103,7 @@ export default {
     computed: {
         sortedEvents() {
             return eventsData
-                .filter(event => event.positionFirstPage)
+                .filter(event => event.positionFirstPage && event.status !== 'upcoming')
                 .sort((a, b) => a.positionFirstPage - b.positionFirstPage);
         }
     }
