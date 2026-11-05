@@ -75,7 +75,7 @@
     "description1": "EPFL Model United Nations Conference is a three-day international relations simulation.",
     "description2": "Join us for an unforgettable experience of diplomacy and debate.",
     "epflmunIs": "EPFLMUN is",
-    "participate2025": "Participate in EPFLMUN 2026",
+    "participate2025": "Participate in EPFLMUN 2027",
     "registerNow": "Applications not yet opened",
     "elements" : [
       {
@@ -91,7 +91,7 @@
         "title": "Post-conference opportunities"
       },
       {
-        "title": "3 incredible days, in March or April 2026"
+        "title": "3 incredible days, in March or April 2027"
       }
     ],
     "partners" : "Our Partners",
@@ -208,7 +208,7 @@
       "team": "Team",
       "conference2024": "EPFLMUN2024",
       "conference2025": "EPFLMUN2025",
-      "conference": "EPFLMUN2026",
+      "conference": "EPFLMUN2027",
       "partners" : "Partners",
       "contact": "Contact"
     }

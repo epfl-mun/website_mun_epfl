@@ -2,37 +2,37 @@
     {
         "id": 1,
         "name": { "fr": "Direction", "en": "Executive Board" },
-        "year": "2026",
+        "year": "2027",
         "groupImage": "/pictures/committee_groups/full_direction.jpg"
     },
     {
         "id": 2,
         "name": { "fr": "Académique", "en": "Academics" },
-        "year": "2026",
+        "year": "2027",
         "groupImage": "/pictures/committee_groups/academics_committee.jpg"
     },
     {
         "id": 3,
         "name": { "fr": "Logistique", "en": "Logistics" },
-        "year": "2026",
+        "year": "2027",
         "groupImage": "/pictures/committee_groups/logistics_committee.jpg"
     },
     {
         "id": 4,
         "name": { "fr": "Sponsoring", "en": "Sponsoring" },
-        "year": "2026",
+        "year": "2027",
         "groupImage": "/pictures/committee_groups/sponsoring_committee.jpg"
     },
     {
         "id": 5,
         "name": { "fr": "Marketing", "en": "Marketing" },
-        "year": "2026",
+        "year": "2027",
         "groupImage": "/pictures/committee_groups/marketing_committee.jpg"
     },
     {
         "id": 6,
         "name": { "fr": "Socials", "en": "Socials" },
-        "year": "2026",
+        "year": "2027",
         "groupImage": "/pictures/committee_groups/socials_committee.jpg"
     }
     ],

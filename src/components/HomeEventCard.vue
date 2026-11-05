@@ -1,20 +1,23 @@
 <template>
-    <div @click="navigateToEvent" class="m-2 overflow-hidden border border-gray-300 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out hover:cursor-pointer lg:pb-2">
-      <div class="w-full h-1/2">
-        <img :src="imageUrl" alt="Event Image" class="object-cover w-full h-full" />
+    <article @click="navigateToEvent" @keydown.enter="navigateToEvent" tabindex="0" class="event-card group m-0 overflow-hidden rounded-2xl hover:cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2">
+      <div class="relative w-full h-56 overflow-hidden">
+        <img :src="imageUrl" :alt="title" class="object-cover w-full h-full" />
+        <span class="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-wider text-red-700">MUN EPFL</span>
       </div>
-      <h2 class="text-2xl font-bold mb-5 mt-5 mx-2">{{ title }}</h2>
-      <div class="flex flex-row justify-around mb-5 max-w-md mx-auto">
-        <div class="flex flex-col items-center gap-2">
-            <CalendarIcon class="h-6 w-6"/>
-            <p class="text-center break-words">{{ date }}</p>
+      <div class="p-6">
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900">{{ title }}</h2>
+        <div class="mt-5 grid grid-cols-2 gap-4 text-sm text-slate-500">
+          <div class="flex items-start gap-2">
+              <CalendarIcon class="h-5 w-5 shrink-0 text-red-600"/>
+              <p class="break-words">{{ date }}</p>
+          </div>
+          <div class="flex items-start gap-2">
+              <MapPinIcon class="h-5 w-5 shrink-0 text-red-600"/>
+              <p>{{ location }}</p>
         </div>
-        <div class="flex flex-col items-center gap-2">
-            <MapPinIcon class="h-6 w-6"/>
-            <p>{{ location }}</p>
         </div>
       </div>
-    </div>
+    </article>
 </template>
 
 <script>

@@ -1,13 +1,13 @@
 <template>
   <!-- Pseudo element to do as if the navbar was real in the dom -->
-   <div class="h-16"></div>
+   <div class="h-20"></div>
   <!-- Desktop Navbar -->
-  <nav :class="['navbar fixed left-0 right-0 h-16 z-50 bg-gray-100 flex justify-center items-center font-bold text-lg hidden lg:flex transition-transform duration-300', { 'top-0 z-50': isOverlay, '-translate-y-full': !isVisible }]" ref="navbar">
-    <div class="container flex items-center max-w-6xl gap-10 px-4">
+  <nav :class="['navbar fixed left-0 right-0 h-20 z-50 flex justify-center items-center hidden lg:flex transition-transform duration-300', { 'top-0 z-50': isOverlay, '-translate-y-full': !isVisible }]" ref="navbar">
+    <div class="container flex items-center max-w-7xl gap-10 px-6">
       <router-link to="/" class="text-black">
         <img src="/svg/logos/EPFLMUN.svg" alt="Logo" class="h-14" />
       </router-link>
-      <div class="flex-1 flex justify-center items-center gap-10">
+      <div class="flex-1 flex justify-end items-center gap-8">
         <router-link 
           v-for="item in navItems" 
           :key="item.path"
@@ -66,7 +66,7 @@
   </nav>
 
   <!-- Mobile Navbar -->
-  <nav :class="['navbar fixed right-0 z-50 left-0 h-16 bg-gray-100 flex lg:hidden justify-between items-center font-bold text-lg px-4 transition-transform duration-300', { 'top-0': isOverlay, '-translate-y-full': !isVisible }]" ref="navbar">
+  <nav :class="['navbar fixed right-0 z-50 left-0 h-20 flex lg:hidden justify-between items-center font-bold text-lg px-5 transition-transform duration-300', { 'top-0': isOverlay, '-translate-y-full': !isVisible }]" ref="navbar">
     <router-link to="/" class="text-black">
       <img src="/svg/logos/EPFLMUN.svg" alt="Logo" class="h-14" />
     </router-link>
