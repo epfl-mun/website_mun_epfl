@@ -4,8 +4,8 @@
   <!-- Desktop Navbar -->
   <nav :class="['navbar fixed left-0 right-0 h-20 z-50 flex justify-center items-center hidden lg:flex transition-transform duration-300', { 'top-0 z-50': isOverlay, '-translate-y-full': !isVisible }]" ref="navbar">
     <div class="container flex items-center max-w-7xl gap-10 px-6">
-      <router-link to="/" class="text-black">
-        <img src="/svg/logos/EPFLMUN.svg" alt="Logo" class="h-14" />
+      <router-link to="/" class="text-black" aria-label="MUN EPFL - Accueil">
+        <img src="/svg/logos/EPFLMUN.svg" alt="MUN EPFL" class="h-14" />
       </router-link>
       <div class="flex-1 flex justify-end items-center gap-8">
         <router-link 
@@ -67,8 +67,8 @@
 
   <!-- Mobile Navbar -->
   <nav :class="['navbar fixed right-0 z-50 left-0 h-20 flex lg:hidden justify-between items-center font-bold text-lg px-5 transition-transform duration-300', { 'top-0': isOverlay, '-translate-y-full': !isVisible }]" ref="navbar">
-    <router-link to="/" class="text-black">
-      <img src="/svg/logos/EPFLMUN.svg" alt="Logo" class="h-14" />
+    <router-link to="/" class="text-black" aria-label="MUN EPFL - Accueil">
+      <img src="/svg/logos/EPFLMUN.svg" alt="MUN EPFL" class="h-14" />
     </router-link>
     
     <!-- Hamburger Button -->

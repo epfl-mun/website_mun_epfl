@@ -9,11 +9,11 @@
           <div class="absolute inset-0 flex items-center justify-center px-6">
             <div class="hero-copy max-w-5xl w-full text-left text-white">
               <p class="eyebrow hero-item hero-item-1">MUN EPFL <span>·</span> 2027</p>
-              <h1 class="hero-title hero-item hero-item-2">Diplomacy starts<br><em>with a voice.</em></h1>
-              <p class="hero-lead hero-item hero-item-3">Débats. Rencontres. Perspectives internationales.</p>
+              <h1 class="hero-title hero-item hero-item-2">{{ $t('home.hero.title') }}<br><em>{{ $t('home.hero.titleAccent') }}</em></h1>
+              <p class="hero-lead hero-item hero-item-3">{{ $t('home.hero.lead') }}</p>
               <div class="flex flex-wrap gap-3 mt-8 hero-item hero-item-4">
-                <RedButton to="/conference" class="hero-button">EPFLMUN 2027</RedButton>
-                <router-link to="/society" class="hero-link">Découvrir l’association <span>↗</span></router-link>
+                <RedButton to="/conference" class="hero-button">{{ $t('home.hero.conference') }}</RedButton>
+                <router-link to="/society" class="hero-link">{{ $t('home.hero.discover') }} <span>↗</span></router-link>
               </div>
             </div>
           </div>
@@ -23,7 +23,7 @@
 
     <section class="w-full flex justify-center items-center">
       <div class="container max-w-4xl flex justify-center flex-col items-center intro-block reveal">
-        <p class="section-kicker reveal reveal-delay-1">WHO WE ARE</p>
+        <p class="section-kicker reveal reveal-delay-1">{{ $t('home.hero.whoWeAre') }}</p>
         <h2 class="text-center font-bold text-4xl sm:text-6xl mb-5 mx-4 reveal reveal-delay-2">
           {{ $t("home.welcome") }}
           </h2>
@@ -46,7 +46,7 @@
         <div class="max-w-5xl mx-auto">
           <div class="flex items-end justify-between gap-4 mb-8 reveal">
           <div class="text-left">
-            <p class="section-kicker">ON THE CALENDAR</p>
+            <p class="section-kicker">{{ $t('home.hero.onTheCalendar') }}</p>
             <h2 class="font-bold text-4xl sm:text-6xl mt-2 mb-2">
             {{ $t("home.events.title") }}
             </h2>

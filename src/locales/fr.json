@@ -9,6 +9,15 @@
     "events": {
       "title": "Nos événements",
       "button": "Voir tous les événements"
+    },
+    "hero": {
+      "title": "La diplomatie commence",
+      "titleAccent": "par une voix.",
+      "lead": "Débats. Rencontres. Perspectives internationales.",
+      "conference": "EPFLMUN 2027",
+      "discover": "Découvrir l’association",
+      "whoWeAre": "QUI SOMMES-NOUS ?",
+      "onTheCalendar": "À L’AGENDA"
     }
   },
   "society": {
