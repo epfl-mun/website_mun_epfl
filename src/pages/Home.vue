@@ -17,16 +17,10 @@
 
     <section class="orbit-journey" ref="orbitJourney" :style="journeyStyle">
       <div class="orbit-journey__sticky">
-        <img src="/pictures/home/orbit-to-epfl.png" alt="Transition de la planète vers le campus EPFL" class="orbit-journey__image" />
+        <img src="/pictures/home/earth-lake-leman-epfl.png" alt="De la planète au lac Léman puis au campus EPFL" class="orbit-journey__image" />
         <div class="orbit-journey__veil"></div>
-        <div class="orbit-journey__copy">
-          <p class="eyebrow">MUN EPFL <span>·</span> 2027</p>
-          <h1 class="hero-title">{{ $t('home.hero.title') }}<br><em>{{ $t('home.hero.titleAccent') }}</em></h1>
-          <p class="hero-lead">{{ $t('home.hero.lead') }}</p>
-          <div class="flex flex-wrap gap-3 mt-8">
-            <RedButton to="#conference" class="hero-button">{{ $t('home.hero.conference') }}</RedButton>
-            <a href="#society" class="hero-link">{{ $t('home.hero.discover') }} <span>↗</span></a>
-          </div>
+        <div class="orbit-journey__stage-labels" aria-hidden="true">
+          <span>Planète</span><span>Lac Léman</span><span>Campus EPFL</span>
         </div>
       </div>
     </section>
@@ -171,10 +165,10 @@ export default {
 .orbit-journey { height: 190vh; background: #050814; }
 .home-anchor-section { scroll-margin-top: 5rem; border-top: 1px solid var(--mun-line); }
 .orbit-journey__sticky { position: sticky; top: 0; height: 100vh; min-height: 560px; overflow: hidden; background: #050814; }
-.orbit-journey__image { position: absolute; inset: -18vh 0; width: 100%; height: 136%; object-fit: cover; object-position: center top; transform: scale(calc(1 + var(--journey-progress) * 1.65)) translateY(calc(var(--journey-progress) * -18%)); transform-origin: 50% 76%; will-change: transform; }
-.orbit-journey__veil { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(4, 8, 20, .82), rgba(4, 8, 20, .28) 58%, rgba(4, 8, 20, .06)), linear-gradient(0deg, rgba(4, 8, 20, .72), transparent 40%); opacity: calc(1 - var(--journey-progress) * .72); }
-.orbit-journey__copy { position: absolute; left: max(1.5rem, calc((100vw - 80rem) / 2)); top: 50%; width: min(44rem, calc(100% - 3rem)); color: white; transform: translateY(-50%) translateY(calc(var(--journey-progress) * -28vh)); opacity: calc(1 - var(--journey-progress) * 1.25); will-change: transform, opacity; }
-.orbit-journey__copy::after { content: 'SCROLL TO DESCEND'; display: block; margin-top: 5rem; color: rgba(255,255,255,.58); font-size: .68rem; font-weight: 800; letter-spacing: .2em; }
-@media (max-width: 640px) { .orbit-journey { height: 165vh; } .orbit-journey__image { inset: -10vh -34vw; width: 168%; height: 120%; } .orbit-journey__copy { top: 54%; } .orbit-journey__copy::after { margin-top: 3rem; } }
-@media (prefers-reduced-motion: reduce) { .orbit-journey__image, .orbit-journey__copy { transform: none; opacity: 1; } .orbit-journey { height: 100vh; } .orbit-journey__copy::after { display: none; } }
+.orbit-journey__image { position: absolute; inset: -16vh 0; width: 100%; height: 132%; object-fit: cover; object-position: center top; transform: scale(calc(1 + var(--journey-progress) * 1.5)) translateY(calc(var(--journey-progress) * -20%)); transform-origin: 50% 78%; will-change: transform; }
+.orbit-journey__veil { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(5, 10, 22, .44), rgba(5, 10, 22, .08) 70%), linear-gradient(0deg, rgba(5, 10, 22, .35), transparent 45%); }
+.orbit-journey__stage-labels { position: absolute; right: 2rem; bottom: 2rem; display: flex; gap: .65rem; color: rgba(255,255,255,.8); font-size: .65rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.orbit-journey__stage-labels span { padding: .55rem .7rem; border: 1px solid rgba(255,255,255,.35); background: rgba(5, 10, 22, .25); backdrop-filter: blur(8px); }
+@media (max-width: 640px) { .orbit-journey { height: 165vh; } .orbit-journey__image { inset: -10vh -34vw; width: 168%; height: 120%; } .orbit-journey__stage-labels { right: 1rem; bottom: 1rem; gap: .3rem; font-size: .52rem; } .orbit-journey__stage-labels span { padding: .45rem; } }
+@media (prefers-reduced-motion: reduce) { .orbit-journey__image { transform: none; } .orbit-journey { height: 100vh; } }
 </style>
