@@ -1,21 +1,15 @@
 <template>
-    <section class="relative w-full hero-shell">
-      <div class="relative w-full min-h-[560px] sm:min-h-[650px]">
-        <div class="absolute inset-0 flex items-center justify-center">
-          <div class="image-overlay h-full w-full">
-            <img src="/pictures/home/team_fun.jpeg" alt="MUN EPFL committee" class="hero-image w-full h-full object-cover object-[center_30%]"/>
-            <div class="overlay absolute inset-0"></div>
-          </div>        
-          <div class="absolute inset-0 flex items-center justify-center px-6">
-            <div class="hero-copy max-w-5xl w-full text-left text-white">
-              <p class="eyebrow hero-item hero-item-1">MUN EPFL <span>·</span> 2027</p>
-              <h1 class="hero-title hero-item hero-item-2">{{ $t('home.hero.title') }}<br><em>{{ $t('home.hero.titleAccent') }}</em></h1>
-              <p class="hero-lead hero-item hero-item-3">{{ $t('home.hero.lead') }}</p>
-              <div class="flex flex-wrap gap-3 mt-8 hero-item hero-item-4">
-                <RedButton to="/conference" class="hero-button">{{ $t('home.hero.conference') }}</RedButton>
-                <router-link to="/society" class="hero-link">{{ $t('home.hero.discover') }} <span>↗</span></router-link>
-              </div>
-            </div>
+    <section class="orbit-journey" ref="orbitJourney" :style="journeyStyle">
+      <div class="orbit-journey__sticky">
+        <img src="/pictures/home/orbit-to-epfl.png" alt="Transition de la planète vers le campus EPFL" class="orbit-journey__image" />
+        <div class="orbit-journey__veil"></div>
+        <div class="orbit-journey__copy">
+          <p class="eyebrow">MUN EPFL <span>·</span> 2027</p>
+          <h1 class="hero-title">{{ $t('home.hero.title') }}<br><em>{{ $t('home.hero.titleAccent') }}</em></h1>
+          <p class="hero-lead">{{ $t('home.hero.lead') }}</p>
+          <div class="flex flex-wrap gap-3 mt-8">
+            <RedButton to="/conference" class="hero-button">{{ $t('home.hero.conference') }}</RedButton>
+            <router-link to="/society" class="hero-link">{{ $t('home.hero.discover') }} <span>↗</span></router-link>
           </div>
         </div>
       </div>
@@ -88,7 +82,22 @@ export default {
         seo('home')
         return {}
     },
+    data() {
+        return { journeyProgress: 0 }
+    },
+    computed: {
+        journeyStyle() {
+            return { '--journey-progress': this.journeyProgress }
+        },
+        sortedEvents() {
+            return eventsData
+                .filter(event => event.positionFirstPage && event.status !== 'upcoming')
+                .sort((a, b) => a.positionFirstPage - b.positionFirstPage);
+        }
+    },
     mounted() {
+        this.updateJourney()
+        window.addEventListener('scroll', this.updateJourney, { passive: true })
         const revealObserver = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
@@ -100,12 +109,28 @@ export default {
 
         document.querySelectorAll('.reveal').forEach((element) => revealObserver.observe(element))
     },
-    computed: {
-        sortedEvents() {
-            return eventsData
-                .filter(event => event.positionFirstPage && event.status !== 'upcoming')
-                .sort((a, b) => a.positionFirstPage - b.positionFirstPage);
+    beforeUnmount() {
+        window.removeEventListener('scroll', this.updateJourney)
+    },
+    methods: {
+        updateJourney() {
+            const section = this.$refs.orbitJourney
+            if (!section) return
+            const distance = section.offsetHeight - window.innerHeight
+            const progress = distance > 0 ? (window.scrollY - section.offsetTop) / distance : 0
+            this.journeyProgress = Math.min(1, Math.max(0, progress))
         }
     }
 }
 </script>
+
+<style scoped>
+.orbit-journey { height: 190vh; background: #050814; }
+.orbit-journey__sticky { position: sticky; top: 0; height: 100vh; min-height: 560px; overflow: hidden; background: #050814; }
+.orbit-journey__image { position: absolute; inset: -18vh 0; width: 100%; height: 136%; object-fit: cover; object-position: center top; transform: scale(calc(1 + var(--journey-progress) * 1.65)) translateY(calc(var(--journey-progress) * -18%)); transform-origin: 50% 76%; will-change: transform; }
+.orbit-journey__veil { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(4, 8, 20, .82), rgba(4, 8, 20, .28) 58%, rgba(4, 8, 20, .06)), linear-gradient(0deg, rgba(4, 8, 20, .72), transparent 40%); opacity: calc(1 - var(--journey-progress) * .72); }
+.orbit-journey__copy { position: absolute; left: max(1.5rem, calc((100vw - 80rem) / 2)); top: 50%; width: min(44rem, calc(100% - 3rem)); color: white; transform: translateY(-50%) translateY(calc(var(--journey-progress) * -28vh)); opacity: calc(1 - var(--journey-progress) * 1.25); will-change: transform, opacity; }
+.orbit-journey__copy::after { content: 'SCROLL TO DESCEND'; display: block; margin-top: 5rem; color: rgba(255,255,255,.58); font-size: .68rem; font-weight: 800; letter-spacing: .2em; }
+@media (max-width: 640px) { .orbit-journey { height: 165vh; } .orbit-journey__image { inset: -10vh -34vw; width: 168%; height: 120%; } .orbit-journey__copy { top: 54%; } .orbit-journey__copy::after { margin-top: 3rem; } }
+@media (prefers-reduced-motion: reduce) { .orbit-journey__image, .orbit-journey__copy { transform: none; opacity: 1; } .orbit-journey { height: 100vh; } .orbit-journey__copy::after { display: none; } }
+</style>
