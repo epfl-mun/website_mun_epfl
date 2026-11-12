@@ -3,19 +3,30 @@
 @tailwind utilities;
 
 :root {
-  --mun-red: #cc0000;
-  --mun-ink: #101827;
-  --mun-paper: #fbfbfa;
-  --mun-muted: #64748b;
+  --mun-red: #c41e2b;
+  --mun-red-dark: #8f1620;
+  --mun-ink: #171717;
+  --mun-paper: #f7f6f2;
+  --mun-muted: #686862;
+  --mun-line: rgba(23, 23, 23, .14);
+  --mun-radius: 0;
 }
 
 html, body {
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: #fbfbfa;
+  background: var(--mun-paper);
   color: var(--mun-ink);
-  line-height: 1.5;
+  line-height: 1.55;
   scroll-behavior: smooth;
 }
+
+body { overflow-x: hidden; }
+button, a { cursor: pointer; }
+a { transition: color .35s ease-in-out, opacity .35s ease-in-out; }
+
+.page-enter-active, .page-leave-active { transition: opacity .38s ease-in-out, transform .38s ease-in-out; }
+.page-enter-from { opacity: 0; transform: translateY(18px); }
+.page-leave-to { opacity: 0; transform: translateY(-10px); }
 
 ::selection { background: var(--mun-red); color: white; }
 
@@ -34,7 +45,12 @@ html, body {
     background-color: var(--mun-red);
 }
 
-.navbar { background: rgba(251, 251, 250, .9); backdrop-filter: blur(18px); border-bottom: 1px solid rgba(15, 23, 42, .08); }
+.navbar { background: rgba(247, 246, 242, .94); backdrop-filter: blur(18px); border-bottom: 1px solid var(--mun-line); }
+.navbar .container { max-width: 88rem; }
+.navbar a { letter-spacing: .08em; text-transform: uppercase; font-size: .68rem; font-weight: 700; }
+.navbar a.router-link-active { color: var(--mun-red) !important; }
+.navbar img { transition: transform .45s ease-in-out; }
+.navbar img:hover { transform: translateY(-2px); }
 .hero-shell { background: #101827; }
 .hero-shell .image-overlay { position: absolute; inset: 0; }
 .hero-shell .overlay { background: linear-gradient(90deg, rgba(7, 15, 28, .88) 0%, rgba(7, 15, 28, .58) 48%, rgba(7, 15, 28, .18) 100%); }
@@ -56,7 +72,7 @@ html, body {
 .hero-link:hover::after { transform: scaleX(1); }
 .hero-link span { font-size: 1.3rem; }
 .intro-block { padding: 7rem 1.5rem; }
-.events-section { background: #f0f2f4; }
+.events-section { background: #ebeae5; }
 .event-card { background: #fff; box-shadow: 0 12px 30px rgba(15, 23, 42, .08); transition: transform .25s ease, box-shadow .25s ease; }
 .event-card:hover { transform: translateY(-6px); box-shadow: 0 18px 40px rgba(15, 23, 42, .14); }
 .event-card img { transition: transform .5s ease; }

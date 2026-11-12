@@ -1,10 +1,10 @@
 <template>
-    <footer class="flex flex-col justify-center items-center py-10 px-6 gap-6 border-t border-gray-200 bg-slate-950 text-white">
+    <footer class="site-footer flex flex-col justify-center items-center py-14 px-6 gap-7 text-white">
 
-        <div class="text-slate-300 text-sm text-center">La Coupole CO 116, Case Postale Station 10, 1015 Lausanne, Suisse</div>
+        <div class="footer-address text-sm text-center">La Coupole CO 116, Case Postale Station 10, 1015 Lausanne, Suisse</div>
 
         <div class="flex flex-col items-center gap-4">
-            <div class="flex items-center justify-center gap-6 font-bold text-base text-slate-300">
+            <div class="flex items-center justify-center gap-6 font-bold text-base footer-socials">
                 <a v-for="link in socialLinks" 
                    :key="link.name" 
                    :href="link.url" 
@@ -21,13 +21,13 @@
             <a href="/other/statuts-2026.pdf"
                target="_blank"
                rel="noopener noreferrer"
-               class="inline-flex items-center justify-center rounded-full bg-red-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-red-500 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2 focus:ring-offset-slate-950"
+               class="footer-button inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white"
             >
                 {{ $t('footer.status') }}
             </a>
         </div>
 
-        <div class="text-slate-500 text-xs">
+        <div class="footer-legal text-xs">
             © 2004-2027 MUN EPFL. {{ $t('footer.allRightsReserved') }}
         </div>
     </footer>
@@ -45,3 +45,13 @@ export default {
 
 }
 </script>
+
+<style scoped>
+.site-footer { background: var(--mun-ink); }
+.footer-address { color: rgba(255,255,255,.62); letter-spacing: .04em; }
+.footer-socials img { opacity: .72; transition: opacity .35s ease-in-out, transform .35s ease-in-out; }
+.footer-socials a:hover img { opacity: 1; transform: translateY(-3px); }
+.footer-button { border: 1px solid rgba(255,255,255,.48); letter-spacing: .12em; text-transform: uppercase; transition: background .35s ease-in-out, color .35s ease-in-out; }
+.footer-button:hover { background: var(--mun-red); border-color: var(--mun-red); }
+.footer-legal { color: rgba(255,255,255,.34); }
+</style>

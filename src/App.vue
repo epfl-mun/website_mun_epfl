@@ -2,7 +2,11 @@
   <div id="app">
     <!-- Navbar -->
      <Navbar />
-    <router-view class="element-at-center"></router-view>
+    <router-view v-slot="{ Component, route }">
+      <Transition name="page" mode="out-in">
+        <component :is="Component" :key="route.path" class="element-at-center" />
+      </Transition>
+    </router-view>
     <!-- Footer -->
      <Footer />
   </div>
