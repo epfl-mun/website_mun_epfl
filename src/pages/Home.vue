@@ -17,11 +17,8 @@
 
     <section class="orbit-journey" ref="orbitJourney" :style="journeyStyle">
       <div class="orbit-journey__sticky">
-        <img src="/pictures/home/earth-lake-leman-epfl.png" alt="De la planète au lac Léman puis au campus EPFL" class="orbit-journey__image" />
+        <img src="/pictures/home/earth-lake-leman-epfl.png" alt="Transition continue de la planète au lac Léman puis au campus EPFL" class="orbit-journey__image" />
         <div class="orbit-journey__veil"></div>
-        <div class="orbit-journey__stage-labels" aria-hidden="true">
-          <span>Planète</span><span>Lac Léman</span><span>Campus EPFL</span>
-        </div>
       </div>
     </section>
 
@@ -118,7 +115,9 @@ export default {
     },
     computed: {
         journeyStyle() {
-            return { '--journey-progress': this.journeyProgress }
+            return {
+                '--journey-progress': this.journeyProgress
+            }
         },
         sortedEvents() {
             return eventsData
@@ -162,13 +161,13 @@ export default {
 .hero-home__overlay { background: linear-gradient(90deg, rgba(4, 10, 24, .86), rgba(4, 10, 24, .45) 55%, rgba(4, 10, 24, .12)); }
 .hero-home__content { position: relative; z-index: 1; display: flex; min-height: calc(100vh - 5rem); width: min(80rem, calc(100% - 3rem)); margin: auto; flex-direction: column; justify-content: center; padding-bottom: 4rem; animation: hero-in .9s cubic-bezier(.2,.7,.2,1) both; }
 .hero-home__content .hero-title { max-width: 78rem; font-size: clamp(3.7rem, 8.5vw, 8.5rem); }
-.orbit-journey { height: 190vh; background: #050814; }
-.home-anchor-section { scroll-margin-top: 5rem; border-top: 1px solid var(--mun-line); }
+.orbit-journey { height: 260vh; background: #050814; }
+.home-anchor-section { scroll-margin-top: 5rem; border-top: 1px solid var(--mun-line); background: var(--mun-paper); }
+.home-anchor-section:nth-child(odd) { background: var(--mun-paper-alt, #efeee9); }
+.home-anchor-section :deep(h1), .home-anchor-section :deep(h2) { letter-spacing: -.04em; }
 .orbit-journey__sticky { position: sticky; top: 0; height: 100vh; min-height: 560px; overflow: hidden; background: #050814; }
-.orbit-journey__image { position: absolute; inset: -16vh 0; width: 100%; height: 132%; object-fit: cover; object-position: center top; transform: scale(calc(1 + var(--journey-progress) * 1.5)) translateY(calc(var(--journey-progress) * -20%)); transform-origin: 50% 78%; will-change: transform; }
-.orbit-journey__veil { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(5, 10, 22, .44), rgba(5, 10, 22, .08) 70%), linear-gradient(0deg, rgba(5, 10, 22, .35), transparent 45%); }
-.orbit-journey__stage-labels { position: absolute; right: 2rem; bottom: 2rem; display: flex; gap: .65rem; color: rgba(255,255,255,.8); font-size: .65rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
-.orbit-journey__stage-labels span { padding: .55rem .7rem; border: 1px solid rgba(255,255,255,.35); background: rgba(5, 10, 22, .25); backdrop-filter: blur(8px); }
-@media (max-width: 640px) { .orbit-journey { height: 165vh; } .orbit-journey__image { inset: -10vh -34vw; width: 168%; height: 120%; } .orbit-journey__stage-labels { right: 1rem; bottom: 1rem; gap: .3rem; font-size: .52rem; } .orbit-journey__stage-labels span { padding: .45rem; } }
+.orbit-journey__image { position: absolute; inset: -10vh 0; width: 100%; height: 120%; object-fit: cover; object-position: center top; transform: scale(calc(1.06 + var(--journey-progress) * .46)) translateY(calc(var(--journey-progress) * -28%)); transform-origin: 50% 72%; will-change: transform; }
+.orbit-journey__veil { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(4, 8, 20, .48), rgba(4, 8, 20, .04) 72%), linear-gradient(0deg, rgba(4, 8, 20, .28), transparent 48%); pointer-events: none; }
+@media (max-width: 640px) { .orbit-journey { height: 220vh; } .orbit-journey__image { inset: -8vh -34vw; width: 168%; height: 116%; } }
 @media (prefers-reduced-motion: reduce) { .orbit-journey__image { transform: none; } .orbit-journey { height: 100vh; } }
 </style>

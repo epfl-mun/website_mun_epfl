@@ -7,6 +7,7 @@
   --mun-red-dark: #8f1620;
   --mun-ink: #171717;
   --mun-paper: #f7f6f2;
+  --mun-paper-alt: #efeee9;
   --mun-muted: #686862;
   --mun-line: rgba(23, 23, 23, .14);
   --mun-radius: 0;
@@ -14,6 +15,7 @@
 
 :root.dark-mode {
   --mun-paper: #111315;
+  --mun-paper-alt: #191c1e;
   --mun-ink: #f1f0eb;
   --mun-muted: #a9aaa4;
   --mun-line: rgba(255, 255, 255, .16);
