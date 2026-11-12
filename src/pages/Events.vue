@@ -15,7 +15,7 @@ export default {
     data() {
         return {
             events: eventsData
-                .filter(event => event.status !== 'upcoming')
+                .filter(event => event.status !== 'upcoming' && !event.title.en.toLowerCase().includes('trip'))
                 .sort((a, b) => b.id - a.id)
         }
     },

@@ -109,7 +109,7 @@ export default {
     computed: {
         sortedEvents() {
             return eventsData
-                .filter(event => event.positionFirstPage && event.status !== 'upcoming')
+                .filter(event => event.positionFirstPage && event.status !== 'upcoming' && !event.title.en.toLowerCase().includes('trip'))
                 .sort((a, b) => a.positionFirstPage - b.positionFirstPage);
         }
     },
