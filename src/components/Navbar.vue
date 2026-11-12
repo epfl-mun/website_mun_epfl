@@ -13,8 +13,8 @@
           :key="item.path"
           :href="item.path" 
           class="text-black relative py-2 hover:text-black"
-          @mouseenter="item.path === '/conference' ? isConferenceHovered = true : null"
-          @mouseleave="item.path === '/conference' ? isConferenceHovered = false : null"
+          @mouseenter="item.path === '#conference' ? isConferenceHovered = true : null"
+          @mouseleave="item.path === '#conference' ? isConferenceHovered = false : null"
         >
           {{ $t(item.translationKey) }}
           
@@ -27,7 +27,7 @@
             leave-from-class="opacity-100 translate-y-0"
             leave-to-class="opacity-0 translate-y-1"
           >
-            <div v-if="isConferenceHovered && item.path === '/conference'" class="relative z-50">
+            <div v-if="isConferenceHovered && item.path === '#conference'" class="relative z-50">
               <!-- Invisible bridge to prevent hover gap -->
               <div class="absolute h-2 w-full -bottom-2"></div>
               
@@ -53,6 +53,7 @@
 
       <!-- Language switcher remains on the right -->
       <div class="flex items-center">
+        <button @click="toggleTheme" class="theme-toggle" :aria-label="isDark ? 'Activer le thème clair' : 'Activer le thème sombre'"><span aria-hidden="true">{{ isDark ? '☼' : '◐' }}</span></button>
         <button @click="changeLanguage('en')" class="mx-2">
           <img src="/svg/flags/english.svg" alt="UK Flag" class="h-6" />
         </button>
@@ -113,6 +114,7 @@
 
           <!-- Language Switcher -->
           <div class="flex justify-center gap-4 py-3">
+            <button @click="toggleTheme" class="theme-toggle" :aria-label="isDark ? 'Activer le thème clair' : 'Activer le thème sombre'"><span aria-hidden="true">{{ isDark ? '☼' : '◐' }}</span></button>
             <button @click="changeLanguage('en')" class="mx-2">
               <img src="/svg/flags/english.svg" alt="UK Flag" class="h-6" />
             </button>
@@ -167,6 +169,7 @@ export default {
       isVisible: true,
       isOverlay: false,
       lastScrollY: 0,
+      isDark: false,
       navItems: [
         {
           path: '#top',
@@ -223,6 +226,11 @@ export default {
       this.$i18n.locale = lang;
       document.documentElement.lang = lang;
     },
+    toggleTheme() {
+      this.isDark = !this.isDark;
+      document.documentElement.classList.toggle('dark-mode', this.isDark);
+      localStorage.setItem('mun-theme', this.isDark ? 'dark' : 'light');
+    },
     handleScroll() {
       const currentScrollY = window.scrollY;
       if (currentScrollY > this.lastScrollY && currentScrollY > 300) {
@@ -235,6 +243,9 @@ export default {
     }
   },
   mounted() {
+    const storedTheme = localStorage.getItem('mun-theme');
+    this.isDark = storedTheme === 'dark' || (!storedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    document.documentElement.classList.toggle('dark-mode', this.isDark);
     window.addEventListener('scroll', this.handleScroll);
   },
   beforeUnmount() {
