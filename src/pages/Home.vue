@@ -17,8 +17,15 @@
 
     <section class="orbit-journey" ref="orbitJourney" :style="journeyStyle">
       <div class="orbit-journey__sticky">
+        <div class="journey-orbit" :style="{ transform: `translate3d(0, ${journeyProgress * -18}vh, 0) scale(${1 + journeyProgress * .22})` }"></div>
+        <div class="journey-horizon" :style="{ transform: `translate3d(0, ${journeyProgress * -10}vh, 0)` }"></div>
         <img src="/pictures/home/earth-lake-leman-epfl.png" alt="Transition continue de la planète au lac Léman puis au campus EPFL" class="orbit-journey__image" />
+        <div class="journey-grain"></div>
         <div class="orbit-journey__veil"></div>
+        <div class="journey-caption" :style="{ opacity: Math.max(.2, 1 - journeyProgress * .8), transform: `translateY(${journeyProgress * -24}px)` }">
+          <span>Une même conversation</span>
+          <strong>du monde à l’EPFL</strong>
+        </div>
       </div>
     </section>
 
@@ -166,8 +173,14 @@ export default {
 .home-anchor-section:nth-child(odd) { background: var(--mun-paper-alt, #efeee9); }
 .home-anchor-section :deep(h1), .home-anchor-section :deep(h2) { letter-spacing: -.04em; }
 .orbit-journey__sticky { position: sticky; top: 0; height: 100vh; min-height: 560px; overflow: hidden; background: #050814; }
-.orbit-journey__image { position: absolute; inset: -10vh 0; width: 100%; height: 120%; object-fit: cover; object-position: center top; transform: scale(calc(1.06 + var(--journey-progress) * .46)) translateY(calc(var(--journey-progress) * -28%)); transform-origin: 50% 72%; will-change: transform; }
-.orbit-journey__veil { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(4, 8, 20, .48), rgba(4, 8, 20, .04) 72%), linear-gradient(0deg, rgba(4, 8, 20, .28), transparent 48%); pointer-events: none; }
-@media (max-width: 640px) { .orbit-journey { height: 220vh; } .orbit-journey__image { inset: -8vh -34vw; width: 168%; height: 116%; } }
+.orbit-journey__image { position: absolute; inset: -10vh 0; width: 100%; height: 120%; object-fit: cover; object-position: center top; transform: scale(calc(1.06 + var(--journey-progress) * .46)) translateY(calc(var(--journey-progress) * -28%)); transform-origin: 50% 72%; will-change: transform; filter: saturate(.86) contrast(.96); }
+.journey-orbit, .journey-horizon, .journey-grain { position: absolute; inset: -12%; pointer-events: none; }
+.journey-orbit { z-index: 2; border: 1px solid rgba(255,255,255,.28); border-radius: 50%; box-shadow: 0 0 0 8vw rgba(255,255,255,.025), 0 0 0 16vw rgba(255,255,255,.018); mix-blend-mode: screen; opacity: calc(1 - var(--journey-progress) * .9); }
+.journey-horizon { z-index: 3; background: linear-gradient(180deg, transparent 58%, rgba(224,239,244,.3) 67%, transparent 75%); mix-blend-mode: screen; opacity: calc(.28 + var(--journey-progress) * .5); }
+.journey-grain { z-index: 4; opacity: .08; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.32'/%3E%3C/svg%3E"); mix-blend-mode: soft-light; }
+.orbit-journey__veil { position: absolute; z-index: 5; inset: 0; background: linear-gradient(90deg, rgba(4, 8, 20, .54), rgba(4, 8, 20, .05) 72%), linear-gradient(0deg, rgba(4, 8, 20, .34), transparent 48%); pointer-events: none; }
+.journey-caption { position: absolute; z-index: 6; left: max(1.5rem, calc((100vw - 80rem) / 2)); bottom: 3rem; display: flex; flex-direction: column; gap: .35rem; color: rgba(255,255,255,.8); letter-spacing: .14em; text-transform: uppercase; font-size: .68rem; }
+.journey-caption strong { color: white; font-size: clamp(1.1rem, 2vw, 1.5rem); letter-spacing: -.02em; text-transform: none; }
+@media (max-width: 640px) { .orbit-journey { height: 220vh; } .orbit-journey__image { inset: -8vh -34vw; width: 168%; height: 116%; } .journey-caption { left: 1rem; bottom: 1.5rem; } }
 @media (prefers-reduced-motion: reduce) { .orbit-journey__image { transform: none; } .orbit-journey { height: 100vh; } }
 </style>
