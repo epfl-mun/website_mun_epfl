@@ -4,16 +4,15 @@
   <!-- Desktop Navbar -->
   <nav :class="['navbar fixed left-0 right-0 h-20 z-50 flex justify-center items-center hidden lg:flex transition-transform duration-300', { 'top-0 z-50': isOverlay, '-translate-y-full': !isVisible }]" ref="navbar">
     <div class="container flex items-center max-w-7xl gap-10 px-6">
-      <router-link to="/" class="text-black" aria-label="MUN EPFL - Accueil">
+      <a href="#top" class="text-black" aria-label="MUN EPFL - Accueil">
         <img src="/svg/logos/EPFLMUN.svg" alt="MUN EPFL" class="h-14" />
-      </router-link>
+      </a>
       <div class="flex-1 flex justify-end items-center gap-8">
-        <router-link 
+        <a 
           v-for="item in navItems" 
           :key="item.path"
-          :to="item.path" 
+          :href="item.path" 
           class="text-black relative py-2 hover:text-black"
-          active-class="text-red-600"
           @mouseenter="item.path === '/conference' ? isConferenceHovered = true : null"
           @mouseleave="item.path === '/conference' ? isConferenceHovered = false : null"
         >
@@ -36,20 +35,19 @@
                    @mouseenter="isConferenceHovered = true"
                    @mouseleave="isConferenceHovered = false">
                 <div class="py-1">
-                  <router-link
+                  <a
                     v-for="confItem in conferenceNavItems"
                     :key="confItem.path"
-                    :to="confItem.path"
+                    :href="confItem.path"
                     class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                    active-class="text-red-600"
                   >
                     {{ $t(confItem.translationKey) }}
-                  </router-link>
+                  </a>
                 </div>
               </div>
             </div>
           </Transition>
-        </router-link>
+        </a>
         
       </div>
 
@@ -90,29 +88,27 @@
            class="absolute top-16 left-0 right-0 z-50 py-2">
         <div class="flex flex-col bg-white rounded-lg shadow-lg mx-5 border border-gray-200">
           <!-- Main nav items -->
-          <router-link 
+          <a 
             v-for="item in navItems" 
             :key="item.path"
-            :to="item.path" 
+            :href="item.path" 
             class="px-4 py-3 text-black flex items-center gap-3 hover:bg-gray-50 transition-colors duration-200" 
-            active-class="text-red-600"
           >
             <component :is="item.icon" class="h-5 w-5" />
             {{ $t(item.translationKey) }}
-          </router-link>
+          </a>
 
           <!-- Conference section at the bottom -->
           <div class="mt-4 py-2 border-t border-gray-200">
             <div class="px-4 py-2 text-sm font-semibold text-gray-500">{{ $t('navbar.pastConferences') }}</div>
-            <router-link 
+            <a 
               v-for="item in conferenceNavItems" 
               :key="item.path"
-              :to="item.path" 
+              :href="item.path" 
               class="px-4 py-2 text-black flex items-center gap-3 hover:text-gray-500 transition-colors duration-200" 
-              active-class="text-red-600"
             >
               {{ $t(item.translationKey) }}
-            </router-link>
+            </a>
           </div>
 
           <!-- Language Switcher -->
@@ -173,49 +169,49 @@ export default {
       lastScrollY: 0,
       navItems: [
         {
-          path: '/',
+          path: '#top',
           icon: HomeIcon,
           translationKey: 'navbar.items.home'
         },
         {
-          path: '/society',
+          path: '#society',
           icon: BriefcaseIcon,
           translationKey: 'navbar.items.society'
         },
         {
-          path: '/conference',
+          path: '#conference',
           icon: AcademicCapIcon,
           translationKey: 'navbar.items.conference'
         },
         {
-          path: '/events',
+          path: '#events',
           icon: CalendarIcon,
           translationKey: 'navbar.items.events'
         },
         {
-          path: '/team',
+          path: '#team',
           icon: UsersIcon,
           translationKey: 'navbar.items.team'
         },
         {
-          path : "/partners",
+          path : "#partners-main",
           icon : LinkIcon,
           translationKey : "navbar.items.partners"
         },
         {
-          path: '/contact',
+          path: '#contact',
           icon: EnvelopeIcon,
           translationKey: 'navbar.items.contact'
         }
       ],
       conferenceNavItems: [
         {
-          path: '/conference/2024',
+          path: '#conference',
           icon: AcademicCapIcon,
           translationKey: 'navbar.items.conference2024'
         },
         {
-          path: '/conference/2025',
+          path: '#conference',
           icon: AcademicCapIcon,
           translationKey: 'navbar.items.conference2025'
         }
