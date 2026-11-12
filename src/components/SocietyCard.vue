@@ -1,6 +1,6 @@
 <template>
-  <div class="md:flex gap-4 border rounded-lg p-4 shadow bg-white">
-    <div class="text-3xl md:self-center mb-3 md:mb-0 flex justify-center md:block">
+  <div class="benefit-card">
+    <div class="benefit-icon">
       <slot name="icon"></slot>
     </div>
     <div>

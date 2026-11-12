@@ -1,29 +1,10 @@
 <template>
-  <section class="relative">
-    <div style="height: 600px; width: 100%;" class="relative p-1">
-      <LazyImage src="/pictures/events/conference2024.jpeg" alt="committee on EPFL logo" height="100%" montainsTransform="rotate(45deg) translate(50%, 70%)" sunOrigin="1000px 5000px" sunSize="5%" class="rounded-xl overflow-hidden" />
-      <div v-show="!loading" class="logo absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-md opacity-90 lg:max-w-3xl w-3/4 p-10">
-        <h1 class="text-red-primary font-bold lg:text-7xl text-3xl mb-5">{{ $t('conference.title') }}</h1>
-        <p class="text-center text-lg mb-5">{{ $t('conference.description1') }}</p>
-        <p class="text-center text-lg">{{ $t('conference.description2') }}</p>
-        <nav class="shadow-md py-4 justify-center items-center border-gray-300 border-t mt-3">
-          <div class="max-w-7xl mx-auto px-4">
-            <ul class="flex flex-col lg:flex-row lg:gap-8 gap-2 justify-center items-center text-xl font-bold underline">
-              <li v-for="section in sections" :key="section.id" class="items-center justify-center">
-                <a :href="'#' + section.id" class="text-center">{{ section.name[$i18n.locale] }}</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </div>
-  </section>
+  <header class="conference-masthead content-shell"><div class="conference-masthead-copy"><span class="section-index">02 / EPFLMUN 2027</span><h1>{{ $t('conference.title') }}</h1><p>{{ $t('conference.description1') }}</p><p>{{ $t('conference.description2') }}</p><nav><a v-for="section in sections" :key="section.id" :href="'#'+section.id">{{ section.name[$i18n.locale] }}<svg width="14" height="14" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M5 5h10v10" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a></nav></div><figure><img src="/pictures/events/conference2024.jpeg" alt="committee on EPFL logo" loading="lazy"/></figure></header>
 
-
-  <section class="bg-red-primary">
-    <div class="bg-red-primary py-6 flex flex-col items-center justify-normal">
+  <section class="conference-facts content-shell">
+    <div class="conference-facts-inner">
       <h2 class="text-6xl font-bold text-white mb-10">{{ $t('conference.epflmunIs') }}</h2>
-      <div class="flex flex-col lg:flex-row gap-6 max-w-7xl">
+      <div class="conference-fact-grid">
         <div v-for="element in elements" :key="element.title" class="flex-1">
           <div class="flex flex-col items-center gap-4">
             <div class="rounded-full bg-white p-2">
@@ -38,11 +19,11 @@
 
   <hr class="border-t-2 border-solid border-gray-300 my-10">
 
-  <section id="participate">
+  <section id="participate" class="conference-registration content-shell">
     <div class="py-6 flex flex-col items-center justify-normal">
       <h2 class="text-6xl font-bold mb-5 text-center">{{ $t('conference.participate2025') }}</h2>
       <!-- <a href="https://mymun.com/conferences/EPFLMUN-2025/" target="_blank" rel="noopener noreferrer" class="bg-red-primary text-white font-bold px-8 py-4 rounded-full mt-4 duration-300 hover:scale-105 hover:bg-red-700 text-2xl">{{ $t('conference.registerNow') }}</a> -->
-      <a target="_blank" rel="noopener noreferrer" class="bg-red-primary text-white font-bold px-8 py-4 rounded-full mt-4 duration-300 hover:scale-100 hover:opacity-50 cursor-not-allowed text-2xl">{{ $t('conference.registerNow') }}</a>
+      <span class="registration-status">{{ $t('conference.registerNow') }}</span>
     </div>
   </section>
 
@@ -57,14 +38,19 @@
   <hr class="border-t-2 border-solid border-gray-300 my-10">
 
 
-  <section id="partners">
+  <section id="partners" class="conference-network content-shell">
     <div class="flex flex-col items-center justify-center py-7 px-5">
-      <h2 class="text-6xl font-bold mb-10 text-center">{{ $t('conference.partners') }}</h2>
-      <div class="flex flex-col lg:flex-row gap-6 max-w-7xl w-full pb-5 overflow-x-scroll overflow-y-hidden">
+      <h2 class="text-6xl font-bold mb-10 text-center">{{ $i18n.locale === 'fr' ? 'Conférences partenaires' : 'Partner conferences' }}</h2>
+      <div class="network-logos">
         <div v-for="partner in partners" :key="partner.title" class="flex-1">
           <a class="flex flex-col items-center gap-4" :href="partner.url" target="_blank" rel="noopener noreferrer">
-            <div class="rounded-full p-2">
-              <LazyImage :src="`/pictures/conf_2025/partners/${partner.image}.png`" :alt="partner.title" width="150px" height="150px" />
+            <div class="rounded-full p-2 network-logo-frame">
+              <img
+                :src="`/pictures/conf_2025/partners/${partner.image}.png`"
+                :alt="$t(`conference.partnersList[${partners.indexOf(partner)}].title`)"
+                class="network-logo"
+                loading="lazy"
+              />
             </div>
             <h3 class="text-xl text-black">{{ $t(`conference.partnersList[${partners.indexOf(partner)}].title`) }}</h3>
           </a>
@@ -75,7 +61,7 @@
 
   <hr class="border-t-2 border-solid border-gray-300 my-10">
 
-  <section class="flex flex-col items-center justify-center py-7 text-left" id="maps">
+  <section class="conference-information content-shell" id="maps">
     <h2 class="text-6xl font-bold mb-10 text-center">{{ $t('conference.informationTitle') }}</h2>
     <article class="w-full m-auto flex flex-col items-center max-w-7xl px-5">
       <h3 class="text-3xl mb-5">{{ $t('conference.informationPlaces') }}</h3>
@@ -176,7 +162,7 @@
 
   <hr class="border-t-2 border-solid border-gray-300 my-10">
 
-  <section class="flex flex-col items-center justify-center py-7 text-left" id="timetable">
+  <section class="conference-timetable content-shell" id="timetable">
     <h2 class="text-6xl font-bold mb-10 text-center">{{ $t('conference.timetable.title') }}</h2>
     <!-- <article class="m-auto flex flex-col px-5 gap-6">
       <div>
@@ -309,7 +295,7 @@ export default {
       ],
       sections: [
           { id: 'participate', name: {"en" : 'Participate', "fr" : "Participer"} },
-          { id: 'partners', name: {"en" : 'Partners', "fr" : "Partenaires"} },
+          { id: 'partners', name: {"en" : 'Partner conferences', "fr" : "Conférences partenaires"} },
           { id: 'maps', name: {"en" : 'Transports', "fr" : "Transports"} },
           { id : "timetable", name : {"en" : "Timetable", "fr" : "Emploi du temps"}}
         ],

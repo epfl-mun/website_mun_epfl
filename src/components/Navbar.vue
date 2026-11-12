@@ -71,7 +71,7 @@
     </router-link>
     
     <!-- Hamburger Button -->
-    <button @click="isMenuOpen = !isMenuOpen" class="text-black">
+    <button @click="isMenuOpen = !isMenuOpen" class="text-black" aria-label="Menu" :aria-expanded="isMenuOpen">
       <Bars3Icon v-if="!isMenuOpen" class="h-6 w-6" />
       <XMarkIcon v-else class="h-6 w-6" />
     </button>
@@ -92,7 +92,8 @@
           <a 
             v-for="item in navItems" 
             :key="item.path"
-            :href="item.path" 
+            :href="item.path"
+            @click="isMenuOpen = false"
             class="px-4 py-3 text-black flex items-center gap-3 hover:bg-gray-50 transition-colors duration-200" 
           >
             <component :is="item.icon" class="h-5 w-5" />
@@ -105,7 +106,8 @@
             <a 
               v-for="item in conferenceNavItems" 
               :key="item.path"
-              :href="item.path" 
+              :href="item.path"
+              @click="isMenuOpen = false"
               class="px-4 py-2 text-black flex items-center gap-3 hover:text-gray-500 transition-colors duration-200" 
             >
               {{ $t(item.translationKey) }}

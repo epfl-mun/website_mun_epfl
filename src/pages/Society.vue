@@ -1,45 +1,10 @@
 <template>
-    <div class="flex flex-col justify-start items-center">
-        <div class="w-full py-10 px-10">
-            <div class="flex flex-col items-center gap-4">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold">{{ $t('society.title') }}</h1>
-                <p class="text-lg md:text-xl lg:text-2xl max-w-3xl text-center">{{ $t('society.description') }}</p>
-            </div>
-        </div>
-
-        <div class="flex flex-col md:flex-row items-center p-4 md:p-10 bg-gray-100">
-          <div class="w-2/3 md:w-1/2 aspect-[4/3] overflow-hidden rounded">
-            <img src="/pictures/society/weekly_session.jpeg" alt="Committee debating" class="w-full h-full object-cover" />
-          </div>
-          <div class="flex flex-col justify-start items-center gap-4 w-full lg:w-1/2 pt-5 md:pl-10">
-            <h2 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-black">{{ $t('society.weeklySessions.title') }}</h2>
-            <p class="text-base lg:text-xl xl:text-2xl">{{ $t('society.weeklySessions.description') }}</p>
-          </div>
-        </div>
-
-        <Section class="max-w-4xl p-10">
-          <h2 class="text-4xl mb-5 font-bold text-black">{{ $t('society.plusForStudents') }}</h2>
-          <SocietyCardSection />
-        </Section>
-        
-        <div class="flex flex-col md:flex-row items-center p-4 md:p-10 bg-gray-100">
-          <div class="flex flex-col justify-center items-center gap-4 w-full lg:w-1/2 pt-5 md:pt-0 md:pr-10 order-2 md:order-1">
-            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-black">{{ $t('society.objectives.title') }}</h2>
-            <div class="flex flex-col gap-1">
-              <p class="text-base lg:text-xl xl:text-2xl">{{ $t('society.objectives.description1') }}</p>
-              <p class="text-base lg:text-xl xl:text-2xl">{{ $t('society.objectives.description2') }}</p>
-              <p class="text-base lg:text-xl xl:text-2xl">{{ $t('society.objectives.description3') }}</p>
-            </div>
-          </div>
-
-          <div class="w-2/3 md:w-1/2 aspect-[4/3] overflow-hidden rounded order-1 md:order-2">
-            <img src="/pictures/society/delegation.jpeg" alt="committee on EPFL logo" class="w-full h-full object-cover" />
-          </div>
-        </div>
-
-        
-    </div>
-
+<div class="society-editorial content-shell">
+ <header class="section-heading"><span class="section-index">01 / MUN EPFL</span><h1>{{ $t('society.title') }}</h1><p>{{ $t('society.description') }}</p></header>
+ <div class="editorial-split"><figure class="editorial-photo"><img src="/pictures/society/weekly_session.jpeg" alt="Committee debating" loading="lazy"/><span class="photo-corner">MUN EPFL</span></figure><div class="editorial-copy"><span class="editorial-number">01</span><h2>{{ $t('society.weeklySessions.title') }}</h2><p>{{ $t('society.weeklySessions.description') }}</p></div></div>
+ <section class="society-benefits"><h2>{{ $t('society.plusForStudents') }}</h2><SocietyCardSection/></section>
+ <div class="editorial-split editorial-reverse"><figure class="editorial-photo"><img src="/pictures/society/delegation.jpeg" alt="committee on EPFL logo" loading="lazy"/></figure><div class="editorial-copy"><span class="editorial-number">02</span><h2>{{ $t('society.objectives.title') }}</h2><p>{{ $t('society.objectives.description1') }}</p><p>{{ $t('society.objectives.description2') }}</p><p class="editorial-note">{{ $t('society.objectives.description3') }}</p></div></div>
+</div>
 </template>
   
   <script>

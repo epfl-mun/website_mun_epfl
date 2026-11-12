@@ -1,35 +1,20 @@
 <template>
-    <section class="hero-home">
-      <div class="hero-home__media">
-        <img src="/pictures/home/team_fun.jpeg" alt="Comité MUN EPFL" />
-        <div class="hero-home__overlay"></div>
-      </div>
+    <section id="top" class="hero-home">
       <div class="hero-home__content">
         <p class="eyebrow">MUN EPFL <span>·</span> 2027</p>
         <h1 class="hero-title">{{ $t('home.hero.title') }}<br><em>{{ $t('home.hero.titleAccent') }}</em></h1>
         <p class="hero-lead">{{ $t('home.hero.lead') }}</p>
         <div class="flex flex-wrap gap-3 mt-8">
           <RedButton to="#conference" class="hero-button">{{ $t('home.hero.conference') }}</RedButton>
-          <a href="#society" class="hero-link">{{ $t('home.hero.discover') }} <span>↗</span></a>
+          <a href="#society" class="hero-link">{{ $t('home.hero.discover') }} <svg width="16" height="16" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M5 5h10v10" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
         </div>
       </div>
+      <div class="hero-art"><GlobeArt /></div>
     </section>
 
-    <section class="orbit-journey" ref="orbitJourney" :style="journeyStyle">
-      <div class="orbit-journey__sticky">
-        <div class="journey-orbit" :style="{ transform: `translate3d(0, ${journeyProgress * -18}vh, 0) scale(${1 + journeyProgress * .22})` }"></div>
-        <div class="journey-horizon" :style="{ transform: `translate3d(0, ${journeyProgress * -10}vh, 0)` }"></div>
-        <img src="/pictures/home/earth-lake-leman-epfl.png" alt="Transition continue de la planète au lac Léman puis au campus EPFL" class="orbit-journey__image" />
-        <div class="journey-grain"></div>
-        <div class="orbit-journey__veil"></div>
-        <div class="journey-caption" :style="{ opacity: Math.max(.2, 1 - journeyProgress * .8), transform: `translateY(${journeyProgress * -24}px)` }">
-          <span>Une même conversation</span>
-          <strong>du monde à l’EPFL</strong>
-        </div>
-      </div>
-    </section>
+    <DiplomacyJourney />
 
-    <section id="top" class="w-full flex justify-center items-center">
+    <section id="introduction" class="w-full flex justify-center items-center">
       <div class="container max-w-4xl flex justify-center flex-col items-center intro-block reveal">
         <p class="section-kicker reveal reveal-delay-1">{{ $t('home.hero.whoWeAre') }}</p>
         <h2 class="text-center font-bold text-4xl sm:text-6xl mb-5 mx-4 reveal reveal-delay-2">
@@ -90,6 +75,8 @@
 </template>
   
 <script>
+import DiplomacyJourney from '@/components/DiplomacyJourney.vue';
+import GlobeArt from '@/components/GlobeArt.vue';
 import RedButton from '@/components/RedButton.vue';
 import HomeEventCard from '@/components/HomeEventCard.vue';
 import Society from '@/pages/Society.vue';
@@ -104,6 +91,8 @@ import { seo } from '@/composables/seo'
 export default {
     name: 'HomePage',
     components: {
+        DiplomacyJourney,
+        GlobeArt,
         RedButton,
         HomeEventCard,
         Society,
@@ -117,15 +106,7 @@ export default {
         seo('home')
         return {}
     },
-    data() {
-        return { journeyProgress: 0 }
-    },
     computed: {
-        journeyStyle() {
-            return {
-                '--journey-progress': this.journeyProgress
-            }
-        },
         sortedEvents() {
             return eventsData
                 .filter(event => event.positionFirstPage && event.status !== 'upcoming')
@@ -133,8 +114,6 @@ export default {
         }
     },
     mounted() {
-        this.updateJourney()
-        window.addEventListener('scroll', this.updateJourney, { passive: true })
         const revealObserver = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
@@ -145,42 +124,12 @@ export default {
         }, { threshold: 0.12 })
 
         document.querySelectorAll('.reveal').forEach((element) => revealObserver.observe(element))
-    },
-    beforeUnmount() {
-        window.removeEventListener('scroll', this.updateJourney)
-    },
-    methods: {
-        updateJourney() {
-            const section = this.$refs.orbitJourney
-            if (!section) return
-            const distance = section.offsetHeight - window.innerHeight
-            const progress = distance > 0 ? (window.scrollY - section.offsetTop) / distance : 0
-            this.journeyProgress = Math.min(1, Math.max(0, progress))
-        }
     }
+
 }
 </script>
 
 <style scoped>
-.hero-home { position: relative; min-height: calc(100vh - 5rem); overflow: hidden; background: #111827; color: white; }
-.hero-home__media, .hero-home__media img, .hero-home__overlay { position: absolute; inset: 0; width: 100%; height: 100%; }
-.hero-home__media img { object-fit: cover; object-position: center 30%; animation: hero-image-in 1.2s cubic-bezier(.2,.7,.2,1) both; }
-.hero-home__overlay { background: linear-gradient(90deg, rgba(4, 10, 24, .86), rgba(4, 10, 24, .45) 55%, rgba(4, 10, 24, .12)); }
-.hero-home__content { position: relative; z-index: 1; display: flex; min-height: calc(100vh - 5rem); width: min(80rem, calc(100% - 3rem)); margin: auto; flex-direction: column; justify-content: center; padding-bottom: 4rem; animation: hero-in .9s cubic-bezier(.2,.7,.2,1) both; }
-.hero-home__content .hero-title { max-width: 78rem; font-size: clamp(3.7rem, 8.5vw, 8.5rem); }
-.orbit-journey { height: 260vh; background: #050814; }
 .home-anchor-section { scroll-margin-top: 5rem; border-top: 1px solid var(--mun-line); background: var(--mun-paper); }
-.home-anchor-section:nth-child(odd) { background: var(--mun-paper-alt, #efeee9); }
-.home-anchor-section :deep(h1), .home-anchor-section :deep(h2) { letter-spacing: -.04em; }
-.orbit-journey__sticky { position: sticky; top: 0; height: 100vh; min-height: 560px; overflow: hidden; background: #050814; }
-.orbit-journey__image { position: absolute; inset: -10vh 0; width: 100%; height: 120%; object-fit: cover; object-position: center top; transform: scale(calc(1.06 + var(--journey-progress) * .46)) translateY(calc(var(--journey-progress) * -28%)); transform-origin: 50% 72%; will-change: transform; filter: saturate(.86) contrast(.96); }
-.journey-orbit, .journey-horizon, .journey-grain { position: absolute; inset: -12%; pointer-events: none; }
-.journey-orbit { z-index: 2; border: 1px solid rgba(255,255,255,.28); border-radius: 50%; box-shadow: 0 0 0 8vw rgba(255,255,255,.025), 0 0 0 16vw rgba(255,255,255,.018); mix-blend-mode: screen; opacity: calc(1 - var(--journey-progress) * .9); }
-.journey-horizon { z-index: 3; background: linear-gradient(180deg, transparent 58%, rgba(224,239,244,.3) 67%, transparent 75%); mix-blend-mode: screen; opacity: calc(.28 + var(--journey-progress) * .5); }
-.journey-grain { z-index: 4; opacity: .08; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.32'/%3E%3C/svg%3E"); mix-blend-mode: soft-light; }
-.orbit-journey__veil { position: absolute; z-index: 5; inset: 0; background: linear-gradient(90deg, rgba(4, 8, 20, .54), rgba(4, 8, 20, .05) 72%), linear-gradient(0deg, rgba(4, 8, 20, .34), transparent 48%); pointer-events: none; }
-.journey-caption { position: absolute; z-index: 6; left: max(1.5rem, calc((100vw - 80rem) / 2)); bottom: 3rem; display: flex; flex-direction: column; gap: .35rem; color: rgba(255,255,255,.8); letter-spacing: .14em; text-transform: uppercase; font-size: .68rem; }
-.journey-caption strong { color: white; font-size: clamp(1.1rem, 2vw, 1.5rem); letter-spacing: -.02em; text-transform: none; }
-@media (max-width: 640px) { .orbit-journey { height: 220vh; } .orbit-journey__image { inset: -8vh -34vw; width: 168%; height: 116%; } .journey-caption { left: 1rem; bottom: 1.5rem; } }
-@media (prefers-reduced-motion: reduce) { .orbit-journey__image { transform: none; } .orbit-journey { height: 100vh; } }
+.home-anchor-section:nth-child(odd) { background: var(--mun-paper-alt); }
 </style>

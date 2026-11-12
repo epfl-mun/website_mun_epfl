@@ -1,7 +1,11 @@
+import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useHead } from '@unhead/vue'
 export function seo(path, index = true) {
   const { t } = useI18n()
+  const route = useRoute()
+  if (route.path === '/' && path !== 'home') return
+
 
   const domain = 'https://mun-epfl.ch'
 

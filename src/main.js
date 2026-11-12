@@ -6,6 +6,7 @@ import VueLazyload from 'vue3-lazyload'
 import i18n from './i18n'
 import { createHead } from '@unhead/vue'
 import './assets/tailwind.css'
+import './assets/mun-design.css'
 
 const app = createApp(App)
 const head = createHead()

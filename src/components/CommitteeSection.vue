@@ -1,5 +1,5 @@
 <template>
-  <section class="px-6 md:px-10">
+  <section class="department-section content-shell">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-8">
         <h2 class="text-3xl md:text-4xl font-bold">{{ title }}</h2>
@@ -8,11 +8,11 @@
         </p>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="department-grid">
         <div
           v-for="c in committees"
           :key="c.id"
-          class="rounded-2xl overflow-hidden shadow bg-white/5 border border-white/10"
+          class="department-card"
         >
         <div class="w-full h-56">
           <LazyImage

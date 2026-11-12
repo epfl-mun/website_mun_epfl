@@ -1,6 +1,6 @@
 <template>
-  <div class="space-y-6">
-    <div class="grid gap-6 md:grid-cols-2">
+  <div class="benefit-grid">
+    <div class="benefit-pair">
       <SocietyCard
         :title="$t('society.cards.0.title')"
         :description="$t('society.cards.0.description')"
@@ -18,7 +18,7 @@
         </template>
       </SocietyCard>
     </div>
-    <div class="md:max-w-xl md:mx-auto">
+    <div class="benefit-third">
       <SocietyCard
         :title="$t('society.cards.2.title')"
         :description="$t('society.cards.2.description')"
